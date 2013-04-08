@@ -29,6 +29,11 @@ function codeAddress() {
   });
 }
 
+function sendQuery() {
+	var userQuery = document.getElementById("userQuery").value;
+	return userQuery;
+}
+
 function deleteMarkers() {
 	if (markersArray) {
 		for (i in markersArray) {
