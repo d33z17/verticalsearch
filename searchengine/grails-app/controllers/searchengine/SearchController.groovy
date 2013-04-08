@@ -17,12 +17,12 @@ class SearchController {
 
 	def myquery() {
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
-		uQ = params.address.replaceAll(' ','+')  // replace spaces in query with '+' for solr
+		uQ = params.address//.replaceAll(' ','+')  // replace spaces in query with '+' for solr
 		uQ = uQ.replaceAll("'",'?')							 // replace apostrophes with ?
 		solrparams.set("q", uQ)	 								 // set query
 		solrparams.set("defType", "edismax")		 // set solr to run as edismax
 		solrparams.set("hl", "true")						 // turn highlighting on
-		solrparams.set("fl", "professor education") 			 // return fields
+		solrparams.set("fl", "education") 			 // return fields
 		solrparams.set("qf", "professor^20.0 schools^10.0 degrees^5.0 country^0.3 education^5.0 courses^1.0") // multiple field query and boost
 		myresponse = solr.query(solrparams)		
 		render myresponse
