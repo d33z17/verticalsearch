@@ -18,6 +18,7 @@ class SearchController {
 	def myquery() {
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
 		uQ = params.address.replaceAll(' ','+')  // replace spaces in query with '+' for solr
+		uQ = uQ.replaceAll("'",'?')							 // replace apostrophes with ?
 		solrparams.set("q", uQ)	 								 // set query
 		solrparams.set("defType", "edismax")		 // set solr to run as edismax
 		solrparams.set("hl", "true")						 // turn highlighting on

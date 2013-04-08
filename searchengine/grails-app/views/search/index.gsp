@@ -23,6 +23,7 @@
 			// enable 'enter' key to invoke search
 			$("#address").keypress(function(e){
 				if (e.which == 13){
+					codeAddress()
 				}
 			})
 			
@@ -43,7 +44,7 @@
 			<g:textField name="address" value="start here" />
 			
 			<%-- submit query to map --%>
-			<g:actionSubmit value="OK" />
+			<g:actionSubmit value="OK" onclick="codeAddress()" />
 				
 			<%-- clear map markers --%>
 			<g:actionSubmit value="Clear All" onclick="deleteMarkers()" />
