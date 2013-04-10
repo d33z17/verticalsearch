@@ -11,7 +11,9 @@
 		</g:if>
 		<g:else>
 			<ul class="errors">
-				<li>An error has occurred</li>
+				<li>An error has occurred.</li>
+				<li>If you are seeing this message, the most likely cause is that the Apache Solr server is down.</li>
+				<li>Please text message or email Derek, the site administrator at mr.sheh@gmail.com and he will restart the Solr server.</li>
 			</ul>
 		</g:else>
 	</body>

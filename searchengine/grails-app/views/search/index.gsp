@@ -38,16 +38,16 @@
 	<div id="querybox">
 		
 		<%-- ajax form to send query to searchcontroller.myquery --%>
-		<g:formRemote name="myForm" update="results" url="[controller:'search', action:'myquery']">		
+		<g:formRemote name="myForm" update="results" url="[controller:'search', action:'myquery']" after="codeAddress()">		
 
 			<%-- search field --%>
 			<g:textField name="address" value="start here" />
 			
 			<%-- submit query to map --%>
-			<g:actionSubmit value="OK" onclick="codeAddress()" />
+			<g:actionSubmit value="OK" />
 				
 			<%-- clear map markers --%>
-			<g:actionSubmit value="Clear All" onclick="deleteMarkers()" />
+			<%--<g:actionSubmit value="Clear All" onclick="deleteMarkers()" />--%>
 			
 		</g:formRemote>
 					
