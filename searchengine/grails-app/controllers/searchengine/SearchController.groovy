@@ -26,6 +26,7 @@ class SearchController {
 																						 // multiple field query and boost
 		solrparams.set("qf", """\
 													professor^20.0
+													website^15.0
 													position^15.0
 													schools^10.0 
 													degrees^5.0 
@@ -39,12 +40,10 @@ class SearchController {
 		
 		if (doclist.getNumFound() == 0)
 			render "Sorry, I could not find any matches for " + uQ + "<br /><br />"
-		
-		def prof[]
-		
+				
 		for (org.apache.solr.common.SolrDocument doc : doclist) {
 						
-			render "<a href='http://'>" + doc.getFieldValues("professor")[0].toString() + "</a>"
+			render "<a href='" + doc.getFieldValues("website")[0].toString() + "'>" + doc.getFieldValues("professor")[0].toString() + "</a>"
 			
 			doc.getFieldValues("professor").each {
 				

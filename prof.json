@@ -7,6 +7,7 @@
             " Warwick University",
             " Nottingham University"
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/stellaatkins.html",
         "degrees": [
             "Ph.D. Computer Science",
             "M.Phil. Computer Science",
@@ -27,7 +28,7 @@
             "Ph.D. Computer Science, University of British Columbia, 1985",
             "M.Phil. Computer Science, Warwick University, 1976",
             "B.Sc. Chemistry, Nottingham University, 1966",
-            " "
+            "\u00A0"
         ],
         "courses": [
             
@@ -40,6 +41,7 @@
             " University of East Anglia",
             " University of Colorado"
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/warrenburton.html",
         "degrees": [
             "Ph.D. Computing Studies",
             "M.A. Mathematics",
@@ -72,6 +74,7 @@
             " Wayne State Univ.",
             " University College"
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/thomaswcalvert.html",
         "degrees": [
             "Ph.D. Elect. Eng.",
             "M.S.E.E.",
@@ -106,6 +109,7 @@
             " Simon Fraser University",
             " University of Virginia"
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/roberthadley.html",
         "degrees": [
             "Ph.D. Philosophy",
             "M.Sc. Computing Science",
@@ -140,6 +144,7 @@
         "schools": [
             " University of Cambridge"
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/ronaldharrop.html",
         "degrees": [
             "Ph.D. Mathematics"
         ],
@@ -168,6 +173,7 @@
             " Va. Polytechnic Inst.",
             " Univ. of British Columbia"
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/williamshavens.html",
         "degrees": [
             "B.Sc. Electrical Eng.",
             "M.Sc. Electrical Eng.",
@@ -188,9 +194,9 @@
             "B.Sc. Electrical Eng., Va. Polytechnic Inst., 1969",
             "M.Sc. Electrical Eng., Va. Polytechnic Inst., 1973",
             "Ph.D. Computer Science, Univ. of British Columbia, 1978.",
-            " ",
-            " ",
-            " "
+            "\u00A0",
+            "\u00A0",
+            "\u00A0"
         ],
         "courses": [
             
@@ -203,6 +209,7 @@
             " Electrical Engineering (Major=Computers",
             " Electrical Engineering"
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/tikokameda.html",
         "degrees": [
             "Ph.D.",
             "Batchelor of Engineering"
@@ -233,6 +240,7 @@
             " Univ. of Chicago",
             " Washington Univ."
         ],
+        "website": "http://www.cs.sfu.ca/people/emeriti/jamesweinkam.html",
         "degrees": [
             "B.Sc. Mathematics",
             "M.Sc. Mathematics",
@@ -264,8 +272,9 @@
         "position": "Senior Lecturer",
         "schools": [
             " Simon Fraser University",
-            " Queen’s University"
+            " Queen\u2019s University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/gregbaker.html",
         "degrees": [
             "M.Sc.",
             "B.Sc."
@@ -282,8 +291,8 @@
         ],
         "education": [
             "M.Sc., Simon Fraser University, Canada, 2000",
-            "B.Sc., Queen’s University, Canada, 1998",
-            " "
+            "B.Sc., Queen\u2019s University, Canada, 1998",
+            "\u00A0"
         ],
         "courses": [
             "CMPT 120 Introduction to Computing Science and Programming I",
@@ -301,6 +310,7 @@
             " University of Waterloo",
             " University of Western Ontario"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/bradleybart.html",
         "degrees": [
             "M.Sc.",
             "B.Sc.",
@@ -323,7 +333,7 @@
             "B.Sc., University of Waterloo, Canada, 1997",
             "B.Ed., University of Western Ontario, Canada, 1996",
             "B.Math., University of Waterloo, Canada, 1996",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 120 Intro to Computing Science Programming 1",
@@ -339,6 +349,7 @@
         "schools": [
             " University of Paderborn"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/petraberenbrink.html",
         "degrees": [
             "Ph.D.",
             "M.Sc."
@@ -356,7 +367,7 @@
         "education": [
             "Ph.D., University of Paderborn, Germany, 2000",
             "M.Sc., University of Paderborn, Germany, 1995",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 300 Operating Systems 1",
@@ -373,6 +384,7 @@
             " Computer Science",
             " University of Calcutta"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/binaybhattacharya.html",
         "degrees": [
             "Ph.D.",
             "M.Sc."
@@ -395,7 +407,7 @@
             "Ph.D., Computer Science, McGill University, Canada, 1982",
             "M.Sc., Computer Science, McGill University, Canada 1978",
             "M.Sc., Pure Mathematics, University of Calcutta, India, 1969",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 102 Introduction to Scientific Computer Programming",
@@ -413,6 +425,7 @@
         "schools": [
             " Ural State University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/andreibulatov.html",
         "degrees": [
             "Ph.D.",
             "M.Sc."
@@ -445,6 +458,7 @@
         "schools": [
             " University of British Columbia"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/robertdcameron.html",
         "degrees": [
             "Ph.D.",
             "B.A. Sc."
@@ -476,6 +490,7 @@
             " Simon Fraser University",
             " Universidad de la Republica"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/dianacukierman.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -509,11 +524,12 @@
     {
         "id": 15,
         "professor": "Ryan D'Arcy",
-        "position": "ProfessorSchool of Computing ScienceSchool of Engineering Science",
+        "position": "ProfessorSchool of Computing ScienceSchool of\u00A0Engineering Science",
         "schools": [
             " Dalhousie University",
             " University of Victoria"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/ryandarcy.html",
         "degrees": [
             "PhD",
             "MSc",
@@ -548,6 +564,7 @@
             " Univ. Aix-Marseille II",
             " Buenos Aires University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/veronicadahl1.html",
         "degrees": [
             "Doctorat de Specialite en Intelligence Artificielle",
             "DEA en Intelligence Artificielle",
@@ -568,7 +585,7 @@
             "Doctorat de Specialite en Intelligence Artificielle, Univ. Aix-Marseille II, France, 1977",
             "DEA en Intelligence Artificielle, Univ. Aix-Marseille II, France, 1976",
             "Computador Cientifico, Buenos Aires University, France, 1975",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 310 Artificial Intelligence Survey",
@@ -583,6 +600,7 @@
         "schools": [
             " University of Toronto"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/jamesdelgrande.html",
         "degrees": [
             "Ph.D.",
             "M.Sc."
@@ -600,7 +618,7 @@
         "education": [
             "Ph.D., University of Toronto, Canada, 1985",
             "M.Sc., University of Toronto, Canada, 1977",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 411: Introduction to Knowledge Representation",
@@ -614,6 +632,7 @@
         "schools": [
             " University of British Columbia"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/tonydixon.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -649,9 +668,10 @@
         "position": "Senior Lecturer",
         "schools": [
             " University of Waterloo",
-            " University of Waterloo",
+            "\u00A0University of Waterloo",
             " Canada"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/tobydonaldson.html",
         "degrees": [
             "Ph.D. Computer Science",
             "M.Math",
@@ -670,9 +690,9 @@
         ],
         "education": [
             "Ph.D. Computer Science, University of Waterloo, Canada, 1998",
-            "M.Math, University of Waterloo, Canada, 1994",
+            "M.Math,\u00A0University of Waterloo, Canada, 1994",
             "B.Sc. Simon Fraser University, Canada, 1992",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 118 Special Topics in Computer and Information Technology",
@@ -690,6 +710,7 @@
             " University of British Columbia",
             " University of Toronto"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/markdrew.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -711,7 +732,7 @@
             "Ph.D., Physics, University of British Columbia, Canada, 1976",
             "M.Sc., Physics, University of Toronto, Canada, 1971",
             "B.A.Sc., Engineering Science, University of Toronto, Canada, 1970",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 828 Illumination in Images and Video",
@@ -727,6 +748,7 @@
             " Simon Fraser University",
             " University College London"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/johnedgar.html",
         "degrees": [
             "M.Sc.",
             "B.Sc."
@@ -763,6 +785,7 @@
             " Cornell University",
             " Bilkent University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/fundaergun.html",
         "degrees": [
             "Ph.D.",
             "BS"
@@ -798,6 +821,7 @@
             " Swiss Federal Institute of Technology",
             " University of Dortmund"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/martinester.html",
         "degrees": [
             "Ph.D. Computer Science",
             "Diploma (M.Sc.) in Computer Science"
@@ -815,7 +839,7 @@
         "education": [
             "Ph.D. Computer Science, Swiss Federal Institute of Technology, Zurich, 1990",
             "Diploma (M.Sc.) in Computer Science, University of Dortmund, 1984",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 354 Database Systems 1",
@@ -832,6 +856,7 @@
             " University of Dundee",
             " Dalhousie University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/mikeevans.html",
         "degrees": [
             "M.Sc. ",
             "M.Sc.",
@@ -855,7 +880,7 @@
             "M.Sc., University of Dundee, Scotland",
             "M.A., Dalhousie University, Canada",
             "B.Sc. Honors, Dalhousie University, Canada",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 126 Introduction to Computing Science and Programming",
@@ -871,6 +896,7 @@
             " Cambridge",
             " Northampton"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/alexandrafedorova.html",
         "degrees": [
             "Ph.D. in Computer Science",
             "M.Sc. in Computer Science",
@@ -903,6 +929,7 @@
         "schools": [
             " Simon Fraser University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/brianfraser.html",
         "degrees": [
             "Ph.D. Computing Science",
             "B.Sc. Computing Science"
@@ -934,6 +961,7 @@
         "schools": [
             " University of British Columbia"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/brianfunt.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -954,7 +982,7 @@
             "Ph.D., Computing Science, University of British Columbia, Canada, 1976",
             "M.Sc., Computing Science, University of British Columbia, Canada, 1973",
             "B.Sc., Computing Science, University of British Columbia, Canada, 1971",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 102 Scientific Computer Programming",
@@ -964,11 +992,12 @@
     },
     {
         "id": 28,
-        "professor": "Uwe Glässer",
+        "professor": "Uwe Gl\u00E4sser",
         "position": "Professor",
         "schools": [
             " University of Paderborn"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/uweglasser.html",
         "degrees": [
             "Habilitation",
             "Doctorate",
@@ -1004,6 +1033,7 @@
             " Ibaraki University",
             " Shandong University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/QianpingGu.html",
         "degrees": [
             "Ph.D. Computer Science",
             "M.Sc. Computer Science",
@@ -1039,6 +1069,7 @@
         "schools": [
             " Carnegie-Mellon University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/louhafer.html",
         "degrees": [
             "Ph.D. Electrical Engineering",
             "M.Sc. Electrical Engineering",
@@ -1059,7 +1090,7 @@
             "Ph.D. Electrical Engineering, Carnegie-Mellon University, United States, 1981",
             "M.Sc. Electrical Engineering, Carnegie-Mellon University, United States, 1978",
             "B.Sc. Electrical Engineering, Carnegie-Mellon University, United States, 1976",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 125 Introduction to Computer Science and Programming II",
@@ -1076,6 +1107,7 @@
             " Chalmers University of Technology",
             " Jordan University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/ghassanhamarneh.html",
         "degrees": [
             "Ph.D. Signal and Systems",
             "M.Sc. Digital Communications",
@@ -1097,7 +1129,7 @@
             "Ph.D. Signal and Systems, Chalmers University of Technology, Sweden, 2001",
             "M.Sc. Digital Communications, Chalmers University of Technology, Sweden, 1997",
             "B.Sc. Electrical Engineering, Jordan University, Jordan, 1995",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 102 Introduction to Scientific Computing",
@@ -1115,6 +1147,7 @@
             " University of Connecticut",
             " Mansoura University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/mohamedhefeeda.html",
         "degrees": [
             "Ph.D. Computer Science",
             "M.Sc",
@@ -1137,7 +1170,7 @@
             "Ph.D. Computer Science, Purdue University, United States, 2004",
             "M.Sc, Computer Science and Engineering, University of Connecticut, United States, 2001",
             "B.Sc., Electronics Engineering, Mansoura University, Egypt, 1994.",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 300 Operating Systems",
@@ -1154,6 +1187,7 @@
             " McMaster University",
             " Prague"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/pavolhell.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -1190,6 +1224,7 @@
         "schools": [
             
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/valentinekabanets.html",
         "degrees": [
             
         ],
@@ -1203,12 +1238,12 @@
             
         ],
         "education": [
-            " "
+            "\u00A0"
         ],
         "courses": [
-            " CMPT 307 Data structures and algorithms",
-            " CMPT 881 Average-case complexity",
-            " CMPT 308 Computability and Complexity"
+            "\u00A0CMPT 307 Data structures and algorithms",
+            "\u00A0CMPT 881 Average-case complexity",
+            "\u00A0CMPT 308 Computability and Complexity"
         ]
     },
     {
@@ -1219,6 +1254,7 @@
             " University of British Columbia",
             " University of Toronto"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/harindersinghkhangura.html",
         "degrees": [
             "M.Sc.",
             "B.Sc. Physics/Computing Science"
@@ -1236,7 +1272,7 @@
         "education": [
             "M.Sc., University of British Columbia, Canada, 2001",
             "B.Sc. Physics/Computing Science, University of Toronto, Canada, 1997",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 105W Process, Form, & Convention in Professional Genres",
@@ -1256,6 +1292,7 @@
             " Maharishi International University",
             " State College"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/arthurkirkpatrick.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -1276,7 +1313,7 @@
             "Ph.D., University of Oregon, United States, 2000",
             "M.Sc., Maharishi International University, United States, 1985",
             "B.Sc., Pennsylvania State University, State College, United States, 1977",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 120 Introduction to Computing Science and Programming 1",
@@ -1293,6 +1330,7 @@
             " Computer and Information Science",
             " Indian Institute of Technology"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/RameshKrishnamurti.html",
         "degrees": [
             "Ph.D.",
             "M.Tech.",
@@ -1327,6 +1365,7 @@
             " University of British Columbia",
             " Simon Fraser University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/annelavergne.html",
         "degrees": [
             "M.Sc.",
             "B.Sc."
@@ -1345,7 +1384,7 @@
         "education": [
             "M.Sc., Computer Science, University of British Columbia, Canada, 1999",
             "B.Sc., Computing Science, Simon Fraser University, Canada, 1991",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 125 Introduction to Computing Science and Programming II",
@@ -1363,6 +1402,7 @@
             " University of Wisconsin-Madison",
             " University of Science and Technology of China"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/ze-lianli.html",
         "degrees": [
             "Ph.D. Computer Sciences",
             "M.Sc. Computer Sciences",
@@ -1384,7 +1424,7 @@
             "Ph.D. Computer Sciences, University of Wisconsin-Madison, United States, 1986",
             "M.Sc. Computer Sciences, University of Wisconsin-Madison, United States, 1981",
             "B.Sc. Electrical Engineering, University of Science and Technology of China, China, 1970",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 365 Multimedia Systems",
@@ -1402,6 +1442,7 @@
             " University of Illinois at Urbana-Chanpaign",
             " University of Kansas"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/arthurliestman.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -1423,7 +1464,7 @@
             "Ph.D., Computer Science, University of Illinois at Urbana-Champaign, United States, 1981",
             "M.Sc., Computer Science, University of Illinois at Urbana-Chanpaign, United States, 1978",
             "B.G.S., Computer Science and Mathematics, University of Kansas, United States, 1975",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 307 Data Structures and Algorithms",
@@ -1439,6 +1480,7 @@
             " The Hong Kong University of Science & Technology (HKUST)",
             " Tsinghua University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/jiangchuanliu.html",
         "degrees": [
             "Ph.D. Computer Science",
             "B.Eng (Cum Laude)"
@@ -1456,7 +1498,7 @@
         "education": [
             "Ph.D. Computer Science, The Hong Kong University of Science & Technology (HKUST), 2003",
             "B.Eng (Cum Laude), Computer Science and Technology, Tsinghua University, Beijing, China, 1999",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 371 Data communications and networking",
@@ -1472,6 +1514,7 @@
             " University of Waterloo",
             " University of London"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/Wo-ShunLuk.html",
         "degrees": [
             "Ph.D.",
             "M.Math.",
@@ -1494,7 +1537,7 @@
             "Ph.D., Computing Science, University of Alberta, Canada, 1976",
             "M.Math., University of Waterloo, Canada, 1972",
             "B.A. (Honors), Math., University of London, England, 1970",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 354 Database Systems 1",
@@ -1510,6 +1553,7 @@
             " University of Toronto",
             " Simon Fraser University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/davidmitchell.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -1532,7 +1576,7 @@
             "Ph.D., Computer Science, University of Toronto, Canada, 2002",
             "M.Sc., Computing Science, Simon Fraser University, Canada, 1993",
             "B.Sc., Cognitive Science and Artificial Intelligence, University of Toronto, Canada, 1989",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 225 Data Structures and Programming",
@@ -1548,6 +1592,7 @@
             " University of California at Berkeley",
             " University of Toronto"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/gregmori.html",
         "degrees": [
             "Ph.D. Computer Science",
             "Hon. B.Sc. (High Distinction) in Computer Science and Mathematics"
@@ -1566,7 +1611,7 @@
         "education": [
             "Ph.D. Computer Science, University of California at Berkeley, United States, 2004",
             "Hon. B.Sc. (High Distinction) in Computer Science and Mathematics, University of Toronto, Canada, 1999",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 310: Artificial Intelligence Survey",
@@ -1576,12 +1621,13 @@
     },
     {
         "id": 45,
-        "professor": "Torsten Möller",
+        "professor": "Torsten M\u00F6ller",
         "position": "Professor",
         "schools": [
             " Ohio State University",
-            " Humboldt-Universität zu Berlin"
+            " Humboldt-Universit\u00E4t zu Berlin"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/torstenmoller.html",
         "degrees": [
             "Ph.D.",
             "M.Sc. Computer and Information Science",
@@ -1603,8 +1649,8 @@
         "education": [
             "Ph.D., Computer and Information Science, Ohio State University, United States, 1999",
             "M.Sc. Computer and Information Science, Ohio State University, United States, 1993",
-            "Vordiplom, Mathematical Computer Science, Humboldt-Universität zu Berlin, Germany, 1992",
-            " "
+            "Vordiplom, Mathematical Computer Science, Humboldt-Universit\u00E4t zu Berlin, Germany, 1992",
+            "\u00A0"
         ],
         "courses": [
             "See"
@@ -1619,6 +1665,7 @@
             " Canada",
             " University of British Columbia"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/stevenpearce.html",
         "degrees": [
             "Ph.D.",
             "M.Sc. University of British Columbia",
@@ -1657,6 +1704,7 @@
             " Computer Science Jiao Tong University",
             " Computer Science Shanghai Jiao Tong University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/jianpei.html",
         "degrees": [
             "Ph.D.",
             "M. Eng.",
@@ -1693,6 +1741,7 @@
             " University of Toronto",
             " University of Waterloo"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/JosephPeters.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -1713,7 +1762,7 @@
             "Ph.D., Computer Science, University of Toronto, Canada, 1984",
             "M.Sc., Computer Science, University of Toronto, Canada, 1976",
             "B. Math., Computer Science, University of Waterloo, Canada, 1974",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 307 Data Structures and Algorithms",
@@ -1730,6 +1779,7 @@
             " Simon Fraser University",
             " University of Alberta"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/fredpopowich.html",
         "degrees": [
             "Ph.D. Cognitive Science/Artificial Intelligence",
             "M.Sc. Computing Science",
@@ -1766,6 +1816,7 @@
             " California Institute of Technology",
             " University of Victoria"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/janiceregan.html",
         "degrees": [
             "Ph.D.",
             "M.Sc.",
@@ -1787,7 +1838,7 @@
             "Ph.D., California Institute of Technology, United States, 1987",
             "M.Sc., California Institute of Technology, United States, 1982",
             "B.Sc. (Honors), University of Victoria, Canada, 1979",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 128 Introduction to Computing Science and Programming for Engineers",
@@ -1805,6 +1856,7 @@
             " College Park",
             " Bilkent University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/cenkssahinalp.html",
         "degrees": [
             "Ph.D. Computer Science",
             "B.Sc. Electrical Engineering"
@@ -1823,7 +1875,7 @@
         "education": [
             "Ph.D. Computer Science, University of Maryland, College Park, United States, 1997",
             "B.Sc. Electrical Engineering, Bilkent University, Turkey, 1991",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 441 Introduction to Computational Biology",
@@ -1838,6 +1890,7 @@
             " University of Pennsylvania",
             " University of Poona"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/anoopsarkar.html",
         "degrees": [
             "Ph.D. Computer Science",
             "B.Eng. Computer Science"
@@ -1859,7 +1912,7 @@
         ],
         "courses": [
             "CMPT 379: Principles of Compiler Design",
-            "CMPT 413: Computational Linguistics ",
+            "CMPT 413: Computational Linguistics\u00A0",
             "CMPT 825: Natural Language Processing"
         ]
     },
@@ -1871,6 +1924,7 @@
             " Carnegie Mellon University",
             " University of Toronto"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/oliverschulte.html",
         "degrees": [
             "Ph.D. Logic and Computation",
             "M.Sc. Logic and Computation",
@@ -1892,7 +1946,7 @@
             "Ph.D. Logic and Computation, Carnegie Mellon University, USA, 1997",
             "M.Sc. Logic and Computation, Carnegie Mellon University, USA, 1993",
             "B.Sc. Computing Science, University of Toronto, Canada, 1992",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT320 Social Implications of a Computerized Society",
@@ -1908,6 +1962,7 @@
             " Johns Hopkins University",
             " McGill University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/thomasshermer.html",
         "degrees": [
             "B.E.S. Electrical Engineering and Computer Science",
             "Ph.D. Computer Science"
@@ -1940,6 +1995,7 @@
         "schools": [
             
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/ArrvindhShriraman.html",
         "degrees": [
             
         ],
@@ -1953,7 +2009,7 @@
             
         ],
         "education": [
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 479 Special Topics in Computing Systems",
@@ -1970,6 +2026,7 @@
             " New York University",
             " McGill University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/tamarasmyth.html",
         "degrees": [
             "Ph.D.",
             "Ph.D. Minor",
@@ -1981,7 +2038,7 @@
             " Canada"
         ],
         "faculty": [
-            "  Computer-Based Theory and Acoustics",
+            "\u00A0 Computer-Based Theory and Acoustics",
             " Music Technology",
             " Piano Performance and Computer Applications to Music (Joint Honors)"
         ],
@@ -1991,11 +2048,11 @@
             " 1996"
         ],
         "education": [
-            "Ph.D.,  Computer-Based Theory and Acoustics, Stanford University, United States, 2004",
+            "Ph.D.,\u00A0 Computer-Based Theory and Acoustics, Stanford University, United States, 2004",
             "Ph.D. Minor, Electrical Engineering Stanford, United States, 2004",
             "M.Mus., Music Technology, New York University, United States, 1998",
             "B.Mus., Piano Performance and Computer Applications to Music (Joint Honors), McGill University, Canada, 1996",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 125 Introduction to Computing Science and Programming II",
@@ -2010,6 +2067,7 @@
         "schools": [
             " Eotvos University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/gabortardos.html",
         "degrees": [
             "Ph.D. Mathematics",
             "Diploma in Mathematics"
@@ -2027,11 +2085,11 @@
         "education": [
             "Ph.D. Mathematics, Eotvos University, Hungary, 1988",
             "Diploma in Mathematics, Eotvos University, Hungary, 1987",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 307 Data Structures and Algorithms",
-            "CMPT 407 - CMPT 710 Computational Complexity – cross-listed",
+            "CMPT 407 - CMPT 710 Computational Complexity \u2013 cross-listed",
             "CMPT 710 Computational Complexity"
         ]
     },
@@ -2043,6 +2101,7 @@
             " University of Toronto",
             " Moscow State University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/EugeniaTernovska.html",
         "degrees": [
             "Ph.D. Computer Science",
             "Diploma (Hons.) Applied Mathematics"
@@ -2060,7 +2119,7 @@
         "education": [
             "Ph.D. Computer Science, University of Toronto, Canada, 2002",
             "Diploma (Hons.) Applied Mathematics, Moscow State University, 1989",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 477/777 Formal Verification",
@@ -2075,6 +2134,7 @@
             " University of Oxford",
             " University of Sussex"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/richardvaughan.html",
         "degrees": [
             "D. Phil.",
             "B.A."
@@ -2093,15 +2153,15 @@
         "education": [
             "D. Phil., Computation, University of Oxford, England, 1998",
             "B.A., Computing with Artificial Intelligence, University of Sussex, England, 1993",
-            " "
+            "\u00A0"
         ],
         "courses": [
-            "CMPT 128  Introduction to Computing Science for Engineers",
-            "CMPT 300  Operating Systems I",
-            "CMPT 401  Operating Systems II",
-            "CMPT 415  Directed Study: Autonomous Robots",
-            "CMPT 431  Distributed Systems",
-            "CMPT 889  Special topics in interdisciplinary computing science: Autonomous Robots"
+            "CMPT 128\u00A0 Introduction to Computing Science for Engineers",
+            "CMPT 300\u00A0 Operating Systems I",
+            "CMPT 401\u00A0 Operating Systems II",
+            "CMPT 415\u00A0 Directed Study: Autonomous Robots",
+            "CMPT 431\u00A0 Distributed Systems",
+            "CMPT 889\u00A0 Special topics in interdisciplinary computing science: Autonomous Robots"
         ]
     },
     {
@@ -2111,6 +2171,7 @@
         "schools": [
             " Georgia Institute of Technology"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/kewang.html",
         "degrees": [
             "Ph.D.",
             "M.Sc."
@@ -2128,7 +2189,7 @@
         "education": [
             "Ph.D., Georgia Institute of Technology, United States, 1986",
             "M.Sc., Georgia Institute of Technology, United States, 1984",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 354 Database Systems I",
@@ -2147,6 +2208,7 @@
             " Department of Computer of Science Universitat des Saarlandes",
             " Department of Mathematics"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/kaywiese.html",
         "degrees": [
             "Certificate in Bioinformatics",
             "Ph.D.",
@@ -2189,6 +2251,7 @@
             " University of Jyvaskyla",
             " East China Normal University"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/cynthiaxie.html",
         "degrees": [
             "M.A.",
             "B.A."
@@ -2208,7 +2271,7 @@
         "education": [
             "M.A., Applied Linguistics, University of Jyvaskyla, Finland, 2000",
             "B.A., Teaching Chinese as a Foreign Language, East China Normal University, China, 1992",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CHIN 180, CHIN 181, CHIN 280 and CHIN 281: Intensive Mandarin Chinese for Beginners",
@@ -2224,6 +2287,7 @@
             " University of Toronto",
             " University of Waterloo"
         ],
+        "website": "http://www.cs.sfu.ca/people/faculty/richardzhang.html",
         "degrees": [
             "Ph.D.",
             "M.Math.",
@@ -2245,7 +2309,7 @@
             "Ph.D., Computer Science, University of Toronto, Canada, 2003",
             "M.Math., Computer Science, University of Waterloo, Canada, 1997",
             "B.Math., Faculty of Mathematics, University of Waterloo, Canada, 1995",
-            " "
+            "\u00A0"
         ],
         "courses": [
             "CMPT 464/764 Geometric modeling in computer graphics",
