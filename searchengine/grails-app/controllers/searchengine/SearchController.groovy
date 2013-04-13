@@ -34,12 +34,17 @@ class SearchController {
 													courses^1.0
 													""")
 		response = solr.query(solrparams)
-		
+						
 		def doclist = response.getResults()
 		
+		if (doclist.getNumFound() == 0)
+			render "Sorry, I could not find any matches for " + uQ + "<br /><br />"
+		
+		def prof[]
+		
 		for (org.apache.solr.common.SolrDocument doc : doclist) {
-			
-			render doc.getFieldValues("professor")[0].toString()
+						
+			render "<a href='http://'>" + doc.getFieldValues("professor")[0].toString() + "</a>"
 			
 			doc.getFieldValues("professor").each {
 				
@@ -55,7 +60,7 @@ class SearchController {
 				
 				doc.getFieldValues("schools").collect {
 					if (it.matches(".*\\w.*"))
-						render "<br />" + it
+						render "<br /><a href='http://'>" + it + "</a>"
 				}
 				
 				doc.getFieldValues("education").collect {

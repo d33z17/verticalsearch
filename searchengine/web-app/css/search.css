@@ -79,7 +79,7 @@ html.no-cssgradients {
 }
 
 a:link, a:visited, a:hover {
-	color: #48802c;
+	color: #0000cc;
 }
 
 a:hover, a:active {
@@ -123,8 +123,12 @@ img {
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
-	padding: 1em;
-	min-height: 1em;
+	min-height: 1em;	
+	padding: 0.5em 0.75em;
+	   -moz-box-shadow: 0 0 3px 1px #aaaaaa;
+	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
+	        box-shadow: 0 0 3px 1px #aaaaaa;
+	zoom: 1;
 }
 
 .footer a {
@@ -278,6 +282,11 @@ input, select, textarea {
 #address {
 	font-size: x-large;
 	margin-top: 177px;
+}
+
+#results {
+	padding: 0em 0em 0em 4em;
+	font-size: x-large;
 }
 
 select {
