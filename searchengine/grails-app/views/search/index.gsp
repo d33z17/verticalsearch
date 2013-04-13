@@ -37,6 +37,11 @@
 		
 	<div id="querybox">
 		
+		<div class="header">
+			<h1 id="bigTitle">Prestigious</h1>
+			<h3 id="subTitle">sfu professor ranklist.</h3>
+		</div>
+		
 		<%-- ajax form to send query to searchcontroller.myquery --%>
 		<g:formRemote name="myForm" update="results" url="[controller:'search', action:'myquery']" after="codeAddress()">		
 

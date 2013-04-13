@@ -20,22 +20,50 @@ class SearchController {
 		uQ = params.address
 		uQ = uQ.replaceAll("'",'?')							 // replace apostrophes with ?
 		solrparams.setQuery(uQ)
-		solrparams.set("q.op", "OR")						 				// allow in-exact matches
-		solrparams.set("defType", "edismax")		 				// set solr to run as edismax
-		solrparams.set("qf", "professor^20.0 schools^10.0 degrees^5.0 country^0.3 education^5.0 courses^1.0") // multiple field query and boost
+		solrparams.set("q.op", "OR")						 // allow in-exact matches
+		solrparams.set("defType", "edismax")		 // set solr to run as edismax
+		solrparams.set("rows",11)								 // set number results returned
+																						 // multiple field query and boost
+		solrparams.set("qf", """\
+													professor^20.0
+													position^15.0
+													schools^10.0 
+													degrees^5.0 
+													country^0.3 
+													education^5.0 
+													courses^1.0
+													""")
 		response = solr.query(solrparams)
 		
 		def doclist = response.getResults()
 		
 		for (org.apache.solr.common.SolrDocument doc : doclist) {
-			render doc.getFieldValues("professor")[0].toString() + " attended <ol>"
+			
+			render doc.getFieldValues("professor")[0].toString()
+			
 			doc.getFieldValues("professor").each {
-				doc.getFieldValues("education").collect {
+				
+				doc.getFieldValues("position").collect {
 					if (it.matches(".*\\w.*"))
-						render "<li>" + it + "</li>"
+						render ", " + it
+				}
+				
+				doc.getFieldValues("courses").collect {
+					if (it.matches(".*\\w.*"))
+						render "<br />" + it
+				}
+				
+				doc.getFieldValues("schools").collect {
+					if (it.matches(".*\\w.*"))
+						render "<br />" + it
+				}
+				
+				doc.getFieldValues("education").collect {
+					if (it.matches(".*\\w.*"))			// regex to match alphanumeric, \\ = \ in java strings; used to omit blank education fields
+						render "<br />" + it
 				}
 			}
-			render("</ol><br />")						
+			render("<br /><br />")						
 		}		
 	}
 	

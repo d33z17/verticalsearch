@@ -51,10 +51,9 @@ html.no-cssgradients {
 }
 
 .header {
-	background: #fff;
-	color: #000;
+	color: #fff;
 	font-size: xx-large;
-	padding: 2em 2em 1em 2em;
+	padding: 0em 2em 0.5em 2em;
 }
 
 #map-canvas {
@@ -88,7 +87,6 @@ a:hover, a:active {
 }
 
 h1 {
-	color: #000;
 	font-weight: bold;
 	font-size: 2.5em;
 }
@@ -264,8 +262,22 @@ input, select, textarea {
 }
 
 #querybox {
+	background-image: url(../images/fortuneTeller.jpg);
+	background-repeat: no-repeat;
+	background-position: 0% 37%;
+  background-size: cover;
 	width: 80%;
-	margin: 2em 10% 3em 10%;
+	height: 400px;
+	margin: -2em 10% 3em 10%;
+}
+
+#querybox h1 {
+	color: #ffc400;
+}
+
+#address {
+	font-size: x-large;
+	margin-top: 177px;
 }
 
 select {

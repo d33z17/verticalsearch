@@ -23,7 +23,7 @@
 
     		<tmpl:/nav />
 
-				<tmpl:/header />
+				<%--<tmpl:/header />--%>
 				
 				<%-- dynamic page content --%>				
     		<g:layoutBody />
