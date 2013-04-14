@@ -49,7 +49,9 @@ def outputJson(data){
 
 def outputRankings(){
 
-	def webAddr = "http://www.topuniversities.com/university-rankings/university-subject-rankings/2012/computer-science-and-information-systems"
+	//def webAddr = "http://www.topuniversities.com/university-rankings/university-subject-rankings/2012/computer-science-and-information-systems"
+
+	def webAddr = "http://www.topuniversities.com/university-rankings/world-university-rankings/2012"
 
 	def data = outputJson(getRankings(getRawDoc(webAddr)))
 	
