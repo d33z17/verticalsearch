@@ -50,21 +50,23 @@ class SearchController {
 			def i = 1
 			def id = doc.getFieldValue("id")
 			def name = doc.getFieldValue("professor")
-			def link = doc.getFieldValue("website")
+			def plink = doc.getFieldValue("website")
 			def position = doc.getFieldValue("position")
 			def courses = doc.getFieldValues("courses")
 			def schools = doc.getFieldValues("schools")
-			def result = [name:"",course:"",school:""]
+			def result = [name:"",plink:"",position:"",course:"",school:""]
 
 //render "SCHOOLS: " + schools
 			
 			// professor name and profile website			
-			render "<span class='name'><a href='" + link + "'>" + name + "</a></span>"
+			render "<span class='name'><a href='" + plink + "'>" + name + "</a></span>"
 			result.name = name
 			
 			// professor position if exists	
-			if (position != null)
+			if (position != null) {
 				render ", is an SFU " + position + " who"
+				result.position = position
+			}
 			
 			// courses taught if any
 			courses.each {
@@ -85,7 +87,8 @@ class SearchController {
 			def schoollist
 			def uniName
 			def uniLink
-			
+			def uniqueUnis = []
+						
 			schools.each {
 				
 				def schoolparams = new org.apache.solr.client.solrj.SolrQuery()
@@ -105,33 +108,49 @@ class SearchController {
 				schoolparams.set("q.op", "AND")
 				schoolparams.set("rows",1)
 				schoolparams.set("defType", "edismax")
-				schoolparams.set("qf", "uniName")	//tie conflict
+				schoolparams.set("qf", "uniName")
 				
 //				render "NESTED QUERY IS: " + schoolparams
 				
 				schoollist = solr.query(schoolparams).getResults()
 				
 //				render "SOLR MATCHES: " + schoollist
-				
+								
 				for (org.apache.solr.common.SolrDocument school : schoollist) {
 					uniName = school.getFieldValue("uniName")
+					uniqueUnis.add(uniName)
+					render "NUMBER UNIS: " + uniqueUnis
+					
+					def linkparams = new org.apache.solr.client.solrj.SolrQuery()
+					linkparams.setQuery(cut)
+					linkparams.set("q.op", "AND")
+					linkparams.set("rows",1)
+					linkparams.set("defType", "edismax")
+					linkparams.set("qf", "university")
+					def linklist = solr.query(linkparams).getResults()
+					
+					for (org.apache.solr.common.SolrDocument link : linklist) {
+						uniLink = link.getFieldValue("uniLink")
+					
 //					render uniName
 //					uniLink = school.getFieldValue("uniLink")
 //					render "UNILINKS: " + uniLink
 					
-					if (!uniName.isEmpty()) {
-						render "<br /><a href='http://" + uniLink + "'>" + cut + "</a>, world comp sci ranking: " + school.getFieldValue("uniRank")
-						totalRank += school.getFieldValue("uniRank")
-						count++
-					} else
-							count--
-						
-//					render "count: " + count
-				}
+						if (!uniName.isEmpty()) {
+							render "<br /><a href='http://" + uniLink + "'>" + cut + "</a>, world ranking: " + school.getFieldValue("uniRank")
+							totalRank += school.getFieldValue("uniRank")
+							count++
+						} else
+								count--					
+					} // end for link:linklist
+				}	// end school.each
 			}
 			
 			if (count > 0) {
-				render "<br />" + name + "'s comp sci ranking is: " + Math.round(totalRank/count)
+				def rank = totalRank / count
+				def pct = (1 - (rank / 852 )) * 100
+				render "<br />" + name + "'s prestigiousness: " + pct.setScale(1, BigDecimal.ROUND_HALF_UP).toString()
+				render "TOTALRANK: " + totalRank + " COUNT: " + count + " RANK: " + rank + " "
 			}
 			
 			doc.getFieldValues("education").collect {
@@ -146,11 +165,14 @@ class SearchController {
 
 		} // end for (doc : doclist)
 		
-		render allResults
+		render 
+		
+		// TO BE OUTPUT: *plink *name is an SFU *position who teaches *course: ... *school *slink *srank *prank *education
 		
 		/* Cross-section analyse */
-		render "ONE MAP: " + allResults[0]
-		render "TEST: " + allResults.findAll{ it.get('course') }
+//		render "EACH_MATCH: " + allResults.eachMatch( it.get('course'), '/.*\\d/.*', )
+//		render "FIND_RESULTS: " + allResults.findResults{ it.get('course') == " " ?  : null }
+		
 		
 	} // end myQuery
 	
