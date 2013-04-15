@@ -101,8 +101,8 @@ class SearchController {
 				schoolparams.set("q.op", "OR")
 				schoolparams.set("rows",1)
 				schoolparams.set("defType", "edismax")
-//				schoolparams.set("qf", "uniName university")	tie conflict
-				schoolparams.set("fq","{!join from=uniName to=university}"+cut)
+				schoolparams.set("qf", "uniName")	//tie conflict
+//				schoolparams.set("fq","uniName"/*"{!join from=uniName to=university}"+cut*/)
 				
 //				render "NESTED QUERY IS: " + schoolparams
 				
@@ -113,13 +113,13 @@ class SearchController {
 				for (org.apache.solr.common.SolrDocument school : schoollist) {
 					uniName = school.getFieldValue("uniName")
 					render uniName
-					uniLink = school.getFieldValue("uniLink")
-					render "UNILINKS: " + uniLink
+//					uniLink = school.getFieldValue("uniLink")
+//					render "UNILINKS: " + uniLink
 					
-//					if (!uniName.isEmpty()) {
-//						render "<br /><a href='http://" + uniLink + "'>" + cut + "</a>, world comp sci ranking: " + school.getFieldValue("uniRank")
-//						totalRank += school.getFieldValue("uniRank")
-//					}
+					if (!uniName.isEmpty()) {
+						render "<br /><a href='http://" + uniLink + "'>" + cut + "</a>, world comp sci ranking: " + school.getFieldValue("uniRank")
+						totalRank += school.getFieldValue("uniRank")
+					}
 				}
 			}
 			render "<br />" + name + "'s comp sci ranking is: " + Math.round(totalRank/count)
