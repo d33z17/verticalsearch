@@ -20,7 +20,6 @@ class SearchController {
 		/* Initial Query */
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
 		uQ = params.address
-		uQ = uQ.replaceAll("'",'?')							 // replace apostrophes with ?
 		solrparams.setQuery(uQ)
 		solrparams.set("qf","""
 										professor
@@ -88,18 +87,24 @@ class SearchController {
 				def schoolparams = new org.apache.solr.client.solrj.SolrQuery()
 				def cut = it.replaceAll('Computer','')
 				cut = cut.replaceAll('Canada','')
-				cut = cut.replaceAll('Science','')
-				
+				cut = cut.replaceAll('Science','')				
+								
 				if (cut.matches('.*\\w.*')) {
 					render "<br /><a href='http://'>" + cut + "</a>"
 					count ++
 				}
-				
+												
 				schoolparams.setQuery(cut)
 				schoolparams.set("q.op", "AND")
 				schoolparams.set("defType", "edismax")
 				schoolparams.set("qf", "uniName")
+				
+				render "NESTED QUERY IS: " + schoolparams
+				
 				schoollist = solr.query(schoolparams).getResults()
+				
+				render "SOLR MATCHES: " + schoollist
+				
 				for (org.apache.solr.common.SolrDocument school : schoollist) {
 					
 					uniName = school.getFieldValues("uniName")

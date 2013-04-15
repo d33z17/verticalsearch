@@ -1,0 +1,437 @@
+[
+    {
+        "id": 5000,
+        "university": "University of British Columbia",
+        "uniLink": "http://www.ubc.ca/"
+    },
+    {
+        "id": 5001,
+        "university": "Warwick University",
+        "uniLink": "http://www2.warwick.ac.uk/"
+    },
+    {
+        "id": 5002,
+        "university": "Nottingham University",
+        "uniLink": "http://www.nottingham.ac.uk/"
+    },
+    {
+        "id": 5003,
+        "university": "University of East Anglia",
+        "uniLink": "http://www.uea.ac.uk/"
+    },
+    {
+        "id": 5004,
+        "university": "University of Colorado",
+        "uniLink": "http://www.colorado.edu/"
+    },
+    {
+        "id": 5005,
+        "university": "Carnegie-Mellon University",
+        "uniLink": "http://www.cmu.edu/index.shtml"
+    },
+    {
+        "id": 5006,
+        "university": "Wayne State Univ.",
+        "uniLink": "http://wayne.edu/"
+    },
+    {
+        "id": 5007,
+        "university": "University College",
+        "uniLink": "http://www.uc.utoronto.ca/"
+    },
+    {
+        "id": 5008,
+        "university": "Simon Fraser University",
+        "uniLink": "http://www.sfu.ca/"
+    },
+    {
+        "id": 5009,
+        "university": "University of Virginia",
+        "uniLink": "http://www.virginia.edu/"
+    },
+    {
+        "id": 5010,
+        "university": "University of Cambridge",
+        "uniLink": "http://www.cam.ac.uk/"
+    },
+    {
+        "id": 5011,
+        "university": "Va. Polytechnic Inst.",
+        "uniLink": "http://www.vt.edu/"
+    },
+    {
+        "id": 5012,
+        "university": "Univ. of British Columbia",
+        "uniLink": "http://www.ubc.ca/"
+    },
+    {
+        "id": 5013,
+        "university": "Xavier Univ.",
+        "uniLink": "http://www.xavier.edu/"
+    },
+    {
+        "id": 5014,
+        "university": "Univ. of Chicago",
+        "uniLink": "http://www.uchicago.edu/"
+    },
+    {
+        "id": 5015,
+        "university": "Washington Univ.",
+        "uniLink": "http://wustl.edu/"
+    },
+    {
+        "id": 5016,
+        "university": "Queen\u2019s University",
+        "uniLink": "http://www.queensu.ca/"
+    },
+    {
+        "id": 5017,
+        "university": "University of Waterloo",
+        "uniLink": "https://uwaterloo.ca/"
+    },
+    {
+        "id": 5018,
+        "university": "University of Western Ontario",
+        "uniLink": "http://www.uwo.ca/english/"
+    },
+    {
+        "id": 5019,
+        "university": "University of Paderborn",
+        "uniLink": "http://www.uni-paderborn.de/en/"
+    },
+    {
+        "id": 5020,
+        "university": "McGill University",
+        "uniLink": "http://www.mcgill.edu/"
+    },
+    {
+        "id": 5021,
+        "university": "University of Calcutta",
+        "uniLink": "http://www.caluniv.ac.in/"
+    },
+    {
+        "id": 5022,
+        "university": "Ural State University",
+        "uniLink": "http://www.usue.ru/"
+    },
+    {
+        "id": 5023,
+        "university": "Universidad de la Republica",
+        "uniLink": "http://www.universidad.edu.uy/"
+    },
+    {
+        "id": 5024,
+        "university": "Dalhousie University",
+        "uniLink": "http://www.dal.ca/"
+    },
+    {
+        "id": 5025,
+        "university": "University of Victoria",
+        "uniLink": "http://www.uvic.ca/"
+    },
+    {
+        "id": 5026,
+        "university": "Univ. Aix-Marseille II",
+        "uniLink": "http://www.univ-amu.fr/"
+    },
+    {
+        "id": 5027,
+        "university": "Buenos Aires University",
+        "uniLink": "http://www.uba.ar/ingles/index01.php"
+    },
+    {
+        "id": 5028,
+        "university": "University of Toronto",
+        "uniLink": "http://www.utoronto.ca/"
+    },
+    {
+        "id": 5029,
+        "university": "University College London",
+        "uniLink": "http://www.ucl.ac.uk/"
+    },
+    {
+        "id": 5030,
+        "university": "Cornell University",
+        "uniLink": "http://www.cornell.edu/"
+    },
+    {
+        "id": 5031,
+        "university": "Bilkent University",
+        "uniLink": "http://www.bilkent.edu.tr/index.html"
+    },
+    {
+        "id": 5032,
+        "university": "Swiss Federal Institute of Technology",
+        "uniLink": "http://www.ethz.ch/index_EN"
+    },
+    {
+        "id": 5033,
+        "university": "University of Dortmund",
+        "uniLink": "http://www.tu-dortmund.de/uni/International/University/"
+    },
+    {
+        "id": 5034,
+        "university": "Birmingham University",
+        "uniLink": "http://www.birmingham.ac.uk/index.aspx"
+    },
+    {
+        "id": 5035,
+        "university": "University of Dundee",
+        "uniLink": "http://www.dundee.ac.uk/"
+    },
+    {
+        "id": 5036,
+        "university": "Cambridge",
+        "uniLink": "http://www.cam.ac.uk/"
+    },
+    {
+        "id": 5037,
+        "university": "Northampton",
+        "uniLink": "http://www.northampton.ac.uk/"
+    },
+    {
+        "id": 5038,
+        "university": "Tohoku University",
+        "uniLink": "http://www.tohoku.ac.jp/english/"
+    },
+    {
+        "id": 5039,
+        "university": "Ibaraki University",
+        "uniLink": "www.ibaraki.ac.jp/en"
+    },
+    {
+        "id": 5040,
+        "university": "Shandong University",
+        "uniLink": "www.sdu.edu.cn/english"
+    },
+    {
+        "id": 5041,
+        "university": "Chalmers University of Technology",
+        "uniLink": "http://www.chalmers.se/en/Pages/default.aspx"
+    },
+    {
+        "id": 5042,
+        "university": "Jordan University",
+        "uniLink": "http://www.ju.edu.jo/home.aspx"
+    },
+    {
+        "id": 5043,
+        "university": "Purdue University",
+        "uniLink": "http://www.purdue.edu/"
+    },
+    {
+        "id": 5044,
+        "university": "University of Connecticut",
+        "uniLink": "http://www.uconn.edu/"
+    },
+    {
+        "id": 5045,
+        "university": "Mansoura University",
+        "uniLink": "http://www.mans.edu.eg/en"
+    },
+    {
+        "id": 5046,
+        "university": "University of Montreal",
+        "uniLink": "http://www.umontreal.ca/english/"
+    },
+    {
+        "id": 5047,
+        "university": "McMaster University",
+        "uniLink": "http://www.mcmaster.ca/"
+    },
+    {
+        "id": 5048,
+        "university": "Praguem",
+        "uniLink": "http://www.cuni.cz/UKENG-1.html"
+    },
+    {
+        "id": 5049,
+        "university": "University of Oregon",
+        "uniLink": "University of Oregon"
+    },
+    {
+        "id": 5050,
+        "university": "Maharishi International University",
+        "uniLink": "http://www.mum.edu/"
+    },
+    {
+        "id": 5051,
+        "university": "State College",
+        "uniLink": "http://www.statecollege.com/"
+    },
+    {
+        "id": 5052,
+        "university": "Indian Institute of Technology",
+        "uniLink": "http://www.iitd.ac.in/"
+    },
+    {
+        "id": 5053,
+        "university": "University of Wisconsin-Madison",
+        "uniLink": "http://www.wisc.edu/"
+    },
+    {
+        "id": 5054,
+        "university": "University of Science and Technology of China",
+        "uniLink": "http://en.ustc.edu.cn/"
+    },
+    {
+        "id": 5055,
+        "university": "University of Illinois at Urbana-Champaign",
+        "uniLink": "http://illinois.edu/"
+    },
+    {
+        "id": 5056,
+        "university": "University of Kansas",
+        "uniLink": "http://www.ku.edu/"
+    },
+    {
+        "id": 5057,
+        "university": "The Hong Kong University of Science & Technology (HKUST)",
+        "uniLink": "http://www.ust.hk/eng/index.htm"
+    },
+    {
+        "id": 5058,
+        "university": "Tsinghua University",
+        "uniLink": "http://www.tsinghua.edu.cn/publish/then/"
+    },
+    {
+        "id": 5059,
+        "university": "University of Alberta",
+        "uniLink": "http://www.ualberta.ca/"
+    },
+    {
+        "id": 5060,
+        "university": "University of London",
+        "uniLink": "http://www.lon.ac.uk/"
+    },
+    {
+        "id": 5061,
+        "university": "University of California at Berkeley",
+        "uniLink": "http://www.berkeley.edu/index.html"
+    },
+    {
+        "id": 5062,
+        "university": "Ohio State University",
+        "uniLink": "http://www.osu.edu/"
+    },
+    {
+        "id": 5063,
+        "university": "Humboldt-Universit\u00E4t zu Berlin",
+        "uniLink": "http://www.hu-berlin.de/?set_language=en"
+    },
+    {
+        "id": 5064,
+        "university": "University of Arizona",
+        "uniLink": "http://www.arizona.edu/"
+    },
+    {
+        "id": 5065,
+        "university": "Computer Science Jiao Tong University",
+        "uniLink": "http://www.cs.sjtu.edu.cn/"
+    },
+    {
+        "id": 5066,
+        "university": "Computer Science Shanghai Jiao Tong University",
+        "uniLink": "http://www.cs.sjtu.edu.cn/"
+    },
+    {
+        "id": 5067,
+        "university": "University of Edinburgh",
+        "uniLink": "http://www.ed.ac.uk/home"
+    },
+    {
+        "id": 5068,
+        "university": "California Institute of Technology",
+        "uniLink": "http://www.caltech.edu/"
+    },
+    {
+        "id": 5069,
+        "university": "College Park",
+        "uniLink": "http://www.umd.edu/"
+    },
+    {
+        "id": 5070,
+        "university": "University of Pennsylvania",
+        "uniLink": "http://www.upenn.edu/"
+    },
+    {
+        "id": 5071,
+        "university": "University of Poona",
+        "uniLink": "http://www.unipune.ac.in/"
+    },
+    {
+        "id": 5072,
+        "university": "Carnegie Mellon University",
+        "uniLink": "http://www.cmu.edu/index.shtml"
+    },
+    {
+        "id": 5073,
+        "university": "Johns Hopkins University",
+        "uniLink": "http://www.jhu.edu/"
+    },
+    {
+        "id": 5074,
+        "university": "Stanford University",
+        "uniLink": "http://www.stanford.edu/"
+    },
+    {
+        "id": 5075,
+        "university": "Electrical Engineering Stanford",
+        "uniLink": "http://ee.stanford.edu/"
+    },
+    {
+        "id": 5076,
+        "university": "New York University",
+        "uniLink": "http://www.nyu.edu/"
+    },
+    {
+        "id": 5077,
+        "university": "Eotvos University",
+        "uniLink": "http://www.elte.hu/en"
+    },
+    {
+        "id": 5078,
+        "university": "Moscow State University",
+        "uniLink": "http://www.msu.ru/en/"
+    },
+    {
+        "id": 5079,
+        "university": "University of Oxford",
+        "uniLink": "http://www.ox.ac.uk/"
+    },
+    {
+        "id": 5080,
+        "university": "University of Sussex",
+        "uniLink": "http://www.sussex.ac.uk/"
+    },
+    {
+        "id": 5081,
+        "university": "Georgia Institute of Technology",
+        "uniLink": "http://www.gatech.edu/"
+    },
+    {
+        "id": 5082,
+        "university": "Canadian Genetic Diseases Network",
+        "uniLink": "http://oicr.on.ca/institution/canadian-genetic-diseases-network"
+    },
+    {
+        "id": 5083,
+        "university": "University of Regina",
+        "uniLink": "http://www.uregina.ca/"
+    },
+    {
+        "id": 5084,
+        "university": "Department of Computer of Science Universitat des Saarlandes",
+        "uniLink": "http://www.cs.uni-saarland.de/"
+    },
+    {
+        "id": 5085,
+        "university": "University of Jyvaskyla",
+        "uniLink": "https://www.jyu.fi/en"
+    },
+    {
+        "id": 5086,
+        "university": "East China Normal University",
+        "uniLink": "http://english.ecnu.edu.cn/"
+    }
+]
