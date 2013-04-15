@@ -57,6 +57,8 @@ class SearchController {
 			
 			profEduc[id][i] = name
 			render profEduc[id][1]
+
+//render "SCHOOLS: " + schools
 			
 			// professor name and profile website			
 			render "<span class='name'><a href='" + link + "'>" + name + "</a></span>"			
@@ -82,6 +84,7 @@ class SearchController {
 			def count = 0
 			def schoollist
 			def uniName
+			def uniLink
 			schools.each {
 				
 				def schoolparams = new org.apache.solr.client.solrj.SolrQuery()
@@ -90,29 +93,33 @@ class SearchController {
 				cut = cut.replaceAll('Science','')				
 								
 				if (cut.matches('.*\\w.*')) {
-					render "<br /><a href='http://'>" + cut + "</a>"
+//					render "<br /><a href='http://'>" + cut + "</a>"
 					count ++
 				}
 												
 				schoolparams.setQuery(cut)
-				schoolparams.set("q.op", "AND")
+				schoolparams.set("q.op", "OR")
+				schoolparams.set("rows",1)
 				schoolparams.set("defType", "edismax")
-				schoolparams.set("qf", "uniName")
+//				schoolparams.set("qf", "uniName university")	tie conflict
+				schoolparams.set("fq","{!join from=uniName to=university}"+cut)
 				
-				render "NESTED QUERY IS: " + schoolparams
+//				render "NESTED QUERY IS: " + schoolparams
 				
 				schoollist = solr.query(schoolparams).getResults()
 				
-				render "SOLR MATCHES: " + schoollist
+//				render "SOLR MATCHES: " + schoollist
 				
 				for (org.apache.solr.common.SolrDocument school : schoollist) {
+					uniName = school.getFieldValue("uniName")
+					render uniName
+					uniLink = school.getFieldValue("uniLink")
+					render "UNILINKS: " + uniLink
 					
-					uniName = school.getFieldValues("uniName")
-					
-					if (!uniName.isEmpty()) {
-						render ", world comp sci ranking: " + school.getFieldValue("uniRank")
-						totalRank += school.getFieldValue("uniRank")
-					}
+//					if (!uniName.isEmpty()) {
+//						render "<br /><a href='http://" + uniLink + "'>" + cut + "</a>, world comp sci ranking: " + school.getFieldValue("uniRank")
+//						totalRank += school.getFieldValue("uniRank")
+//					}
 				}
 			}
 			render "<br />" + name + "'s comp sci ranking is: " + Math.round(totalRank/count)

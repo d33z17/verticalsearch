@@ -27,3 +27,8 @@ Television, Televisions, TV, TVs
 # Synonym mappings can be used for spelling correction too
 pixima => pixma
 
+# My Synonyms
+uni, univ, university
+va, virginia
+inst, institute
+
