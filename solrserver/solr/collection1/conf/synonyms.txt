@@ -31,4 +31,6 @@ pixima => pixma
 uni, univ, university
 va, virginia
 inst, institute
+sfu, simon fraser university
+ubc, university british columbia
 
