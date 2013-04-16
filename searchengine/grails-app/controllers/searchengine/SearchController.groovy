@@ -70,7 +70,7 @@ class SearchController {
 			}
 			
 			/* Courses taught, if any */
-			result.course = setData(courses)
+			result.course = courses
 			
 			/* Schools Attended */
 			def schoollist				// nested query results used to find school rank
@@ -142,7 +142,7 @@ class SearchController {
 			result.school = uniqueUnis
 			
 			/* Education */
-			result.education = setData(education)
+			result.education = education
 			
 			/* Calculate Ranks */
 			result.prank = calculateRanks(pooledRanks)
@@ -152,14 +152,11 @@ class SearchController {
 
 		} // end for (doc : doclist)
 		
-//		render allResults
+		/* to View */
 		show(allResults)
-		// TO BE OUTPUT: *plink *name is an SFU *position who teaches *course: ... *school *slink *srank *prank *education
 		
-		/* Cross-section analyse */
-//		render "EACH_MATCH: " + allResults.eachMatch( it.get('course'), '/.*\\d/.*', )
-//		render "FIND_RESULTS: " + allResults.findResults{ it.get('course') == " " ?  : null }
-		
+		/* for Relationships */
+		findSimilarities(allResults)
 		
 	} // end mainQuery
 	
@@ -169,11 +166,11 @@ class SearchController {
 		a.each {
 			if (!it.isEmpty()) {
 				if (it == a.first())
-					b = "<span class='course'>" + it
+					b = it
 				else if (it == a.last()) {
-					b = b + ", and " + it + ".</span>"
+					b = b + it
 				} else
-					b = b + ", " + it
+					b = b + it
 			}
 		}
 		return b
@@ -189,15 +186,38 @@ class SearchController {
 			return pct
 		}
 	}
+
+	/* Cross-section analyse */	
+	def findSimilarities(e) {
+		
+		render "<div class='cell'>$e.course </div>"
+		
+//		render "${e.course.findResults{ k, v -> v.contains('CMPT') ? $v : "not found"}}"
+/*		e.each {f -> 
+			if (f.course){
+				render "$f.course <br />"
+			}
+		}
+*/		//		render "EACH_MATCH: " + allResults.eachMatch( it.get('course'), '/.*\\d/.*', )
+		//		render "FIND_RESULTS: " + allResults.findResults{ it.get('course') == " " ?  : null }
+	}
 	
+	/* to View */
 	def show(e) {
 		e.each { f ->
-			render "<div class='cell'><span class='name'><a href='$f.plink'>$f.name</a></span>"
+			render "<span class='name'><a href='$f.plink'>$f.name</a></span>"
 			if (f.position) {
 			 render " is a SFU $f.position"
 			}
 			if (f.course) {
-				render " who teaches: <br />$f.course"
+				f.course.each {
+					if (it == f.course.first())
+						render " who teaches: <br /><span class='course'>$it"
+					else if (it == f.course.last()) {
+						render ", and $it.</span>"
+					} else
+						render ", $it"
+				}
 			}
 			if (f.school) {
 				render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }} attended:</span>"
@@ -210,7 +230,7 @@ class SearchController {
 					render "<span class='prestige'>${f.name.takeWhile{ it != ' ' }}'s world prestige is: <em>$f.prank</em></span>"
 				}
 			}
-			render "</div><br />"
+			render "<br />"
 		}
 		render "<br />"
 	}
