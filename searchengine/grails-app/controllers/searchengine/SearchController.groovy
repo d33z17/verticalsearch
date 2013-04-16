@@ -189,10 +189,15 @@ class SearchController {
 
 	/* Cross-section analyse */	
 	def findSimilarities(e) {
-		
-		render "<div class='cell'>$e.course </div>"
-		
-//		render "${e.course.findResults{ k, v -> v.contains('CMPT') ? $v : "not found"}}"
+		render "<div class='cell'>"
+		e.eachWithIndex { v1, i1 ->
+			render "$i1:$v1.name <br />"
+			v1.course.eachWithIndex { v2, i2 -> def r = "$i1$i2"
+				render "$r:$v2 <br />"
+				render "${v2.tokenize().take(2)} <br />"
+			}
+			//it.findAll{ !it.course.each.unique() }
+		}
 /*		e.each {f -> 
 			if (f.course){
 				render "$f.course <br />"
@@ -200,6 +205,7 @@ class SearchController {
 		}
 */		//		render "EACH_MATCH: " + allResults.eachMatch( it.get('course'), '/.*\\d/.*', )
 		//		render "FIND_RESULTS: " + allResults.findResults{ it.get('course') == " " ?  : null }
+		render "</div>"
 	}
 	
 	/* to View */
