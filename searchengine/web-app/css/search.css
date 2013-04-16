@@ -270,7 +270,7 @@ input, select, textarea {
 #querybox {
 	background-image: url(../images/fortuneTeller.jpg);
 	background-repeat: no-repeat;
-	background-position: 0% 37%;
+	background-position: 0% 88%;
   background-size: cover;
 	width: 80%;
 	height: 400px;
@@ -300,9 +300,34 @@ input, select, textarea {
 	padding-left: 1em;
 }
 
+.course {
+	color: #009900;
+	display: block;
+	padding-left: 1em;
+}
+
 .smindent {
 	display: block;
 	padding-left: 0.7em;
+}
+
+.prestige {
+	color: #009900;
+	display: block;
+	padding-left: 0.7em;
+}
+
+.cell {
+	background-color: #ffffff;
+	border: 1px solid black;
+	padding: 0.5em;
+	text-decoration: none;
+	   -moz-border-radius: 1.3em;
+	-webkit-border-radius: 1.3em;
+	        border-radius: 1.3em;
+		    -moz-box-shadow: 5px 5px 6px 0px #888;
+		 -webkit-box-shadow: 5px 5px 6px 0px #888;
+		         box-shadow: 5px 5px 6px 0px #888;
 }
 
 select {

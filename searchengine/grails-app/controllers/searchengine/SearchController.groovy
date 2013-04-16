@@ -169,7 +169,7 @@ class SearchController {
 		a.each {
 			if (!it.isEmpty()) {
 				if (it == a.first())
-					b = "<span class='indent'>" + it
+					b = "<span class='course'>" + it
 				else if (it == a.last()) {
 					b = b + ", and " + it + ".</span>"
 				} else
@@ -192,7 +192,7 @@ class SearchController {
 	
 	def show(e) {
 		e.each { f ->
-			render "<span class='name'><a href='$f.plink'>$f.name</a></span>"
+			render "<div class='cell'><span class='name'><a href='$f.plink'>$f.name</a></span>"
 			if (f.position) {
 			 render " is a SFU $f.position"
 			}
@@ -203,14 +203,14 @@ class SearchController {
 				render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }} attended:</span>"
 				if (f.ranks) {
 					f.school.eachWithIndex {g, i ->
-						render "<span class='indent'>$g, with a world ranking of: ${f.ranks[i]}</span>"
+						render "<span class='indent'><a href='${f.slink[i]}'>$g</a>, with a world ranking of: ${f.ranks[i]}</span>"
 					}
 				}
 				if (f.prank) {
-					render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }}'s world prestige is: $f.prank</span>"
+					render "<span class='prestige'>${f.name.takeWhile{ it != ' ' }}'s world prestige is: <em>$f.prank</em></span>"
 				}
 			}
-			render "<br />"
+			render "</div><br />"
 		}
 		render "<br />"
 	}
