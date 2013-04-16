@@ -36,7 +36,7 @@
 		</div>
 		
 		<%-- ajax form to send query to searchcontroller.myquery --%>
-		<g:formRemote name="myForm" update="results" url="[controller:'search', action:'myquery']">		
+		<g:formRemote name="myForm" update="results" url="[controller:'Search', action:'mainQuery']">		
 
 			<%-- search field --%>
 			<g:textField name="address" placeholder="start here" />

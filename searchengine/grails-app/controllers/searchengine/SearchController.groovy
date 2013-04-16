@@ -1,25 +1,24 @@
 package searchengine
 
 class SearchController {
-	// logic and methods
 
-	// Solr URL
+	/* Global Variables */
 	String urlString = "http://localhost:8983/solr/"
 	def solr = new org.apache.solr.client.solrj.impl.HttpSolrServer(urlString)
 	def uQ
 	def response
+	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
 	
-	// Main content
+	/* Main */
 	def index() {
-		def allSearch = Search.list()		// query data from search model db
-		[allSearch:allSearch] // send queried data to view
 	}
 
-	def myquery() {		
+	/* Initial Query */
+	def mainQuery() {		
 		
-		/* Initial Query */
+		/* Local Variables */
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
-		uQ = params.address
+		uQ = params.address				// user query input value from gsp
 		solrparams.setQuery(uQ)
 		solrparams.set("qf","""
 										professor
@@ -29,144 +28,132 @@ class SearchController {
 										country
 										""")										 // searchable fields
 		solrparams.set("q.op", "OR")						 // allow in-exact matches
-//		solrparams.set("mm",2)									 // minimum match 2 elements since in-exact
 		solrparams.set("defType", "edismax")		 // set solr to run as edismax
 		
-		response = solr.query(solrparams)		
-
-//		render response	// debug
+		response = solr.query(solrparams)				 // main query raw header and results
 						 
-		def doclist = response.getResults()
+		def doclist = response.getResults()			 // main query results
 		
-		/* no results output message */
+		/* Unsuccessful search */
 		if (doclist.getNumFound() == 0)
 			render "Sorry, I could not find any matches for " + uQ + "<br /><br />"
 
-		/* iterate each matched result in the result list */
-		def allResults = []
-		
+		def allResults = []		// collection for concatenation of all prof maps
+
+		/* Loop every result doc in main results */		
 		for (org.apache.solr.common.SolrDocument doc : doclist) {
 			
-			def i = 1
-			def id = doc.getFieldValue("id")
-			def name = doc.getFieldValue("professor")
-			def plink = doc.getFieldValue("website")
-			def position = doc.getFieldValue("position")
-			def courses = doc.getFieldValues("courses")
-			def schools = doc.getFieldValues("schools")
-			def result = [name:"",plink:"",position:"",course:"",school:""]
-
-//render "SCHOOLS: " + schools
+			def id = doc.getFieldValue("id")								// single unique value
+			def name = doc.getFieldValue("professor")				// single value
+			def plink = doc.getFieldValue("website")				// single unique value
+			def position = doc.getFieldValue("position")		// single value
+			def courses = doc.getFieldValues("courses")			// multivalue
+			def schools = doc.getFieldValues("schools")			// multivalue
+			def education = doc.getFieldValues("education")	// multivalue
+			def result = [name:"",
+									 plink:"",
+								position:"",
+									course:"",
+									school:"",
+									 slink:"",
+									 ranks:"",
+									 prank:"",
+							 education:""]		// map data for each prof
 			
-			// professor name and profile website			
-			render "<span class='name'><a href='" + plink + "'>" + name + "</a></span>"
-			result.name = name
+			/* Professor name and profile website	*/
+			result.name = name	// set name data
+			result.plink = plink	// set plink data
 			
-			// professor position if exists	
+			/* Professor position, if exists	*/
 			if (position != null) {
-				render ", is an SFU " + position + " who"
-				result.position = position
+				result.position = position	// set position data
 			}
 			
-			// courses taught if any
-			courses.each {
-				if (!it.isEmpty()) {
-					result.course = it
-					if (it == courses.first())
-						render " teaches: "
-					else if (it == courses.last())
-					  render "and " + it + "."
-					else
-						render it + ", "
-				}
-			}
+			/* Courses taught, if any */
+			result.course = setData(courses)
 			
-			// schools attended
-			def totalRank = 0
-			def count = 0
-			def schoollist
-			def uniName
-			def uniLink
-			def uniqueUnis = []
-						
+			/* Schools Attended */
+			def schoollist				// nested query results used to find school rank
+			def linklist					// nested query results used to find school link
+			def uniName						// school name key for sub query									[single unique value]
+			def uniRank						// school rank match															[single value]
+			def uniLink						// school site key for sub query									[single unique value]
+			def actualUnis = []		// original school names from prof profiles				[multivalued]
+			def pooledRanks = []	// school rank matches for later retrieval				[multivalued]
+			def pooledLinks = []	// school link matches for later retrieval				[multivalued]
+			def uniqueUnis = []		// used to remove duplicate schools for a prof		[multivalued]
+			
+			/* Match each school to rank data and website link */			
 			schools.each {
-				
-				def schoolparams = new org.apache.solr.client.solrj.SolrQuery()
-				def cut = it.replaceAll('Computer','')
+								
+				def cut = it.replaceAll('Computer','')	// clean the school query values
 				cut = cut.replaceAll('Canada','')
 				cut = cut.replaceAll('Science','')
 				cut = cut.replaceAll('\\-',' ')				
 												
 				if (cut.matches('.*\\w.*')) {
-					if (it == schools.first())
-						result.school = cut
-					else
-						result.school = result.school + "," + cut
+					actualUnis.add(cut)														// store actual school names
 				}
 				
-				schoolparams.setQuery(cut)
-				schoolparams.set("q.op", "AND")
-				schoolparams.set("rows",1)
+				/* School Ranks Subquery */
+				def schoolparams = new org.apache.solr.client.solrj.SolrQuery() // subquery params
+				schoolparams.setQuery(cut)							// cleaned values for query
+				schoolparams.set("q.op", "AND")					// exact match
+				schoolparams.set("rows",1)							// return first match only
 				schoolparams.set("defType", "edismax")
-				schoolparams.set("qf", "uniName")
+				schoolparams.set("qf", "uniName")				// query school name->rank keys only				
+				schoollist = solr.query(schoolparams).getResults()	// subquery results			
 				
-//				render "NESTED QUERY IS: " + schoolparams
-				
-				schoollist = solr.query(schoolparams).getResults()
-				
-//				render "SOLR MATCHES: " + schoollist
-								
+				/* Loop each school in results */				
 				for (org.apache.solr.common.SolrDocument school : schoollist) {
-					uniName = school.getFieldValue("uniName")
-					uniqueUnis.add(uniName)
-					render "NUMBER UNIS: " + uniqueUnis
 					
-					def linkparams = new org.apache.solr.client.solrj.SolrQuery()
-					linkparams.setQuery(cut)
-					linkparams.set("q.op", "AND")
-					linkparams.set("rows",1)
+					uniName = school.getFieldValue("uniName")		// school name->rank key
+					uniqueUnis.add(uniName)											// append school name keys
+					uniqueUnis = uniqueUnis.unique()						// remove duplicate schools
+					
+					uniRank = school.getFieldValue("uniRank")		// school rank match
+					pooledRanks.add(uniRank)										// append ranks
+					pooledRanks = pooledRanks.unique()					// remove duplicate ranks
+					result.ranks = pooledRanks									// set school rank data
+					
+					/* School Links Subquery */
+					def linkparams = new org.apache.solr.client.solrj.SolrQuery()	// subquery params
+					linkparams.setQuery(cut)										// cleaned values for query
+					linkparams.set("q.op", "AND")								// exact match
+					linkparams.set("rows",1)										// return first match only
 					linkparams.set("defType", "edismax")
-					linkparams.set("qf", "university")
-					def linklist = solr.query(linkparams).getResults()
+					linkparams.set("qf", "university")					// query school name->link keys only
+					linklist = solr.query(linkparams).getResults()	// subquery results
 					
-					for (org.apache.solr.common.SolrDocument link : linklist) {
-						uniLink = link.getFieldValue("uniLink")
-					
-//					render uniName
-//					uniLink = school.getFieldValue("uniLink")
-//					render "UNILINKS: " + uniLink
-					
-						if (!uniName.isEmpty()) {
-							render "<br /><a href='http://" + uniLink + "'>" + cut + "</a>, world ranking: " + school.getFieldValue("uniRank")
-							totalRank += school.getFieldValue("uniRank")
-							count++
-						} else
-								count--					
+					/* Loop each link in results */
+					for (org.apache.solr.common.SolrDocument link : linklist) {						
+												
+						uniLink = link.getFieldValue("uniLink")		// school link
+						pooledLinks.add(uniLink)									// append school links
+						pooledLinks = pooledLinks.unique()				// remove duplicates
+													
 					} // end for link:linklist
-				}	// end school.each
-			}
+					
+					result.slink = pooledLinks									// set school link data
+					
+				}	// end for school:schoollist
+			}	// end schools.each
 			
-			if (count > 0) {
-				def rank = totalRank / count
-				def pct = (1 - (rank / 852 )) * 100
-				render "<br />" + name + "'s prestigiousness: " + pct.setScale(1, BigDecimal.ROUND_HALF_UP).toString()
-				render "TOTALRANK: " + totalRank + " COUNT: " + count + " RANK: " + rank + " "
-			}
+			result.school = uniqueUnis
 			
-			doc.getFieldValues("education").collect {
-				if (!it.matches("\\S+"))
-					render "<br />" + it
-			}
+			/* Education */
+			result.education = setData(education)
 			
-//			render "RESULTS: " + result
+			/* Calculate Ranks */
+			result.prank = calculateRanks(pooledRanks)
+			
+			/* Add to Results */
 			allResults.add(result)
-			
-			render "<br /><br />"
 
 		} // end for (doc : doclist)
 		
-		render 
-		
+//		render allResults
+		show(allResults)
 		// TO BE OUTPUT: *plink *name is an SFU *position who teaches *course: ... *school *slink *srank *prank *education
 		
 		/* Cross-section analyse */
@@ -174,6 +161,58 @@ class SearchController {
 //		render "FIND_RESULTS: " + allResults.findResults{ it.get('course') == " " ?  : null }
 		
 		
-	} // end myQuery
+	} // end mainQuery
+	
+	/* Setter for simple string values */
+	def setData(a) {
+		def b
+		a.each {
+			if (!it.isEmpty()) {
+				if (it == a.first())
+					b = "<span class='indent'>" + it
+				else if (it == a.last()) {
+					b = b + ", and " + it + ".</span>"
+				} else
+					b = b + ", " + it
+			}
+		}
+		return b
+	}
+	
+	/* Calculate and return the professor's prestige */
+	def calculateRanks(ranklist) {
+		if (ranklist.size() > 0) {
+			def totalRank = ranklist.sum()
+			def rank = totalRank / ranklist.size()
+			def pct = (1 - (rank / TOTAL_UNIVERSITIES )) * 100
+			pct = pct.setScale(1, BigDecimal.ROUND_HALF_UP).toString()
+			return pct
+		}
+	}
+	
+	def show(e) {
+		e.each { f ->
+			render "<span class='name'><a href='$f.plink'>$f.name</a></span>"
+			if (f.position) {
+			 render " is a SFU $f.position"
+			}
+			if (f.course) {
+				render " who teaches: <br />$f.course"
+			}
+			if (f.school) {
+				render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }} attended:</span>"
+				if (f.ranks) {
+					f.school.eachWithIndex {g, i ->
+						render "<span class='indent'>$g, with a world ranking of: ${f.ranks[i]}</span>"
+					}
+				}
+				if (f.prank) {
+					render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }}'s world prestige is: $f.prank</span>"
+				}
+			}
+			render "<br />"
+		}
+		render "<br />"
+	}
 	
 }

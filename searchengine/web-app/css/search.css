@@ -287,12 +287,22 @@ input, select, textarea {
 }
 
 #results {
-	padding: 0em 4em;
 	font-size: large;
+	padding: 0em 4em;
 }
 
 .name a {
 	font-size: x-large;
+}
+
+.indent {
+	display: block;
+	padding-left: 1em;
+}
+
+.smindent {
+	display: block;
+	padding-left: 0.7em;
 }
 
 select {
