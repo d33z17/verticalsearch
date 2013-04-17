@@ -190,33 +190,57 @@ class SearchController {
 	/* Cross-section analyse */	
 	def findSimilarities(e) {
 		
-		def p // prof label
-		def cid // course id
-		def map = [(p):cid]// prof label : course ids
+		def p 							// prof name
+		def cid 						// course id
+		def map = [:]				// prof label : course ids
 		
 		render "<div class='cell'>"
-				
-		e.eachWithIndex { v1, i1 ->
-			def cids = []		// all course ids per prof
-			p = "$v1.name"
-			render "$p <br />"
-			v1.course.eachWithIndex { v2, i2 ->
-				cid = "${v2.tokenize().take(2)}"
-				cids.add(cid)
-				render "$cids <br />"
-			}
-			map += [(p):cids]		// map each prof with their course ids
-			//it.findAll{ !it.course.each.unique() }
-		}
-		render "My Map: $map<br />"
-		render "</div>"
 		
+		/* MAP Prof Name : Course Ids */		
+		e.eachWithIndex { v1, i1 -> 
+			def r																// prof + course id as key
+			p = "$v1.name"											// prof name
+			
+			v1.course.eachWithIndex { v2, i2 -> r = "$p $i1 $i2"
+				cid = "${v2.tokenize().take(2)}"	// transform course label to course id				
+				map.putAt(r,cid)											// map each prof key with course ids
+			}			
+		}
+		
+/*		map.each {
+			render it
+		}
+*/		
+		/* Iterate Current and Complement Maps */			
+		def count = 0
+		e.each {				
+			count += it.course.size()
+			def position = it.course.size()
+			
+			render "count: $count, position: $position<br />"
+
+			def current = map.take(count)
+			
+			if (position > 0)
+				current = map.take(count) << map.drop(position)
+			
+			def complement = map.drop(count)
+	
+			def match = current.values().intersect(complement.values())
+	
+//			render "MATCH: $match <br />"
+	
+			render "<br /><br />$current"
+//			render "<br /><br /> $complement"
+		}
+				
+		render "</div>"
 	}
 	
 	/* to View */
 	def show(e) {
 		e.each { f ->
-			render "<span class='name'><a href='$f.plink'>$f.name</a></span>"
+			render "<span class='name'><a href='$f.plink' target='_blank'>$f.name</a></span>"
 			if (f.position) {
 			 render " is a SFU $f.position"
 			}
@@ -234,7 +258,7 @@ class SearchController {
 				render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }} attended:</span>"
 				if (f.ranks) {
 					f.school.eachWithIndex {g, i ->
-						render "<span class='indent'><a href='${f.slink[i]}'>$g</a>, with a world ranking of: ${f.ranks[i]}</span>"
+						render "<span class='indent'><a href='${f.slink[i]}' target='_blank'>$g</a>, with a world ranking of: ${f.ranks[i]}</span>"
 					}
 				}
 				if (f.prank) {
