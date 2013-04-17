@@ -200,9 +200,11 @@ class SearchController {
 			def r																// prof + course id as key
 			p = "$v1.name"											// prof name
 			
-			v1.course.eachWithIndex { v2, i2 -> r = "$p" + 0 + "$i1$i2"
-				cid = "${v2.tokenize().take(2)}"	// transform course label to course id				
-				map.putAt(r,cid)									// map each prof key with course ids
+			if (v1.course) {
+				v1.course.eachWithIndex { v2, i2 -> r = "$p" + 0 + "$i1$i2"
+					cid = "${v2.tokenize().take(2)}"	// transform course label to course id				
+					map.putAt(r,cid)									// map each prof key with course ids
+				}
 			}			
 		}
 		
@@ -211,38 +213,42 @@ class SearchController {
 	
 		/* Iterate Current and Complement Maps */			
 		def count = 0
-		e.each {				
-			def position = count
-			count += it.course.size()
+		def cmap = [:]
+		e.each {
+			if (it.course) {
+				def position = count
+				count += it.course.size()
 			
-			def current = map.take(count)									
-			def complement = map.take(position) << map.drop(count)
+				def current = map.take(count)									
+				def complement = map.take(position) << map.drop(count)
 			
-			if (position > 0) {
-				current = current.drop(position)
-				complement = complement.drop(position)
-			}
-
-			current.each { ku, vu ->
-				complement.each{ ko, vo ->
-					if ((vu == vo) && (flag == 0)) {
-						flag = 1											// first iteration to draw div in main loop
-					}
-					
-					if ((vu == vo) && (flag == 2)) {
-						def uName = ku.takeWhile{ it != "0"}
-						def oName = ko.takeWhile{ it != "0"}
-						
-//						def cmap = [:]
-//								cmap.putAt(vu,uName + ', ' + oName)
-//						def cmap = [(vu):uName + ', ' + oName].groupBy{ it.key.replaceAll('\\W',' ') }
-
-//						render "${cmap.groupBy{ it.key.replaceAll('\\W',' ') }}"
-						render "<span class='smindent'>$uName and $oName both teach ${vu.replaceAll('\\W',' ')}</span>"
-					}
+				if (position > 0) {
+					current = current.drop(position)
+					complement = complement.drop(position)
 				}
-			}
-		}
+
+				current.each { ku, vu ->
+					complement.each{ ko, vo ->
+						if ((vu == vo) && (flag == 0)) {
+							flag = 1											// first iteration to draw div in main loop
+						}
+					
+						if ((vu == vo) && (flag == 2)) {
+							def uName = ku.takeWhile{ it != "0"}
+							def oName = ko.takeWhile{ it != "0"}
+
+	//						cmap.putAt(vu,uName + ', ' + oName)
+	//						render "$cmap <br /><br />"
+						
+	//						render "${cmap.groupBy{ it.key.replaceAll('\\W',' ') }}"
+
+							render "<span class='smindent'>$uName and $oName both teach ${vu.replaceAll('\\W',' ')}</span>"
+						}	// end if					
+					}	// end.complement.each
+				}	// end.current.each
+			} // end if it.course
+		}	// end e.each		
+		
 		if (flag == 2)
 			render "</div>"
 		if (flag == 1)
