@@ -320,7 +320,7 @@ input, select, textarea {
 .cell {
 	background-color: #ffffff;
 	border: 1px solid black;
-	padding: 0.5em;
+	padding: 1.5em 1em 1.5em 3em;
 	text-decoration: none;
 	   -moz-border-radius: 1.3em;
 	-webkit-border-radius: 1.3em;

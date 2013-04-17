@@ -156,7 +156,8 @@ class SearchController {
 		show(allResults)
 		
 		/* for Relationships */
-		findSimilarities(allResults)
+		if (findSimilarities(allResults, 0) == 1)
+			findSimilarities(allResults, 2)
 		
 	} // end mainQuery
 	
@@ -188,53 +189,64 @@ class SearchController {
 	}
 
 	/* Cross-section analyse */	
-	def findSimilarities(e) {
+	def findSimilarities(e, flag) {
 		
 		def p 							// prof name
 		def cid 						// course id
 		def map = [:]				// prof label : course ids
-		
-		render "<div class='cell'>"
-		
+				
 		/* MAP Prof Name : Course Ids */		
 		e.eachWithIndex { v1, i1 -> 
 			def r																// prof + course id as key
 			p = "$v1.name"											// prof name
 			
-			v1.course.eachWithIndex { v2, i2 -> r = "$p $i1 $i2"
+			v1.course.eachWithIndex { v2, i2 -> r = "$p" + 0 + "$i1$i2"
 				cid = "${v2.tokenize().take(2)}"	// transform course label to course id				
-				map.putAt(r,cid)											// map each prof key with course ids
+				map.putAt(r,cid)									// map each prof key with course ids
 			}			
 		}
 		
-/*		map.each {
-			render it
-		}
-*/		
+		if (flag == 2)
+			render "<div class='cell'><h3>Matching Relationships</h3>"
+	
 		/* Iterate Current and Complement Maps */			
 		def count = 0
 		e.each {				
+			def position = count
 			count += it.course.size()
-			def position = it.course.size()
 			
-			render "count: $count, position: $position<br />"
+			def current = map.take(count)									
+			def complement = map.take(position) << map.drop(count)
+			
+			if (position > 0) {
+				current = current.drop(position)
+				complement = complement.drop(position)
+			}
 
-			def current = map.take(count)
-			
-			if (position > 0)
-				current = map.take(count) << map.drop(position)
-			
-			def complement = map.drop(count)
-	
-			def match = current.values().intersect(complement.values())
-	
-//			render "MATCH: $match <br />"
-	
-			render "<br /><br />$current"
-//			render "<br /><br /> $complement"
+			current.each { ku, vu ->
+				complement.each{ ko, vo ->
+					if ((vu == vo) && (flag == 0)) {
+						flag = 1											// first iteration to draw div in main loop
+					}
+					
+					if ((vu == vo) && (flag == 2)) {
+						def uName = ku.takeWhile{ it != "0"}
+						def oName = ko.takeWhile{ it != "0"}
+						
+//						def cmap = [:]
+//								cmap.putAt(vu,uName + ', ' + oName)
+//						def cmap = [(vu):uName + ', ' + oName].groupBy{ it.key.replaceAll('\\W',' ') }
+
+//						render "${cmap.groupBy{ it.key.replaceAll('\\W',' ') }}"
+						render "<span class='smindent'>$uName and $oName both teach ${vu.replaceAll('\\W',' ')}</span>"
+					}
+				}
+			}
 		}
-				
-		render "</div>"
+		if (flag == 2)
+			render "</div>"
+		if (flag == 1)
+			return flag
 	}
 	
 	/* to View */
