@@ -189,16 +189,26 @@ class SearchController {
 
 	/* Cross-section analyse */	
 	def findSimilarities(e) {
-		render "<div class='cell'>"
 		
+		def p // prof label
+		def cid // course id
+		def map = [(p):cid]// prof label : course ids
+		
+		render "<div class='cell'>"
+				
 		e.eachWithIndex { v1, i1 ->
-			render "$i1:$v1.name <br />"
-			v1.course.eachWithIndex { v2, i2 -> def r = "$i1$i2"
-				render "$r:$v2 <br />"
-				render "${v2.tokenize().take(2)} <br />"
+			def cids = []		// all course ids per prof
+			p = "$v1.name"
+			render "$p <br />"
+			v1.course.eachWithIndex { v2, i2 ->
+				cid = "${v2.tokenize().take(2)}"
+				cids.add(cid)
+				render "$cids <br />"
 			}
+			map += [(p):cids]		// map each prof with their course ids
 			//it.findAll{ !it.course.each.unique() }
 		}
+		render "My Map: $map<br />"
 		render "</div>"
 		
 	}
