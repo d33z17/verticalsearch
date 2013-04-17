@@ -1,278 +1,11 @@
 [
     {
         "id": 0,
-        "professor": "Stella Atkins",
-        "schools": [
-            " University of British Columbia",
-            " Warwick University",
-            " Nottingham University"
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/stellaatkins.html",
-        "degrees": [
-            "Ph.D. Computer Science",
-            "M.Phil. Computer Science",
-            "B.Sc. Chemistry"
-        ],
-        "country": [
-            " 1985",
-            " 1976",
-            " 1966"
-        ],
-        "faculty": [
-            
-        ],
-        "yearCompleted": [
-            
-        ],
-        "education": [
-            "Ph.D. Computer Science, University of British Columbia, 1985",
-            "M.Phil. Computer Science, Warwick University, 1976",
-            "B.Sc. Chemistry, Nottingham University, 1966",
-            "\u00A0"
-        ],
-        "courses": [
-            
-        ]
-    },
-    {
-        "id": 1,
-        "professor": "Warren Burton",
-        "schools": [
-            " University of East Anglia",
-            " University of Colorado"
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/warrenburton.html",
-        "degrees": [
-            "Ph.D. Computing Studies",
-            "M.A. Mathematics",
-            "B.Sc. Applied Mathematics"
-        ],
-        "country": [
-            " 1977",
-            " 1972"
-        ],
-        "faculty": [
-            
-        ],
-        "yearCompleted": [
-            
-        ],
-        "education": [
-            "Ph.D. Computing Studies, University of East Anglia, 1977",
-            "M.A. Mathematics, University of Colorado, 1972",
-            "B.Sc. Applied Mathematics, University of Colorado, 1972"
-        ],
-        "courses": [
-            
-        ]
-    },
-    {
-        "id": 2,
-        "professor": "Thomas Calvert",
-        "schools": [
-            " Carnegie-Mellon University",
-            " Wayne State Univ.",
-            " University College"
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/thomaswcalvert.html",
-        "degrees": [
-            "Ph.D. Elect. Eng.",
-            "M.S.E.E.",
-            "B.Sc. (Eng)"
-        ],
-        "country": [
-            " 1967",
-            " 1964",
-            " London"
-        ],
-        "faculty": [
-            " Elect. Eng."
-        ],
-        "yearCompleted": [
-            "1957"
-        ],
-        "education": [
-            "Ph.D. Elect. Eng., Carnegie-Mellon University, 1967",
-            "M.S.E.E., Wayne State Univ., 1964",
-            "B.Sc. (Eng), Elect. Eng., University College, London,1957"
-        ],
-        "courses": [
-            
-        ]
-    },
-    {
-        "id": 3,
-        "professor": "Robert Hadley",
-        "position": "Professor",
-        "schools": [
-            " University of British Columbia",
-            " Simon Fraser University",
-            " University of Virginia"
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/roberthadley.html",
-        "degrees": [
-            "Ph.D. Philosophy",
-            "M.Sc. Computing Science",
-            "B.A. Philosophy"
-        ],
-        "country": [
-            " Canada",
-            " United States"
-        ],
-        "faculty": [
-            
-        ],
-        "yearCompleted": [
-            " 1973",
-            " 1984",
-            " 1967"
-        ],
-        "education": [
-            "Ph.D. Philosophy, University of British Columbia, Canada, 1973",
-            "M.Sc. Computing Science, Simon Fraser University, Canada, 1984",
-            "B.A. Philosophy, University of Virginia, United States, 1967"
-        ],
-        "courses": [
-            "CMPT 826 Machine Learning and Reasoning",
-            "CMPT 418 Computational Cognitive Architecture",
-            "CMPT 310 Artificial Intelligence"
-        ]
-    },
-    {
-        "id": 4,
-        "professor": "Ronald Harrop",
-        "schools": [
-            " University of Cambridge"
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/ronaldharrop.html",
-        "degrees": [
-            "Ph.D. Mathematics"
-        ],
-        "country": [
-            "1953"
-        ],
-        "faculty": [
-            
-        ],
-        "yearCompleted": [
-            
-        ],
-        "education": [
-            "Ph.D. Mathematics, University of Cambridge,1953",
-            "M.A. 1950",
-            "B.A. Mathematics 1946"
-        ],
-        "courses": [
-            
-        ]
-    },
-    {
-        "id": 5,
-        "professor": "William Havens",
-        "schools": [
-            " Va. Polytechnic Inst.",
-            " Univ. of British Columbia"
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/williamshavens.html",
-        "degrees": [
-            "B.Sc. Electrical Eng.",
-            "M.Sc. Electrical Eng.",
-            "Ph.D. Computer Science"
-        ],
-        "country": [
-            " 1969",
-            " 1973",
-            " 1978."
-        ],
-        "faculty": [
-            
-        ],
-        "yearCompleted": [
-            
-        ],
-        "education": [
-            "B.Sc. Electrical Eng., Va. Polytechnic Inst., 1969",
-            "M.Sc. Electrical Eng., Va. Polytechnic Inst., 1973",
-            "Ph.D. Computer Science, Univ. of British Columbia, 1978.",
-            "\u00A0",
-            "\u00A0",
-            "\u00A0"
-        ],
-        "courses": [
-            
-        ]
-    },
-    {
-        "id": 6,
-        "professor": "Tsunehiko Kameda",
-        "schools": [
-            " Electrical Engineering (Major=Computers",
-            " Electrical Engineering"
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/tikokameda.html",
-        "degrees": [
-            "Ph.D.",
-            "Batchelor of Engineering"
-        ],
-        "country": [
-            " Minor=Communications)",
-            " Tokyo University"
-        ],
-        "faculty": [
-            
-        ],
-        "yearCompleted": [
-            " Princeton University"
-        ],
-        "education": [
-            "Ph.D., Electrical Engineering (Major=Computers, Minor=Communications), Princeton University",
-            "Batchelor of Engineering, Electrical Engineering, Tokyo University"
-        ],
-        "courses": [
-            
-        ]
-    },
-    {
-        "id": 7,
-        "professor": "James Weinkam",
-        "schools": [
-            " Xavier Univ.",
-            " Univ. of Chicago",
-            " Washington Univ."
-        ],
-        "website": "http://www.cs.sfu.ca/people/emeriti/jamesweinkam.html",
-        "degrees": [
-            "B.Sc. Mathematics",
-            "M.Sc. Mathematics",
-            "D.Sc. Computing Science"
-        ],
-        "country": [
-            " 1964",
-            " 1967",
-            " 1970"
-        ],
-        "faculty": [
-            
-        ],
-        "yearCompleted": [
-            
-        ],
-        "education": [
-            "B.Sc. Mathematics, Xavier Univ., 1964",
-            "M.Sc. Mathematics, Univ. of Chicago, 1967",
-            "D.Sc. Computing Science, Washington Univ., 1970"
-        ],
-        "courses": [
-            
-        ]
-    },
-    {
-        "id": 8,
         "professor": "Greg Baker",
         "position": "Senior Lecturer",
         "schools": [
-            " Simon Fraser University",
-            " Queen\u2019s University"
+            "Simon Fraser University",
+            "Queen\u2019s University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/gregbaker.html",
         "degrees": [
@@ -280,35 +13,34 @@
             "B.Sc."
         ],
         "country": [
-            " Canada"
-        ],
-        "faculty": [
-            
+            "Canada"
         ],
         "yearCompleted": [
-            " 2000",
-            " 1998"
+            "2000",
+            "1998"
         ],
         "education": [
             "M.Sc., Simon Fraser University, Canada, 2000",
-            "B.Sc., Queen\u2019s University, Canada, 1998",
-            "\u00A0"
+            "B.Sc., Queen\u2019s University, Canada, 1998"
         ],
         "courses": [
             "CMPT 120 Introduction to Computing Science and Programming I",
             "CMPT 165 Introduction to the Internet and the World Wide Web",
             "CMPT 383 Comparative Programming Languages",
             "CMPT 470 Web-based Information Systems"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 9,
+        "id": 1,
         "professor": "Bradley Bart",
         "position": "Senior Lecturer",
         "schools": [
-            " Simon Fraser University",
-            " University of Waterloo",
-            " University of Western Ontario"
+            "Simon Fraser University",
+            "University of Waterloo",
+            "University of Western Ontario"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/bradleybart.html",
         "degrees": [
@@ -318,36 +50,35 @@
             "B.Math."
         ],
         "country": [
-            " Canada"
-        ],
-        "faculty": [
-            
+            "Canada"
         ],
         "yearCompleted": [
-            " 2000",
-            " 1997",
-            " 1996"
+            "2000",
+            "1997",
+            "1996"
         ],
         "education": [
             "M.Sc., Simon Fraser University, Canada, 2000",
             "B.Sc., University of Waterloo, Canada, 1997",
             "B.Ed., University of Western Ontario, Canada, 1996",
-            "B.Math., University of Waterloo, Canada, 1996",
-            "\u00A0"
+            "B.Math., University of Waterloo, Canada, 1996"
         ],
         "courses": [
             "CMPT 120 Intro to Computing Science Programming 1",
             "CMPT 150 Intro Computer Design",
             "CMPT 225 Data Structures/Programming",
             "CMPT 300 Operating Systems"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 10,
+        "id": 2,
         "professor": "Petra Berenbrink",
         "position": "Associate Professor",
         "schools": [
-            " University of Paderborn"
+            "University of Paderborn"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/petraberenbrink.html",
         "degrees": [
@@ -355,34 +86,33 @@
             "M.Sc."
         ],
         "country": [
-            " Germany"
-        ],
-        "faculty": [
-            
+            "Germany"
         ],
         "yearCompleted": [
-            " 2000",
-            " 1995"
+            "2000",
+            "1995"
         ],
         "education": [
             "Ph.D., University of Paderborn, Germany, 2000",
-            "M.Sc., University of Paderborn, Germany, 1995",
-            "\u00A0"
+            "M.Sc., University of Paderborn, Germany, 1995"
         ],
         "courses": [
             "CMPT 300 Operating Systems 1",
             "CMPT 405 Design and Analysis of Computing Algorithms",
             "CMPT 705 Design and Analysis of Algorithms"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 11,
+        "id": 3,
         "professor": "Binay Bhattacharya",
         "position": "Professor",
         "schools": [
-            " McGill University",
-            " Computer Science",
-            " University of Calcutta"
+            "McGill University",
+            "Computer Science",
+            "University of Calcutta"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/binaybhattacharya.html",
         "degrees": [
@@ -390,24 +120,23 @@
             "M.Sc."
         ],
         "country": [
-            " Canada",
-            " McGill University",
-            " India"
+            "Canada",
+            "McGill University",
+            "India"
         ],
         "faculty": [
-            " Computer Science",
-            " Pure Mathematics"
+            "Computer Science",
+            "Pure Mathematics"
         ],
         "yearCompleted": [
-            " 1982",
-            " Canada 1978",
-            " 1969"
+            "1982",
+            "Canada 1978",
+            "1969"
         ],
         "education": [
             "Ph.D., Computer Science, McGill University, Canada, 1982",
             "M.Sc., Computer Science, McGill University, Canada 1978",
-            "M.Sc., Pure Mathematics, University of Calcutta, India, 1969",
-            "\u00A0"
+            "M.Sc., Pure Mathematics, University of Calcutta, India, 1969"
         ],
         "courses": [
             "CMPT 102 Introduction to Scientific Computer Programming",
@@ -416,14 +145,17 @@
             "CMPT 813 Computatiional Geometry",
             "CMPT 881 Special Topics in Theoretical Computing Science",
             "MACM 101 Discrete Mathematics"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 12,
+        "id": 4,
         "professor": "Andrei Bulatov",
         "position": "Associate Professor",
         "schools": [
-            " Ural State University"
+            "Ural State University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/andreibulatov.html",
         "degrees": [
@@ -431,14 +163,14 @@
             "M.Sc."
         ],
         "country": [
-            " Russia"
+            "Russia"
         ],
         "faculty": [
-            " Mathematics"
+            "Mathematics"
         ],
         "yearCompleted": [
-            " 1995",
-            " 1991"
+            "1995",
+            "1991"
         ],
         "education": [
             "Ph.D., Mathematics, Ural State University, Russia, 1995",
@@ -449,14 +181,21 @@
             "CMPT 405 Design and Analysis of Computing Algorithms",
             "CMPT 705 Design and Analysis of Algorithms",
             "MACM 101 Discrete Mathematics"
+        ],
+        "publications": [
+            "(with D.Marx) Constraint satisfaction parameterized by solution size, In ICALP 2011, 424-436",
+            "Complexity of Conservative Constraint Satisfaction Problems, ACM Trans. on Compitational Logic, 12(4), 2011",
+            "(with D. Marx) Constraint satisfaction problems and global cardinality constraints. Commun. ACM 53(9): 99-106 (2010)",
+            "(with Albert Atserias and Anuj Dawar) Affine systems of equations and counting infinitary logic, Theor. Comput. Sci. 410(18), 2009, pp. 1666-1683",
+            "The Complexity of the Counting Constraint Satisfaction Problem. ICALP (1) 2008: 646-661"
         ]
     },
     {
-        "id": 13,
+        "id": 5,
         "professor": "Robert Cameron",
         "position": "Professor",
         "schools": [
-            " University of British Columbia"
+            "University of British Columbia"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/robertdcameron.html",
         "degrees": [
@@ -464,14 +203,14 @@
             "B.A. Sc."
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Electrical Engineering"
+            "Electrical Engineering"
         ],
         "yearCompleted": [
-            " 1983",
-            " 1977"
+            "1983",
+            "1977"
         ],
         "education": [
             "Ph.D., Electrical Engineering, University of British Columbia, Canada, 1983",
@@ -480,15 +219,21 @@
         "courses": [
             "CMPT 885 Special Topics in Computer Architecture",
             "CMPT 383 Comparative Programming Languages"
+        ],
+        "publications": [
+            "Robert D. Cameron, Ehsan Amiri, Kenneth S. Herdy, Dan Lin, Thomas C. Shermer, and Fred P. Popowich. Parallel Scanning with Bitstream Addition: An XML Case Study, Euro-Par 2011, Bordeaux, France, Aug. 29\u2014Sep. 2, 2011.",
+            "Rob Cameron, Patent Peer Review Perspectives: Inventor/Small Entity, Patent Reformer, Educator, Proceedings of the Peer Review Prior Art Roundtable, Geneva, Switzerland, October 2010.",
+            "Robert D. Cameron and Dan Lin,",
+            "Robert D. Cameron,"
         ]
     },
     {
-        "id": 14,
+        "id": 6,
         "professor": "Diana Cukierman",
         "position": "Senior Lecturer",
         "schools": [
-            " Simon Fraser University",
-            " Universidad de la Republica"
+            "Simon Fraser University",
+            "Universidad de la Republica"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/dianacukierman.html",
         "degrees": [
@@ -497,16 +242,16 @@
             "Engineer of Computational Systems"
         ],
         "country": [
-            " Canada",
-            " Uruguay"
+            "Canada",
+            "Uruguay"
         ],
         "faculty": [
-            " Computing Science"
+            "Computing Science"
         ],
         "yearCompleted": [
-            " 2003",
-            " 1994",
-            " 1989"
+            "2003",
+            "1994",
+            "1989"
         ],
         "education": [
             "Ph.D., Computing Science, Simon Fraser University, Canada, 2003",
@@ -519,15 +264,18 @@
             "CMPT 126 Introduction to Computing Science and Programming",
             "CMPT 150 Introduction to Computer Design",
             "CMPT 891 Advanced Graduate Seminar"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 15,
+        "id": 7,
         "professor": "Ryan D'Arcy",
         "position": "ProfessorSchool of Computing ScienceSchool of\u00A0Engineering Science",
         "schools": [
-            " Dalhousie University",
-            " University of Victoria"
+            "Dalhousie University",
+            "University of Victoria"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/ryandarcy.html",
         "degrees": [
@@ -536,16 +284,16 @@
             "BSc"
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Neuroscience",
-            " Psychology and Biology"
+            "Neuroscience",
+            "Psychology and Biology"
         ],
         "yearCompleted": [
-            " 2002",
-            " 1998",
-            " 1996"
+            "2002",
+            "1998",
+            "1996"
         ],
         "education": [
             "PhD, Neuroscience, Dalhousie University, Canada, 2002",
@@ -554,15 +302,18 @@
         ],
         "courses": [
             
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 16,
+        "id": 8,
         "professor": "Veronica Dahl",
         "position": "Professor",
         "schools": [
-            " Univ. Aix-Marseille II",
-            " Buenos Aires University"
+            "Univ. Aix-Marseille II",
+            "Buenos Aires University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/veronicadahl1.html",
         "degrees": [
@@ -571,34 +322,37 @@
             "Computador Cientifico"
         ],
         "country": [
-            " France"
-        ],
-        "faculty": [
-            
+            "France"
         ],
         "yearCompleted": [
-            " 1977",
-            " 1976",
-            " 1975"
+            "1977",
+            "1976",
+            "1975"
         ],
         "education": [
             "Doctorat de Specialite en Intelligence Artificielle, Univ. Aix-Marseille II, France, 1977",
             "DEA en Intelligence Artificielle, Univ. Aix-Marseille II, France, 1976",
-            "Computador Cientifico, Buenos Aires University, France, 1975",
-            "\u00A0"
+            "Computador Cientifico, Buenos Aires University, France, 1975"
         ],
         "courses": [
             "CMPT 310 Artificial Intelligence Survey",
             "CMPT 419 Special Topics in Artificial Intelligence",
             "CMPT 882 Special Topics in Artificial Intelligence"
+        ],
+        "publications": [
+            "Dahl, V.,",
+            "Dahl, V. and Maharshak, E.",
+            "Dahl, V. (2010)",
+            "\u00A0Zahariev, M.",
+            "Dahl, V. and Maharshak, E. (2009)"
         ]
     },
     {
-        "id": 17,
+        "id": 9,
         "professor": "James Delgrande",
         "position": "Professor",
         "schools": [
-            " University of Toronto"
+            "University of Toronto"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/jamesdelgrande.html",
         "degrees": [
@@ -606,31 +360,34 @@
             "M.Sc."
         ],
         "country": [
-            " Canada"
-        ],
-        "faculty": [
-            
+            "Canada"
         ],
         "yearCompleted": [
-            " 1985",
-            " 1977"
+            "1985",
+            "1977"
         ],
         "education": [
             "Ph.D., University of Toronto, Canada, 1985",
-            "M.Sc., University of Toronto, Canada, 1977",
-            "\u00A0"
+            "M.Sc., University of Toronto, Canada, 1977"
         ],
         "courses": [
             "CMPT 411: Introduction to Knowledge Representation",
             "CMPT 354: Database Systems"
+        ],
+        "publications": [
+            "James P. Delgrande, \u201CRevising by an Inconsistent Set of Formulas\u201D, 22nd International Joint Conference on Artificial Intelligence, (IJCAI-11), Barcelona, Spain, July 19-22, 2011, pp. 833-838",
+            "James P. Delgrande and Pavlos Peppas, \u201CBelief Revision: Revising Horn Clause Theories\u201D 22nd International Joint Conference on Artificial Intelligence, (IJCAI-11), Barcelona, Spain, July 19-22, 2011, pp. 839-844.",
+            "Aaron Hunter and James Delgrande, \u201CIterated Belief Change Due to Actions and Observations\u201D, Journal of Artificial Intelligence Research, 40, 2011, pp. 269-304.",
+            "James Delgrande,\u00A0 \u201CA Program-Level Approach to Revising Logic Programs under the Answer SetSemantics\u201D, Theory and Practice of Logic Programming, 10, 4\u20146, 2010, pp. 565-580",
+            "James P. Delgrande and Renata Wassermann, Horn Clause Contraction Functions: Belief Set and Belief Base Approaches\u201D, Twelth International Conference on Principles of Knowledge Representation and Reasoning, Toronto, Canada, May 9-13, 2010."
         ]
     },
     {
-        "id": 18,
+        "id": 10,
         "professor": "Anthony Dixon",
         "position": "Associate Director",
         "schools": [
-            " University of British Columbia"
+            "University of British Columbia"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/tonydixon.html",
         "degrees": [
@@ -639,15 +396,12 @@
             "B.Sc."
         ],
         "country": [
-            " Canada"
-        ],
-        "faculty": [
-            
+            "Canada"
         ],
         "yearCompleted": [
-            " 1973",
-            " 1970",
-            " 1968"
+            "1973",
+            "1970",
+            "1968"
         ],
         "education": [
             "Ph.D., University of British Columbia, Canada, 1973",
@@ -660,16 +414,19 @@
             "CMPT 250 Introduction to Computer Architecture",
             "CMPT 384 Symbolic Computing",
             "MACM 101 Discrete Mathematics"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 19,
+        "id": 11,
         "professor": "Toby Donaldson",
         "position": "Senior Lecturer",
         "schools": [
-            " University of Waterloo",
+            "University of Waterloo",
             "\u00A0University of Waterloo",
-            " Canada"
+            "Canada"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/tobydonaldson.html",
         "degrees": [
@@ -678,21 +435,17 @@
             "B.Sc. Simon Fraser University"
         ],
         "country": [
-            " Canada",
-            " 1992"
-        ],
-        "faculty": [
-            
+            "Canada",
+            "1992"
         ],
         "yearCompleted": [
-            " 1998",
-            " 1994"
+            "1998",
+            "1994"
         ],
         "education": [
             "Ph.D. Computer Science, University of Waterloo, Canada, 1998",
             "M.Math,\u00A0University of Waterloo, Canada, 1994",
-            "B.Sc. Simon Fraser University, Canada, 1992",
-            "\u00A0"
+            "B.Sc. Simon Fraser University, Canada, 1992"
         ],
         "courses": [
             "CMPT 118 Special Topics in Computer and Information Technology",
@@ -700,15 +453,18 @@
             "CMPT 125 Introduction to Computing Science and Programming 11",
             "CMPT 170 Introduction to Web Application Development",
             "CMPT 275 Software Engineering 1"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 20,
+        "id": 12,
         "professor": "Mark Drew",
         "position": "Professor",
         "schools": [
-            " University of British Columbia",
-            " University of Toronto"
+            "University of British Columbia",
+            "University of Toronto"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/markdrew.html",
         "degrees": [
@@ -717,36 +473,41 @@
             "B.A.Sc."
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Physics",
-            " Engineering Science"
+            "Physics",
+            "Engineering Science"
         ],
         "yearCompleted": [
-            " 1976",
-            " 1971",
-            " 1970"
+            "1976",
+            "1971",
+            "1970"
         ],
         "education": [
             "Ph.D., Physics, University of British Columbia, Canada, 1976",
             "M.Sc., Physics, University of Toronto, Canada, 1971",
-            "B.A.Sc., Engineering Science, University of Toronto, Canada, 1970",
-            "\u00A0"
+            "B.A.Sc., Engineering Science, University of Toronto, Canada, 1970"
         ],
         "courses": [
             "CMPT 828 Illumination in Images and Video",
             "CMPT 365 Multimedia Systems",
             "CMPT 110 Event-Driven Programming in Visual Basic"
+        ],
+        "publications": [
+            "Lookup-Table Based Gradient Field Reconstruction, IEEE Trans. on Image Processing,\u00A0 2011.",
+            "A \u201CPerception-based Visualization of Manifold-Valued Medical Images using Distance-Preserving Dimensionality Reduction,\u00A0 , IEEE Trans. on Medical Imaging,\u00A0 2011.",
+            "Action Detection in Cluttered Video with Successive Convex Matching, IEEE Trans. On Circuits and Systems for Video Tech., 2010.\u00A0",
+            "Entropy Minimization for Shadow Removal, Int. J. of Computer Vision, 2009."
         ]
     },
     {
-        "id": 21,
+        "id": 13,
         "professor": "John Edgar",
         "position": "Senior Lecturer",
         "schools": [
-            " Simon Fraser University",
-            " University College London"
+            "Simon Fraser University",
+            "University College London"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/johnedgar.html",
         "degrees": [
@@ -754,16 +515,16 @@
             "B.Sc."
         ],
         "country": [
-            " Canada",
-            " UK"
+            "Canada",
+            "UK"
         ],
         "faculty": [
-            " Computing Sciences",
-            " Psychology"
+            "Computing Sciences",
+            "Psychology"
         ],
         "yearCompleted": [
-            " 1999",
-            " 1984"
+            "1999",
+            "1984"
         ],
         "education": [
             "M.Sc., Computing Sciences, Simon Fraser University, Canada, 1999",
@@ -775,15 +536,18 @@
             "CMPT 212 Object-Oriented Applications Design in C++",
             "CMPT 225 Data Structures and Programming",
             "CMPT 354 Database Systems I"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 22,
+        "id": 14,
         "professor": "Funda Ergun",
         "position": "Associate Professor",
         "schools": [
-            " Cornell University",
-            " Bilkent University"
+            "Cornell University",
+            "Bilkent University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/fundaergun.html",
         "degrees": [
@@ -791,16 +555,16 @@
             "BS"
         ],
         "country": [
-            " United States",
-            " Turkey"
+            "United States",
+            "Turkey"
         ],
         "faculty": [
-            " Computer Science",
-            " Computer Engineering and Information Science"
+            "Computer Science",
+            "Computer Engineering and Information Science"
         ],
         "yearCompleted": [
-            " 1997",
-            " 1990"
+            "1997",
+            "1990"
         ],
         "education": [
             "Ph.D., Computer Science, Cornell University, United States, 1997",
@@ -811,15 +575,18 @@
             "CMPT 408 Special Topics in Theoretical Computing Science",
             "CMPT 765 Computer Communication Network",
             "CMPT 881 Special Topics in Theoretical Computing Science"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 23,
+        "id": 15,
         "professor": "Martin Ester",
         "position": "Director",
         "schools": [
-            " Swiss Federal Institute of Technology",
-            " University of Dortmund"
+            "Swiss Federal Institute of Technology",
+            "University of Dortmund"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/martinester.html",
         "degrees": [
@@ -827,49 +594,48 @@
             "Diploma (M.Sc.) in Computer Science"
         ],
         "country": [
-            " Zurich",
-            " 1984"
-        ],
-        "faculty": [
-            
+            "Zurich",
+            "1984"
         ],
         "yearCompleted": [
-            " 1990"
+            "1990"
         ],
         "education": [
             "Ph.D. Computer Science, Swiss Federal Institute of Technology, Zurich, 1990",
-            "Diploma (M.Sc.) in Computer Science, University of Dortmund, 1984",
-            "\u00A0"
+            "Diploma (M.Sc.) in Computer Science, University of Dortmund, 1984"
         ],
         "courses": [
             "CMPT 354 Database Systems 1",
             "CMPT 454 Database Systems 11",
             "CMPT 459 Special Topics in Database Systems"
+        ],
+        "publications": [
+            "Samaneh Moghaddam, Martin Ester: ILDA: Interdependent LDA Model for Learning Latent Aspects and their Ratings from Online Product Reviews, Proc. ACM SIGIR 2011.",
+            "Mohsen Jamali, Gholamreza Haffari, Martin Ester: Modeling the temporal dynamics of social rating networks using bidirectional effects of social relations and rating patterns, Proc. WWW 2011.",
+            "Phuong Dao, Kendric Wang, Colin Collins, Martin Ester, Anna Lapuk, S. Cenk Sahinalp: Optimal Discriminating Subnetwork Markers Predict Responses To Cancer Treatments, to appear in Bioinformatics, 2011.",
+            "Phuong Dao, Recep Colak, Raheleh Salari, Flavia Moser, Elai Davicioni, Alexander Sch\u00F6nhuth, Martin Ester: Inferring cancer subnetwork markers using density-constrained biclustering, Bioinformatics 26(18):2010.",
+            "Mohsen Jamali, Martin Ester: TrustWalker: a random walk model for combining trust-based and item-based recommendation, Proc. ACM SIGKDD 2009."
         ]
     },
     {
-        "id": 24,
+        "id": 16,
         "professor": "Mike Evans",
         "position": "Senior Lecturer",
         "schools": [
-            " Birmingham University",
-            " University of Dundee",
-            " Dalhousie University"
+            "Birmingham University",
+            "University of Dundee",
+            "Dalhousie University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/mikeevans.html",
         "degrees": [
-            "M.Sc. ",
             "M.Sc.",
             "M.A.",
             "B.Sc. Honors"
         ],
         "country": [
-            " England",
-            " Scotland",
-            " Canada"
-        ],
-        "faculty": [
-            
+            "England",
+            "Scotland",
+            "Canada"
         ],
         "yearCompleted": [
             
@@ -879,22 +645,24 @@
             "Post Grad Cert in Education, University of Wales",
             "M.Sc., University of Dundee, Scotland",
             "M.A., Dalhousie University, Canada",
-            "B.Sc. Honors, Dalhousie University, Canada",
-            "\u00A0"
+            "B.Sc. Honors, Dalhousie University, Canada"
         ],
         "courses": [
             "CMPT 126 Introduction to Computing Science and Programming",
             "CMPT 225 Data Structures and Programming",
             "CMPT 300 Operating Systems 1"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 25,
+        "id": 17,
         "professor": "Alexandra Fedorova",
         "position": "Associate Professor",
         "schools": [
-            " Cambridge",
-            " Northampton"
+            "Cambridge",
+            "Northampton"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/alexandrafedorova.html",
         "degrees": [
@@ -903,14 +671,14 @@
             "B.A. in Computer Science and Economics"
         ],
         "country": [
-            " MA"
+            "MA"
         ],
         "faculty": [
-            " Harvard University",
-            " Smith College"
+            "Harvard University",
+            "Smith College"
         ],
         "yearCompleted": [
-            " United States"
+            "United States"
         ],
         "education": [
             "Ph.D. in Computer Science, Harvard University, Cambridge, MA, United States, 2006",
@@ -920,14 +688,17 @@
         "courses": [
             "CMPT 431 Distributed Systems",
             "CMPT 886 Special Topics in Operating Systems: Multicore Processors -- Software/Hardware Interaction"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 26,
+        "id": 18,
         "professor": "Brian Fraser",
         "position": "Lecturer",
         "schools": [
-            " Simon Fraser University"
+            "Simon Fraser University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/brianfraser.html",
         "degrees": [
@@ -935,14 +706,11 @@
             "B.Sc. Computing Science"
         ],
         "country": [
-            " Canada",
-            " Canada 2002"
-        ],
-        "faculty": [
-            
+            "Canada",
+            "Canada 2002"
         ],
         "yearCompleted": [
-            " 2009"
+            "2009"
         ],
         "education": [
             "Ph.D. Computing Science, Simon Fraser University, Canada, 2009",
@@ -952,14 +720,17 @@
             "CMPT 213 Object-Oriented Applications Design in Java",
             "CMPT 276 Introduction to Software Engineering using the Android operating system",
             "CMPT 433 Embedded Systems"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 27,
+        "id": 19,
         "professor": "Brian Funt",
         "position": "Professor",
         "schools": [
-            " University of British Columbia"
+            "University of British Columbia"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/brianfunt.html",
         "degrees": [
@@ -968,34 +739,36 @@
             "B.Sc."
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Computing Science"
+            "Computing Science"
         ],
         "yearCompleted": [
-            " 1976",
-            " 1973",
-            " 1971"
+            "1976",
+            "1973",
+            "1971"
         ],
         "education": [
             "Ph.D., Computing Science, University of British Columbia, Canada, 1976",
             "M.Sc., Computing Science, University of British Columbia, Canada, 1973",
-            "B.Sc., Computing Science, University of British Columbia, Canada, 1971",
-            "\u00A0"
+            "B.Sc., Computing Science, University of British Columbia, Canada, 1971"
         ],
         "courses": [
             "CMPT 102 Scientific Computer Programming",
             "CMPT 412 Computational Vision",
             "CMPT 822 Computational Colour Vision Seminar"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 28,
+        "id": 20,
         "professor": "Uwe Gl\u00E4sser",
         "position": "Professor",
         "schools": [
-            " University of Paderborn"
+            "University of Paderborn"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/uweglasser.html",
         "degrees": [
@@ -1004,15 +777,15 @@
             "Diploma"
         ],
         "country": [
-            " Germany"
+            "Germany"
         ],
         "faculty": [
-            " Computer Science"
+            "Computer Science"
         ],
         "yearCompleted": [
-            " 1999",
-            " 1992",
-            " 1987"
+            "1999",
+            "1992",
+            "1987"
         ],
         "education": [
             "Habilitation, Computer Science, University of Paderborn, Germany, 1999",
@@ -1022,16 +795,22 @@
         "courses": [
             "CMPT 475 Software Engineering II",
             "CMPT 375 Software Technology Foundations"
+        ],
+        "publications": [
+            "R. Farahbod, U. Gl\u00E4sser. The CoreASM Modeling Framework. Software: Practice & Experience, Tool Building in Formal Methods, 41(2): 167\u2013178, John Wiley & Sons, 2011.",
+            "P. L. Brantingham, U. Gl\u00E4sser, P. Jackson and M. Vajihollahi. Modeling Criminal Activity in Urban Landscapes. In N. Memon, J. D. Farley, D. L. Hicks, T. Rosen\u00F8rn (eds.), Mathematical Methods in Counterterrorism, Springer, 2009, pages 9\u201331.",
+            "J.-R. Abrial, U. Gl\u00E4sser (Eds.). Rigorous Methods for Software Construction and Analysis. LNCS Festschrift volume 5115, Springer, 2009.",
+            "R. Farahbod, V. Gervasi and U. Gl\u00E4sser. CoreASM: An Extensible ASM Execution Engine. Fundamenta Informaticae, 77 (1-2), pages 71\u2013103, 2007."
         ]
     },
     {
-        "id": 29,
+        "id": 21,
         "professor": "Qianping Gu",
         "position": "Professor",
         "schools": [
-            " Tohoku University",
-            " Ibaraki University",
-            " Shandong University"
+            "Tohoku University",
+            "Ibaraki University",
+            "Shandong University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/QianpingGu.html",
         "degrees": [
@@ -1040,16 +819,13 @@
             "B.Sc. Computer Science"
         ],
         "country": [
-            " Japan",
-            " China"
-        ],
-        "faculty": [
-            
+            "Japan",
+            "China"
         ],
         "yearCompleted": [
-            " 1988",
-            " 1985",
-            " 1982"
+            "1988",
+            "1985",
+            "1982"
         ],
         "education": [
             "Ph.D. Computer Science, Tohoku University, Japan, 1988",
@@ -1060,14 +836,21 @@
             "CMPT 471 Networking II",
             "CMPT 497 Capstone Projects",
             "CMPT 816 Theory of Communication Networks"
+        ],
+        "publications": [
+            "Q. Gu and H. Tamaki, Improved bounds on the planar branchwidth with respect to the largest grid minor size, Algorithmica, to appear",
+            "Z. Bian, Q. Gu, and X. Zhou, Efficient algorithms for wavelength assignment on trees of rings, Discrete Applied Mathematics, 157, pages 875-889, 2009.",
+            "M. Marzban, Q. Gu, and X. Jia, Computational study on planar dominating set problem, Theoretical Computer Science, Vol. 410, No. 52, pages 5455-5466, 2009.",
+            "Q. Gu and H. Tamaki, Optimal branch-decomposition of planar graphs in $O(n^3)$ time, ACM Trans. on Algorithms, Vol. 4, No. 3, pages 30:1-30:13, 2008.",
+            "Z. Bian, Q. Gu, M. Marzban, H. Tamaki, Y. Yoshitake, Empirical study on branchwidth and branch decomposition of planar graphs, Proc. Of the 2008 SIAM Workshop on Algorithm Engineering and Experiments (ALENEX'08), pages 152-165, 2008."
         ]
     },
     {
-        "id": 30,
+        "id": 22,
         "professor": "Lou Hafer",
         "position": "Associate Professor",
         "schools": [
-            " Carnegie-Mellon University"
+            "Carnegie-Mellon University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/louhafer.html",
         "degrees": [
@@ -1076,36 +859,39 @@
             "B.Sc. Electrical Engineering"
         ],
         "country": [
-            " United States"
-        ],
-        "faculty": [
-            
+            "United States"
         ],
         "yearCompleted": [
-            " 1981",
-            " 1978",
-            " 1976"
+            "1981",
+            "1978",
+            "1976"
         ],
         "education": [
             "Ph.D. Electrical Engineering, Carnegie-Mellon University, United States, 1981",
             "M.Sc. Electrical Engineering, Carnegie-Mellon University, United States, 1978",
-            "B.Sc. Electrical Engineering, Carnegie-Mellon University, United States, 1976",
-            "\u00A0"
+            "B.Sc. Electrical Engineering, Carnegie-Mellon University, United States, 1976"
         ],
         "courses": [
             "CMPT 125 Introduction to Computer Science and Programming II",
             "CMPT 150 Introduction to Computer Design",
             "CMPT 371 Data Communications and Networking",
             "CMPT 471 Networking 11"
+        ],
+        "publications": [
+            "Hafer, L., On-the-fly tableau generation for DYLP. 8,300 lines code plus documentation (7pp.). COIN Project, http://coin-or.org, August, 2009.",
+            "Hafer, L., Cbc-generic, multi-solver driver for libCbc branch-and-cut library. 6,980 lines plus 2,802 lines enhancements to supporting code base.\u00A0 COIN Project, http://coin-or.org, March, 2007. Actively maintained.",
+            "Hafer, L., DYLP dynamic LP code, 44,000 lines plus 81 pp. documentation (SFU-CMPT TR 2005-18), COIN Project, http://www.coin-or.org, November, 2005.\u00A0 Actively maintained.",
+            "Hafer, L., Tse, S., COIN OSI layer for dylp. 4,700 lines. COIN Project, http://coin-or.org , May, 2002. Actively maintained.",
+            "Hafer, L., bonsaiG/DYLP MILP code, 52,000 lines plus documentation (100 pp.), http://www.cs.sfu.ca/~lou/BonsaiG, December, 1999. Upgraded February 2000, September 2000, June 2001, November 2004. Retired."
         ]
     },
     {
-        "id": 31,
+        "id": 23,
         "professor": "Ghassan Hamarneh",
         "position": "Associate Professor",
         "schools": [
-            " Chalmers University of Technology",
-            " Jordan University"
+            "Chalmers University of Technology",
+            "Jordan University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/ghassanhamarneh.html",
         "degrees": [
@@ -1114,38 +900,41 @@
             "B.Sc. Electrical Engineering"
         ],
         "country": [
-            " Sweden",
-            " Jordan"
-        ],
-        "faculty": [
-            
+            "Sweden",
+            "Jordan"
         ],
         "yearCompleted": [
-            " 2001",
-            " 1997",
-            " 1995"
+            "2001",
+            "1997",
+            "1995"
         ],
         "education": [
             "Ph.D. Signal and Systems, Chalmers University of Technology, Sweden, 2001",
             "M.Sc. Digital Communications, Chalmers University of Technology, Sweden, 1997",
-            "B.Sc. Electrical Engineering, Jordan University, Jordan, 1995",
-            "\u00A0"
+            "B.Sc. Electrical Engineering, Jordan University, Jordan, 1995"
         ],
         "courses": [
             "CMPT 102 Introduction to Scientific Computing",
             "CMPT 340 Biomedical Computing",
             "CMPT 419/829 Biomedical Image Computing",
             "CMPT 888 Medical Image Analysis"
+        ],
+        "publications": [
+            "G. Hamarneh, C. McIntosh, and M. Drew.",
+            "A. Yazdanpanah, G. Hamarneh, B. Smith, and M. Sarunic.",
+            "Bahareh HajGhanbari, Ghassan Hamarneh, Neda Changizi, Aaron Ward, and W. Darlene Reid.",
+            "Aaron Ward and Ghassan Hamarneh.",
+            "Ahmed Saad, Ghassan Hamarneh, and Torsten Moeller."
         ]
     },
     {
-        "id": 32,
+        "id": 24,
         "professor": "Mohamed Hefeeda",
         "position": "Associate Professor",
         "schools": [
-            " Purdue University",
-            " University of Connecticut",
-            " Mansoura University"
+            "Purdue University",
+            "University of Connecticut",
+            "Mansoura University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/mohamedhefeeda.html",
         "degrees": [
@@ -1154,38 +943,44 @@
             "B.Sc."
         ],
         "country": [
-            " United States",
-            " Egypt"
+            "United States",
+            "Egypt"
         ],
         "faculty": [
-            " Computer Science and Engineering",
-            " Electronics Engineering"
+            "Computer Science and Engineering",
+            "Electronics Engineering"
         ],
         "yearCompleted": [
-            " 2004",
-            " 2001",
-            " 1994."
+            "2004",
+            "2001",
+            "1994."
         ],
         "education": [
             "Ph.D. Computer Science, Purdue University, United States, 2004",
             "M.Sc, Computer Science and Engineering, University of Connecticut, United States, 2001",
-            "B.Sc., Electronics Engineering, Mansoura University, Egypt, 1994.",
-            "\u00A0"
+            "B.Sc., Electronics Engineering, Mansoura University, Egypt, 1994."
         ],
         "courses": [
             "CMPT 300 Operating Systems",
             "CMPT 771 Internet Architecture and Protocols",
             "CMPT 820 Multimedia Systems"
+        ],
+        "publications": [
+            "C. Hsu and M. Hefeeda, Flexible Broadcasting of Scalable Video Streams to Heterogeneous Mobile Devices, IEEE Transactions on Mobile Computing, 10(3), pp. 406--418, March 2011.",
+            "K. Mokhtarian and M. Hefeeda, Authentication of Scalable Video Streams with Low Communication Overhead, IEEE Transactions on Multimedia, 12(7), pp. 730--742,\u00A0 November 2010.",
+            "C. Ly, C. Hsu, and M. Hefeeda, Improving Online Gaming Quality using Detour Paths, In Proc. of ACM Multimedia 2010, pp. 55--64, Firenze, Italy, October 2010.",
+            "M. Hefeeda and C. Hsu,",
+            "M. Hefeeda and O. Saleh, Traffic Modeling and Proportional Partial Caching for Peer-to-Peer Systems, IEEE/ACM Transactions on Networking, 16(6), pp. 1447--1460, December 2008."
         ]
     },
     {
-        "id": 33,
+        "id": 25,
         "professor": "Pavol Hell",
         "position": "Professor",
         "schools": [
-            " University of Montreal",
-            " McMaster University",
-            " Prague"
+            "University of Montreal",
+            "McMaster University",
+            "Prague"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/pavolhell.html",
         "degrees": [
@@ -1194,16 +989,16 @@
             "B.Sc."
         ],
         "country": [
-            " Canada",
-            " Czech Republic"
+            "Canada",
+            "Czech Republic"
         ],
         "faculty": [
-            " Charles University"
+            "Charles University"
         ],
         "yearCompleted": [
-            " 1973",
-            " 1970",
-            " 1968"
+            "1973",
+            "1970",
+            "1968"
         ],
         "education": [
             "Ph.D., University of Montreal, Canada, 1973",
@@ -1215,10 +1010,13 @@
             "CMPT 814 Algorithmic Graph Theory",
             "MACM 101 Discrete Mathematics",
             "MACM 300 Introduction to Formal Languages and Automata with Applications"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 34,
+        "id": 26,
         "professor": "Valentine Kabanets",
         "position": "Associate Professor",
         "schools": [
@@ -1231,28 +1029,30 @@
         "country": [
             
         ],
-        "faculty": [
-            
-        ],
         "yearCompleted": [
             
         ],
         "education": [
-            "\u00A0"
+            
         ],
         "courses": [
             "\u00A0CMPT 307 Data structures and algorithms",
             "\u00A0CMPT 881 Average-case complexity",
             "\u00A0CMPT 308 Computability and Complexity"
+        ],
+        "publications": [
+            "V. Kabanets and R. Impagliazzo, Derandomizing Polynomial Identity Tests means proving circuit lower bounds, Computational Complexity, 13(1-2), pages 1-46, 2004.",
+            "R. Impagliazzo, V. Kabanets, and A. Kolokolova, An axiomatic approach to algebrization, in STOC\u201909.",
+            "R. Impagliazzo, V. Kabanets, and A. Wigderson, New direct product testers and 2-query PCPs, in STOC\u201909 (to appear in the SIAM Journal on Computing)."
         ]
     },
     {
-        "id": 35,
+        "id": 27,
         "professor": "Harinder Khangura",
         "position": "Senior Lecturer",
         "schools": [
-            " University of British Columbia",
-            " University of Toronto"
+            "University of British Columbia",
+            "University of Toronto"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/harindersinghkhangura.html",
         "degrees": [
@@ -1260,19 +1060,15 @@
             "B.Sc. Physics/Computing Science"
         ],
         "country": [
-            " Canada"
-        ],
-        "faculty": [
-            
+            "Canada"
         ],
         "yearCompleted": [
-            " 2001",
-            " 1997"
+            "2001",
+            "1997"
         ],
         "education": [
             "M.Sc., University of British Columbia, Canada, 2001",
-            "B.Sc. Physics/Computing Science, University of Toronto, Canada, 1997",
-            "\u00A0"
+            "B.Sc. Physics/Computing Science, University of Toronto, Canada, 1997"
         ],
         "courses": [
             "CMPT 105W Process, Form, & Convention in Professional Genres",
@@ -1281,16 +1077,19 @@
             "CMPT 250 Introduction to Computer Architecture",
             "CMPT 300 Operating Systems I",
             "CMPT 322W Professional Responsibility & Ethics"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 36,
+        "id": 28,
         "professor": "Arthur Kirkpatrick",
         "position": "Associate Professor",
         "schools": [
-            " University of Oregon",
-            " Maharishi International University",
-            " State College"
+            "University of Oregon",
+            "Maharishi International University",
+            "State College"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/arthurkirkpatrick.html",
         "degrees": [
@@ -1299,36 +1098,38 @@
             "B.Sc."
         ],
         "country": [
-            " United States"
+            "United States"
         ],
         "faculty": [
-            " Pennsylvania State University"
+            "Pennsylvania State University"
         ],
         "yearCompleted": [
-            " 2000",
-            " 1985",
-            " 1977"
+            "2000",
+            "1985",
+            "1977"
         ],
         "education": [
             "Ph.D., University of Oregon, United States, 2000",
             "M.Sc., Maharishi International University, United States, 1985",
-            "B.Sc., Pennsylvania State University, State College, United States, 1977",
-            "\u00A0"
+            "B.Sc., Pennsylvania State University, State College, United States, 1977"
         ],
         "courses": [
             "CMPT 120 Introduction to Computing Science and Programming 1",
             "CMPT 363 User Interface Design",
             "CMPT 376 Technical Writing and Group Dynamics",
             "CMPT 383 Comparative Programming Languages"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 37,
+        "id": 29,
         "professor": "Ramesh Krishnamurti",
         "position": "Professor",
         "schools": [
-            " Computer and Information Science",
-            " Indian Institute of Technology"
+            "Computer and Information Science",
+            "Indian Institute of Technology"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/RameshKrishnamurti.html",
         "degrees": [
@@ -1337,16 +1138,16 @@
             "B.Tech."
         ],
         "country": [
-            " University of Pennsylvania",
-            " India"
+            "University of Pennsylvania",
+            "India"
         ],
         "faculty": [
-            " Electrical Engineering"
+            "Electrical Engineering"
         ],
         "yearCompleted": [
-            " 1987",
-            " 1977",
-            " 1974"
+            "1987",
+            "1977",
+            "1974"
         ],
         "education": [
             "Ph.D., Computer and Information Science, University of Pennsylvania, 1987",
@@ -1355,15 +1156,18 @@
         ],
         "courses": [
             
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 38,
+        "id": 30,
         "professor": "Anne Lavergne",
         "position": "Senior Lecturer",
         "schools": [
-            " University of British Columbia",
-            " Simon Fraser University"
+            "University of British Columbia",
+            "Simon Fraser University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/annelavergne.html",
         "degrees": [
@@ -1371,20 +1175,19 @@
             "B.Sc."
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Computer Science",
-            " Computing Science"
+            "Computer Science",
+            "Computing Science"
         ],
         "yearCompleted": [
-            " 1999",
-            " 1991"
+            "1999",
+            "1991"
         ],
         "education": [
             "M.Sc., Computer Science, University of British Columbia, Canada, 1999",
-            "B.Sc., Computing Science, Simon Fraser University, Canada, 1991",
-            "\u00A0"
+            "B.Sc., Computing Science, Simon Fraser University, Canada, 1991"
         ],
         "courses": [
             "CMPT 125 Introduction to Computing Science and Programming II",
@@ -1392,15 +1195,18 @@
             "CMPT 225 Data Structures and Programming",
             "CMPT 275 Software Engineering I",
             "CMPT 363 User Interface Design"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 39,
+        "id": 31,
         "professor": "Ze-Nian Li",
         "position": "Professor",
         "schools": [
-            " University of Wisconsin-Madison",
-            " University of Science and Technology of China"
+            "University of Wisconsin-Madison",
+            "University of Science and Technology of China"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/ze-lianli.html",
         "degrees": [
@@ -1409,38 +1215,41 @@
             "B.Sc. Electrical Engineering"
         ],
         "country": [
-            " United States",
-            " China"
-        ],
-        "faculty": [
-            
+            "United States",
+            "China"
         ],
         "yearCompleted": [
-            " 1986",
-            " 1981",
-            " 1970"
+            "1986",
+            "1981",
+            "1970"
         ],
         "education": [
             "Ph.D. Computer Sciences, University of Wisconsin-Madison, United States, 1986",
             "M.Sc. Computer Sciences, University of Wisconsin-Madison, United States, 1981",
-            "B.Sc. Electrical Engineering, University of Science and Technology of China, China, 1970",
-            "\u00A0"
+            "B.Sc. Electrical Engineering, University of Science and Technology of China, China, 1970"
         ],
         "courses": [
             "CMPT 365 Multimedia Systems",
             "CMPT 414 Model-based Computer Vision",
             "CMPT 820 Multimedia Systems",
             "CMPT 821 Robot Vision"
+        ],
+        "publications": [
+            "H. Jiang, M.S. Drew, and Z.N. Li, \u201CAction detection in cluttered video with successive convex matching\u201D,",
+            "\u00A0J. Huang and Z.N. Li, \u201CImage trimming via saliency region detection\u201D,",
+            "Y. Lu and Z.N. Li, \u201CAutomatic object extraction and reconstruction in active video\u201D,",
+            "J. Yin, Q. Yang, D. Shen, and Z.N. Li, \u201CActivity recognition via user-trace segmentation\u201D,",
+            "H. Jiang, M.S. Drew, and Z.N. Li, \u201CMatching by linear programming and successive convexification\u201D,"
         ]
     },
     {
-        "id": 40,
+        "id": 32,
         "professor": "Arthur Liestman",
         "position": "Professor",
         "schools": [
-            " University of Illinois at Urbana-Champaign",
-            " University of Illinois at Urbana-Chanpaign",
-            " University of Kansas"
+            "University of Illinois at Urbana-Champaign",
+            "University of Illinois at Urbana-Chanpaign",
+            "University of Kansas"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/arthurliestman.html",
         "degrees": [
@@ -1449,36 +1258,42 @@
             "B.G.S."
         ],
         "country": [
-            " United States"
+            "United States"
         ],
         "faculty": [
-            " Computer Science",
-            " Computer Science and Mathematics"
+            "Computer Science",
+            "Computer Science and Mathematics"
         ],
         "yearCompleted": [
-            " 1981",
-            " 1978",
-            " 1975"
+            "1981",
+            "1978",
+            "1975"
         ],
         "education": [
             "Ph.D., Computer Science, University of Illinois at Urbana-Champaign, United States, 1981",
             "M.Sc., Computer Science, University of Illinois at Urbana-Chanpaign, United States, 1978",
-            "B.G.S., Computer Science and Mathematics, University of Kansas, United States, 1975",
-            "\u00A0"
+            "B.G.S., Computer Science and Mathematics, University of Kansas, United States, 1975"
         ],
         "courses": [
             "CMPT 307 Data Structures and Algorithms",
             "CMPT 376W Technical Writing and Group Dynamics",
             "CMPT 705 Design and Analysis of Algorithms"
+        ],
+        "publications": [
+            "H. A. Harutyunyan, A. L. Liestman, K. Makino, and T. C. Shermer, Non-adaptive Broadcasting in Trees, Networks, to appear.",
+            "H. A. Harutyunyan, P. Hell, and A. L. Liestman, Messy Broadcasting - Decentralized broadcast schemes with limited knowledge, Discr. Appl. Math. 159: 322-327, 2011.",
+            "A. L. Liestman, T. C. Shermer, and L. Stacho, Edge-Disjoint Spanners in Tori, Discrete Mathematics 309: 2239-2249, 2009.",
+            "A. L. Liestman, D. Richards, and L. Stacho, Broadcasting from Multiple Originators, Discrete Applied Mathematics157: 2886-2891, 2009.",
+            "H. A. Harutyunyan and A. L. Liestman, A Linear Algorithm for Finding the k-Broadcast Center of a Tree, Networks 53: 287-292, 2008."
         ]
     },
     {
-        "id": 41,
+        "id": 33,
         "professor": "Jiangchuan Liu",
         "position": "Associate Professor",
         "schools": [
-            " The Hong Kong University of Science & Technology (HKUST)",
-            " Tsinghua University"
+            "The Hong Kong University of Science & Technology (HKUST)",
+            "Tsinghua University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/jiangchuanliu.html",
         "degrees": [
@@ -1486,33 +1301,37 @@
             "B.Eng (Cum Laude)"
         ],
         "country": [
-            " 2003",
-            " Beijing"
+            "2003",
+            "Beijing"
         ],
         "faculty": [
-            " Computer Science and Technology"
+            "Computer Science and Technology"
         ],
         "yearCompleted": [
-            " China"
+            "China"
         ],
         "education": [
             "Ph.D. Computer Science, The Hong Kong University of Science & Technology (HKUST), 2003",
-            "B.Eng (Cum Laude), Computer Science and Technology, Tsinghua University, Beijing, China, 1999",
-            "\u00A0"
+            "B.Eng (Cum Laude), Computer Science and Technology, Tsinghua University, Beijing, China, 1999"
         ],
         "courses": [
             "CMPT 371 Data communications and networking",
             "CMPT 771 Advanced network architecture and protocols"
+        ],
+        "publications": [
+            "J. Liu, S. G. Rao, B. Li, and H. Zhang,",
+            "X. Cheng and J. Liu, NetTube: Exploring Interest Correlation for Peer-to-Peer Socialized Video Sharing, to appear in ACM Transactions on Multimedia Computing, Communications and Applications, 2010.",
+            "F. Wang and J. Liu,"
         ]
     },
     {
-        "id": 42,
+        "id": 34,
         "professor": "Wo-Shun Luk",
         "position": "Professor",
         "schools": [
-            " University of Alberta",
-            " University of Waterloo",
-            " University of London"
+            "University of Alberta",
+            "University of Waterloo",
+            "University of London"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/Wo-ShunLuk.html",
         "degrees": [
@@ -1521,37 +1340,39 @@
             "B.A. (Honors)"
         ],
         "country": [
-            " Canada",
-            " England"
+            "Canada",
+            "England"
         ],
         "faculty": [
-            " Computing Science",
-            " Math."
+            "Computing Science",
+            "Math."
         ],
         "yearCompleted": [
-            " 1976",
-            " 1972",
-            " 1970"
+            "1976",
+            "1972",
+            "1970"
         ],
         "education": [
             "Ph.D., Computing Science, University of Alberta, Canada, 1976",
             "M.Math., University of Waterloo, Canada, 1972",
-            "B.A. (Honors), Math., University of London, England, 1970",
-            "\u00A0"
+            "B.A. (Honors), Math., University of London, England, 1970"
         ],
         "courses": [
             "CMPT 354 Database Systems 1",
             "CMPT 454 Database Systems 11",
             "CMPT 740 Database Systems"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 43,
+        "id": 35,
         "professor": "David Mitchell",
         "position": "Associate Professor",
         "schools": [
-            " University of Toronto",
-            " Simon Fraser University"
+            "University of Toronto",
+            "Simon Fraser University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/davidmitchell.html",
         "degrees": [
@@ -1560,37 +1381,39 @@
             "B.Sc."
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Computer Science",
-            " Computing Science",
-            " Cognitive Science and Artificial Intelligence"
+            "Computer Science",
+            "Computing Science",
+            "Cognitive Science and Artificial Intelligence"
         ],
         "yearCompleted": [
-            " 2002",
-            " 1993",
-            " 1989"
+            "2002",
+            "1993",
+            "1989"
         ],
         "education": [
             "Ph.D., Computer Science, University of Toronto, Canada, 2002",
             "M.Sc., Computing Science, Simon Fraser University, Canada, 1993",
-            "B.Sc., Cognitive Science and Artificial Intelligence, University of Toronto, Canada, 1989",
-            "\u00A0"
+            "B.Sc., Cognitive Science and Artificial Intelligence, University of Toronto, Canada, 1989"
         ],
         "courses": [
             "CMPT 225 Data Structures and Programming",
             "CMPT 417 Intelligent Systems",
             "CMPT 701 Computability and Logic"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 44,
+        "id": 36,
         "professor": "Greg Mori",
         "position": "Associate Professor",
         "schools": [
-            " University of California at Berkeley",
-            " University of Toronto"
+            "University of California at Berkeley",
+            "University of Toronto"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/gregmori.html",
         "degrees": [
@@ -1598,34 +1421,37 @@
             "Hon. B.Sc. (High Distinction) in Computer Science and Mathematics"
         ],
         "country": [
-            " United States",
-            " Canada"
-        ],
-        "faculty": [
-            
+            "United States",
+            "Canada"
         ],
         "yearCompleted": [
-            " 2004",
-            " 1999"
+            "2004",
+            "1999"
         ],
         "education": [
             "Ph.D. Computer Science, University of California at Berkeley, United States, 2004",
-            "Hon. B.Sc. (High Distinction) in Computer Science and Mathematics, University of Toronto, Canada, 1999",
-            "\u00A0"
+            "Hon. B.Sc. (High Distinction) in Computer Science and Mathematics, University of Toronto, Canada, 1999"
         ],
         "courses": [
             "CMPT 310: Artificial Intelligence Survey",
             "CMPT 726: Machine Learning",
             "CMPT 888: Human Activity Recognition"
+        ],
+        "publications": [
+            "Yang Wang and Greg Mori. Hidden Part Models for Human Action Recognition: Probabilistic vs. Max-Margin.\u00A0",
+            "Tian Lan, Yang Wang, Weilong Yang, and Greg Mori. Beyond Actions: Discriminative Models for Contextual Group Activities.\u00A0",
+            "Weilong Yang, Yang Wang, and Greg Mori. Recognizing Human Actions from Still Images with Latent Poses.\u00A0",
+            "Yang Wang and Greg Mori, Human Action Recognition by Semi-Latent Topic Models,\u00A0",
+            "Jens Wawerla, Shelley Marshall, Greg Mori, Kristina Rothley, and Payam Sabzmeydani, BearCam: Automated Wildlife Monitoring At The Arctic Circle,\u00A0"
         ]
     },
     {
-        "id": 45,
+        "id": 37,
         "professor": "Torsten M\u00F6ller",
         "position": "Professor",
         "schools": [
-            " Ohio State University",
-            " Humboldt-Universit\u00E4t zu Berlin"
+            "Ohio State University",
+            "Humboldt-Universit\u00E4t zu Berlin"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/torstenmoller.html",
         "degrees": [
@@ -1634,36 +1460,39 @@
             "Vordiplom"
         ],
         "country": [
-            " United States",
-            " Germany"
+            "United States",
+            "Germany"
         ],
         "faculty": [
-            " Computer and Information Science",
-            " Mathematical Computer Science"
+            "Computer and Information Science",
+            "Mathematical Computer Science"
         ],
         "yearCompleted": [
-            " 1999",
-            " 1993",
-            " 1992"
+            "1999",
+            "1993",
+            "1992"
         ],
         "education": [
             "Ph.D., Computer and Information Science, Ohio State University, United States, 1999",
             "M.Sc. Computer and Information Science, Ohio State University, United States, 1993",
-            "Vordiplom, Mathematical Computer Science, Humboldt-Universit\u00E4t zu Berlin, Germany, 1992",
-            "\u00A0"
+            "Vordiplom, Mathematical Computer Science, Humboldt-Universit\u00E4t zu Berlin, Germany, 1992"
         ],
         "courses": [
             "See"
+        ],
+        "publications": [
+            "Stefan Bruckner, Torsten M\u00F6ller,",
+            "Ahmed Saad, Ghassan Hamarneh, Torsten M\u00F6ller,"
         ]
     },
     {
-        "id": 46,
+        "id": 38,
         "professor": "Steven Pearce",
         "position": "Lecturer",
         "schools": [
-            " University of Arizona",
-            " Canada",
-            " University of British Columbia"
+            "University of Arizona",
+            "Canada",
+            "University of British Columbia"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/stevenpearce.html",
         "degrees": [
@@ -1672,16 +1501,13 @@
             "B.Sc. (Honors)"
         ],
         "country": [
-            " United States",
-            " 1984",
-            " Canada"
-        ],
-        "faculty": [
-            
+            "United States",
+            "1984",
+            "Canada"
         ],
         "yearCompleted": [
-            " 1995",
-            " 1981"
+            "1995",
+            "1981"
         ],
         "education": [
             "Ph.D., University of Arizona, United States, 1995",
@@ -1693,16 +1519,19 @@
             "Mathematics (MACM 101, 201, MATH 232, MATH 894)",
             "Physics (390)",
             "Earth Sciences (108)"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 47,
+        "id": 39,
         "professor": "Jian Pei",
         "position": "Professor",
         "schools": [
-            " Simon Fraser University",
-            " Computer Science Jiao Tong University",
-            " Computer Science Shanghai Jiao Tong University"
+            "Simon Fraser University",
+            "Computer Science Jiao Tong University",
+            "Computer Science Shanghai Jiao Tong University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/jianpei.html",
         "degrees": [
@@ -1711,16 +1540,16 @@
             "B.Eng."
         ],
         "country": [
-            " Canada",
-            " China"
+            "Canada",
+            "China"
         ],
         "faculty": [
-            " Computing Science"
+            "Computing Science"
         ],
         "yearCompleted": [
-            " 2002",
-            " 1993",
-            " 1991"
+            "2002",
+            "1993",
+            "1991"
         ],
         "education": [
             "Ph.D., Computing Science, Simon Fraser University, Canada, 2002",
@@ -1731,15 +1560,18 @@
             "CMPT 454 Database Systems 11",
             "CMPT 456 Information Retrieval and Web Search",
             "CMPT 843 Database and Knowledge-base Systems"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 48,
+        "id": 40,
         "professor": "Joseph Peters",
         "position": "Professor",
         "schools": [
-            " University of Toronto",
-            " University of Waterloo"
+            "University of Toronto",
+            "University of Waterloo"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/JosephPeters.html",
         "degrees": [
@@ -1748,36 +1580,45 @@
             "B. Math."
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Computer Science"
+            "Computer Science"
         ],
         "yearCompleted": [
-            " 1984",
-            " 1976",
-            " 1974"
+            "1984",
+            "1976",
+            "1974"
         ],
         "education": [
             "Ph.D., Computer Science, University of Toronto, Canada, 1984",
             "M.Sc., Computer Science, University of Toronto, Canada, 1976",
-            "B. Math., Computer Science, University of Waterloo, Canada, 1974",
-            "\u00A0"
+            "B. Math., Computer Science, University of Waterloo, Canada, 1974"
         ],
         "courses": [
             "CMPT 307 Data Structures and Algorithms",
             "CMPT 371 Data Communications and Networking",
             "CMPT 705 Design and Analysis of Algorithms"
+        ],
+        "publications": [
+            "F. Molazem Tabrizi, J.G.",
+            "M. Hefeeda, C.-H. Hsu, and J. Peters. Energy and bandwidth optimization in mobile video streaming systems. Advanced Video Communications over Wireless Networks, Chapter 6, C. Zhu and Y. Li (Eds.), CRC Press, 2013.",
+            "Optimal Gathering in Radio Grids with Interference.\u00A0 J.-C. Bermond and J.G. Peters.\u00A0 Theoretical Computer Science, 457(2012), 10\u201326.",
+            "Reseaux complexes et epidemies.\u00A0 P.J. Giabbanelli and J.G. Peters.\u00A0 Technique et Science Informatiques, Numero special sur Graphes de Terrain, vol 30:2(2011), 181--212.",
+            "Consensus vs Broadcast in Communciation Networks with Arbitrary Omission Faults.\u00A0 E. Godard and J. Peters.\u00A0 18th International Colloquium on Structural Information and Communication Complexity (SIROCCO 2011), June 2011, Gdansk, LNCS 6796, Springer-Verlag.",
+            "M. Hosseini, J. Peters, and S. Shirmohammadi. Energy-Budget-Compliant Adaptative 3D Texture Streaming in Mobile Games. ACM Multimedia Systems 2013 (MMSys\u201913) - 3D Technology in Multimedia, 2013, Oslo, Norway, 1-11.",
+            "M. Hosseini, A. Fedorova, J. Peters, and S. Shirmohammadi. Energy-Aware Adaptations in Mobile 3D Graphics. ACM Multimedia 2012 (MM\u201912), October 2012, Nara, Japan.",
+            "F. Molazem Tabrizi, C-H. Hsu, M. Hefeeda, J.G. Peters. Optimal Scalable Video Multiplexing in Mobile Broadcast Networks. 3rd ACM Workshop on Mobile Video (MoVid 2010), Oct. 2010, Firenze, 9\u201314."
         ]
     },
     {
-        "id": 49,
+        "id": 41,
         "professor": "Fred Popowich",
         "position": "Professor",
         "schools": [
-            " University of Edinburgh",
-            " Simon Fraser University",
-            " University of Alberta"
+            "University of Edinburgh",
+            "Simon Fraser University",
+            "University of Alberta"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/fredpopowich.html",
         "degrees": [
@@ -1786,16 +1627,13 @@
             "B.Sc. Computing Science"
         ],
         "country": [
-            " Scotland",
-            " Canada"
-        ],
-        "faculty": [
-            
+            "Scotland",
+            "Canada"
         ],
         "yearCompleted": [
-            " 1989",
-            " 1985",
-            " 1982"
+            "1989",
+            "1985",
+            "1982"
         ],
         "education": [
             "Ph.D. Cognitive Science/Artificial Intelligence, University of Edinburgh, Scotland, 1989",
@@ -1806,15 +1644,18 @@
             "CMPT 383 Comparative Programming Languages",
             "CMPT 417 Intelligent Systems",
             "CMPT 825 Natural Language Processing"
+        ],
+        "publications": [
+            "R. Cameron, E. Amiri, K.S. Herdy"
         ]
     },
     {
-        "id": 50,
+        "id": 42,
         "professor": "Janice Regan",
         "position": "Senior Lecturer",
         "schools": [
-            " California Institute of Technology",
-            " University of Victoria"
+            "California Institute of Technology",
+            "University of Victoria"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/janiceregan.html",
         "degrees": [
@@ -1823,22 +1664,18 @@
             "B.Sc. (Honors)"
         ],
         "country": [
-            " United States",
-            " Canada"
-        ],
-        "faculty": [
-            
+            "United States",
+            "Canada"
         ],
         "yearCompleted": [
-            " 1987",
-            " 1982",
-            " 1979"
+            "1987",
+            "1982",
+            "1979"
         ],
         "education": [
             "Ph.D., California Institute of Technology, United States, 1987",
             "M.Sc., California Institute of Technology, United States, 1982",
-            "B.Sc. (Honors), University of Victoria, Canada, 1979",
-            "\u00A0"
+            "B.Sc. (Honors), University of Victoria, Canada, 1979"
         ],
         "courses": [
             "CMPT 128 Introduction to Computing Science and Programming for Engineers",
@@ -1846,15 +1683,18 @@
             "CMPT 300 Operating systems I",
             "CMPT 371 Data Communications and Networking",
             "CMPT 471 Networking II"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 51,
+        "id": 43,
         "professor": "Cenk Sahinalp",
         "position": "Professor",
         "schools": [
-            " College Park",
-            " Bilkent University"
+            "College Park",
+            "Bilkent University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/cenkssahinalp.html",
         "degrees": [
@@ -1862,33 +1702,38 @@
             "B.Sc. Electrical Engineering"
         ],
         "country": [
-            " United States",
-            " Turkey"
+            "United States",
+            "Turkey"
         ],
         "faculty": [
-            " University of Maryland"
+            "University of Maryland"
         ],
         "yearCompleted": [
-            " 1997",
-            " 1991"
+            "1997",
+            "1991"
         ],
         "education": [
             "Ph.D. Computer Science, University of Maryland, College Park, United States, 1997",
-            "B.Sc. Electrical Engineering, Bilkent University, Turkey, 1991",
-            "\u00A0"
+            "B.Sc. Electrical Engineering, Bilkent University, Turkey, 1991"
         ],
         "courses": [
             "CMPT 441 Introduction to Computational Biology",
             "CMPT 711 Bioinformatics Algorithms"
+        ],
+        "publications": [
+            "Alu repeat discovery and characterization within human genomes.",
+            "A map of human genome variation from population-scale sequencing.",
+            "mrsFAST: a cache-oblivious algorithm for short-read mapping.",
+            "Personalized copy number and segmental duplication maps using next-generation sequencing."
         ]
     },
     {
-        "id": 52,
+        "id": 44,
         "professor": "Anoop Sarkar",
         "position": "Associate Professor",
         "schools": [
-            " University of Pennsylvania",
-            " University of Poona"
+            "University of Pennsylvania",
+            "University of Poona"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/anoopsarkar.html",
         "degrees": [
@@ -1896,15 +1741,12 @@
             "B.Eng. Computer Science"
         ],
         "country": [
-            " United States",
-            " India"
-        ],
-        "faculty": [
-            
+            "United States",
+            "India"
         ],
         "yearCompleted": [
-            " 2002",
-            " 1991"
+            "2002",
+            "1991"
         ],
         "education": [
             "Ph.D. Computer Science, University of Pennsylvania, United States, 2002",
@@ -1914,15 +1756,21 @@
             "CMPT 379: Principles of Compiler Design",
             "CMPT 413: Computational Linguistics\u00A0",
             "CMPT 825: Natural Language Processing"
+        ],
+        "publications": [
+            "Combining Morpheme-based Machine Translation with Post-processing Morpheme Prediction. Ann Clifton and Anoop Sarkar. In ACL 2011.",
+            "\u00A0Active Learning for Multilingual Statistical Machine Translation. Gholamreza Haffari and Anoop Sarkar. In ACL-IJCNLP 2009.",
+            "\u00A0Exploration of the LTAG-Spinal Formalism and Treebank for Semantic Role Labeling. Yudong Liu and Anoop Sarkar. In Grammar Engineering Across Frameworks (GEAF 2009), workshop at ACL-IJCNLP 2009.",
+            "\u00A0Semi-supervised model adaptation for statistical machine translation. Nicola Ueffing, Gholamreza Haffari and Anoop Sarkar. In Machine Translation, DOI 10.1007/s10590-008-9036-3, Springer. 2008."
         ]
     },
     {
-        "id": 53,
+        "id": 45,
         "professor": "Oliver Schulte",
         "position": "Associate Professor",
         "schools": [
-            " Carnegie Mellon University",
-            " University of Toronto"
+            "Carnegie Mellon University",
+            "University of Toronto"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/oliverschulte.html",
         "degrees": [
@@ -1931,36 +1779,39 @@
             "B.Sc. Computing Science"
         ],
         "country": [
-            " USA",
-            " Canada"
-        ],
-        "faculty": [
-            
+            "USA",
+            "Canada"
         ],
         "yearCompleted": [
-            " 1997",
-            " 1993",
-            " 1992"
+            "1997",
+            "1993",
+            "1992"
         ],
         "education": [
             "Ph.D. Logic and Computation, Carnegie Mellon University, USA, 1997",
             "M.Sc. Logic and Computation, Carnegie Mellon University, USA, 1993",
-            "B.Sc. Computing Science, University of Toronto, Canada, 1992",
-            "\u00A0"
+            "B.Sc. Computing Science, University of Toronto, Canada, 1992"
         ],
         "courses": [
             "CMPT320 Social Implications of a Computerized Society",
             "CMPT 354 Introduction to Database Management",
             "CMPT 726 Machine Learning"
+        ],
+        "publications": [
+            "A tractable pseudo-likelihood function for Bayes Nets Applied to Relational Data. SIAM Conference on Data Mining, 2011.",
+            "Structure Learning for Markov Logic Networks with Many Descriptive Attributes.",
+            "The Imap Hybrid Method for Learning Gaussian Bayes Nets.",
+            "Simultaneous Discovery of Conservation Laws and Hidden Particles With Smith Matrix Decomposition",
+            "Mind-change optimal learning of Bayes net structure from dependency and independency data. Schulte, O., W. Luo, and R. Greiner (2010). Information and Computation, 208:63-82."
         ]
     },
     {
-        "id": 54,
+        "id": 46,
         "professor": "Thomas Shermer",
         "position": "Professor",
         "schools": [
-            " Johns Hopkins University",
-            " McGill University"
+            "Johns Hopkins University",
+            "McGill University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/thomasshermer.html",
         "degrees": [
@@ -1968,15 +1819,12 @@
             "Ph.D. Computer Science"
         ],
         "country": [
-            " United States",
-            " Canada"
-        ],
-        "faculty": [
-            
+            "United States",
+            "Canada"
         ],
         "yearCompleted": [
-            " 1984",
-            " 1989"
+            "1984",
+            "1989"
         ],
         "education": [
             "B.E.S. Electrical Engineering and Computer Science, Johns Hopkins University, United States, 1984",
@@ -1986,10 +1834,15 @@
             "CMPT 373 Software Development Methods",
             "CMPT 379 Compiler Design",
             "MACM 101 Discrete Mathematics"
+        ],
+        "publications": [
+            "Parallel Scanning with Bitstream Addition: An XML Case Study,\u00A0 Cameron, R., Amiri, E., Herdy, K, Lin, D. , Shermer, T., and Popowich, F. , Proceedings Euro-Par 2011, LNCS 6853, Part II, 2-13, Springer-Verlag, 2011.",
+            "Nonadaptive Broadcasting in Trees, Harutyunyan, H., Liestman, A., Makino, K., and Shermer, T.,",
+            "Edge-disjoint Spanners in Tori, Liestman, A., Shermer, T., and Stacho, L.,"
         ]
     },
     {
-        "id": 55,
+        "id": 47,
         "professor": "Arrvindh Shriraman",
         "position": "Assistant Professor",
         "schools": [
@@ -2002,29 +1855,31 @@
         "country": [
             
         ],
-        "faculty": [
-            
-        ],
         "yearCompleted": [
             
         ],
         "education": [
-            "\u00A0"
+            
         ],
         "courses": [
             "CMPT 479 Special Topics in Computing Systems",
             "CMPT 885 Future Multicore Systems and their Software (offered in summer)"
+        ],
+        "publications": [
+            "SPACE : Sharing Pattern based Directory Coherence for Multicore Scalability.PACT 2010",
+            "Sentry: An Auxiliary Memory Access Control, ISCA 2010",
+            "An Integrated Hardware-Software Approach to Flexible Transactional Memory, ISCA 2007"
         ]
     },
     {
-        "id": 56,
+        "id": 48,
         "professor": "Tamara Smyth",
         "position": "Assistant Professor",
         "schools": [
-            " Stanford University",
-            " Electrical Engineering Stanford",
-            " New York University",
-            " McGill University"
+            "Stanford University",
+            "Electrical Engineering Stanford",
+            "New York University",
+            "McGill University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/tamarasmyth.html",
         "degrees": [
@@ -2034,38 +1889,41 @@
             "B.Mus."
         ],
         "country": [
-            " United States",
-            " Canada"
+            "United States",
+            "Canada"
         ],
         "faculty": [
             "\u00A0 Computer-Based Theory and Acoustics",
-            " Music Technology",
-            " Piano Performance and Computer Applications to Music (Joint Honors)"
+            "Music Technology",
+            "Piano Performance and Computer Applications to Music (Joint Honors)"
         ],
         "yearCompleted": [
-            " 2004",
-            " 1998",
-            " 1996"
+            "2004",
+            "1998",
+            "1996"
         ],
         "education": [
             "Ph.D.,\u00A0 Computer-Based Theory and Acoustics, Stanford University, United States, 2004",
             "Ph.D. Minor, Electrical Engineering Stanford, United States, 2004",
             "M.Mus., Music Technology, New York University, United States, 1998",
-            "B.Mus., Piano Performance and Computer Applications to Music (Joint Honors), McGill University, Canada, 1996",
-            "\u00A0"
+            "B.Mus., Piano Performance and Computer Applications to Music (Joint Honors), McGill University, Canada, 1996"
         ],
         "courses": [
             "CMPT 125 Introduction to Computing Science and Programming II",
             "CMPT 468/768 Computer Music Theory and Sound Synthesis",
             "CMPT 889 Computational Acoustic Modeling"
+        ],
+        "publications": [
+            "Tamara Smyth and Frederick S. Scott, Trombone Synthesis by Model and Measurement, EURASIP Journal on Advances in Signal Processing, vol. 2011, Article ID 151436, 13 pages, 2011. doi:10.1155/2011/151436.",
+            "Tamara Smyth and Jonathan Abel, ``Estimating waveguide model elements from acoustic tube measurements,\u201D"
         ]
     },
     {
-        "id": 57,
+        "id": 49,
         "professor": "Gabor Tardos",
         "position": "Professor",
         "schools": [
-            " Eotvos University"
+            "Eotvos University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/gabortardos.html",
         "degrees": [
@@ -2073,33 +1931,35 @@
             "Diploma in Mathematics"
         ],
         "country": [
-            " Hungary"
-        ],
-        "faculty": [
-            
+            "Hungary"
         ],
         "yearCompleted": [
-            " 1988",
-            " 1987"
+            "1988",
+            "1987"
         ],
         "education": [
             "Ph.D. Mathematics, Eotvos University, Hungary, 1988",
-            "Diploma in Mathematics, Eotvos University, Hungary, 1987",
-            "\u00A0"
+            "Diploma in Mathematics, Eotvos University, Hungary, 1987"
         ],
         "courses": [
             "CMPT 307 Data Structures and Algorithms",
             "CMPT 407 - CMPT 710 Computational Complexity \u2013 cross-listed",
             "CMPT 710 Computational Complexity"
+        ],
+        "publications": [
+            "J. Pach, G. Tardos,",
+            "H. Johwari, M. Saglam, G. Tardos,",
+            "R. Moser, G. Tardos,",
+            "E. Amiri, G. Tardos,"
         ]
     },
     {
-        "id": 58,
+        "id": 50,
         "professor": "Eugenia Ternovska",
         "position": "Associate Professor",
         "schools": [
-            " University of Toronto",
-            " Moscow State University"
+            "University of Toronto",
+            "Moscow State University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/EugeniaTernovska.html",
         "degrees": [
@@ -2107,32 +1967,31 @@
             "Diploma (Hons.) Applied Mathematics"
         ],
         "country": [
-            " Canada",
-            " 1989"
-        ],
-        "faculty": [
-            
+            "Canada",
+            "1989"
         ],
         "yearCompleted": [
-            " 2002"
+            "2002"
         ],
         "education": [
             "Ph.D. Computer Science, University of Toronto, Canada, 2002",
-            "Diploma (Hons.) Applied Mathematics, Moscow State University, 1989",
-            "\u00A0"
+            "Diploma (Hons.) Applied Mathematics, Moscow State University, 1989"
         ],
         "courses": [
             "CMPT 477/777 Formal Verification",
             "MACM 101 Discrete Mathematics"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 59,
+        "id": 51,
         "professor": "Richard Vaughan",
         "position": "Associate Professor",
         "schools": [
-            " University of Oxford",
-            " University of Sussex"
+            "University of Oxford",
+            "University of Sussex"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/richardvaughan.html",
         "degrees": [
@@ -2140,20 +1999,19 @@
             "B.A."
         ],
         "country": [
-            " England"
+            "England"
         ],
         "faculty": [
-            " Computation",
-            " Computing with Artificial Intelligence"
+            "Computation",
+            "Computing with Artificial Intelligence"
         ],
         "yearCompleted": [
-            " 1998",
-            " 1993"
+            "1998",
+            "1993"
         ],
         "education": [
             "D. Phil., Computation, University of Oxford, England, 1998",
-            "B.A., Computing with Artificial Intelligence, University of Sussex, England, 1993",
-            "\u00A0"
+            "B.A., Computing with Artificial Intelligence, University of Sussex, England, 1993"
         ],
         "courses": [
             "CMPT 128\u00A0 Introduction to Computing Science for Engineers",
@@ -2162,14 +2020,17 @@
             "CMPT 415\u00A0 Directed Study: Autonomous Robots",
             "CMPT 431\u00A0 Distributed Systems",
             "CMPT 889\u00A0 Special topics in interdisciplinary computing science: Autonomous Robots"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 60,
+        "id": 52,
         "professor": "Ke Wang",
         "position": "Professor",
         "schools": [
-            " Georgia Institute of Technology"
+            "Georgia Institute of Technology"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/kewang.html",
         "degrees": [
@@ -2177,36 +2038,38 @@
             "M.Sc."
         ],
         "country": [
-            " United States"
-        ],
-        "faculty": [
-            
+            "United States"
         ],
         "yearCompleted": [
-            " 1986",
-            " 1984"
+            "1986",
+            "1984"
         ],
         "education": [
             "Ph.D., Georgia Institute of Technology, United States, 1986",
-            "M.Sc., Georgia Institute of Technology, United States, 1984",
-            "\u00A0"
+            "M.Sc., Georgia Institute of Technology, United States, 1984"
         ],
         "courses": [
             "CMPT 354 Database Systems I",
             "CMPT 454 Database Systems II",
             "CMPT 741 Introduction to Data Mining",
             "CMPT 884 Special topics in Database Systems"
+        ],
+        "publications": [
+            "Chaytor, R., Wang, K.",
+            "B. Fung, K. Wang, R. Chen, P. Yu.",
+            "R. She, J. Chu, K. Wang, J. Pei, J. Chen.",
+            "B. Fung, K. Wang and P. Yu."
         ]
     },
     {
-        "id": 61,
+        "id": 53,
         "professor": "Kay Wiese",
         "position": "Associate Professor",
         "schools": [
-            " Canadian Genetic Diseases Network",
-            " University of Regina",
-            " Department of Computer of Science Universitat des Saarlandes",
-            " Department of Mathematics"
+            "Canadian Genetic Diseases Network",
+            "University of Regina",
+            "Department of Computer of Science Universitat des Saarlandes",
+            "Department of Mathematics"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/kaywiese.html",
         "degrees": [
@@ -2216,19 +2079,19 @@
             "B.Math"
         ],
         "country": [
-            " Canada",
-            " Germany",
-            " Universitat des Saarlandes"
+            "Canada",
+            "Germany",
+            "Universitat des Saarlandes"
         ],
         "faculty": [
-            " Computer Science"
+            "Computer Science"
         ],
         "yearCompleted": [
-            " 2001",
-            " 1999",
-            " 1995",
-            " 1991",
-            " Germany 1991"
+            "2001",
+            "1999",
+            "1995",
+            "1991",
+            "Germany 1991"
         ],
         "education": [
             "Certificate in Bioinformatics, Canadian Genetic Diseases Network, Canada, 2001",
@@ -2241,15 +2104,22 @@
             "CMPT 441 Computational Biology",
             "CMPT 711 Bioinformatics Algorithms",
             "MACM 101 Discrete Mathematics"
+        ],
+        "publications": [
+            "Scott F. Smith and Wiese, Kay C. (2008), \u201CIntegrating Thermodynamic and Observed-Frequency Data for Non-coding RNA Gene Search\u201D, Springer Transactions on Computational Systems Biology, Vol. 10, pp. 124-142.",
+            "Tsang, Herbert and Wiese, Kay C. (2008). \u201CSARNA-Predict - RNA Secondary Structure Prediction Using Permutation-based Simulated Annealing\u201D, IEEE/ACM Transactions on Computational Biology and Bioinformatics, published on-line September 2008, (ISI Impact Factor: 1.803 (2007)). Print publication Vol. 7 (4), October 2010, pp. 727-740.",
+            "Wiese, Kay C., Desch\u00EAnes, Alain, and Hendriks, Andrew (2008). \u201CRnaPredict - An Evolutionary Algorithm for RNA Secondary Structure Prediction\u201D, IEEE/ACM Transactions on Computational Biology and Bioinformatics, Vol. 5(1), pp. 25-41, (ISI Impact Factor: 1.803 (2007), Featured Article of Vol. 5 (1)).",
+            "Wiese, Kay C. and Hendriks, Andrew (2006). \u201CComparison of P-RnaPredict and Mfold \u2013 Algorithms for RNA Secondary Structure Prediction\u201D, Bioinformatics Vol. 22 (8), pp. 934-942 (Acceptance Rate: ~20%, ISI Impact Factor: 5.742 (2004), 6.019 (2005)).",
+            "Wiese, Kay C., Glen, Edward. and Vasudevan, Anna (2005). jViz.Rna - A Java Tool for RNA Secondary Structure Visualization, IEEE Transactions on NanoBioscience, Vol. 4(3), pp. 212-218, (Acceptance Rate: ~29%, ISI Impact Factor: 1.392 (2005))."
         ]
     },
     {
-        "id": 62,
+        "id": 54,
         "professor": "Cynthia Xie",
         "position": "Lecturer",
         "schools": [
-            " University of Jyvaskyla",
-            " East China Normal University"
+            "University of Jyvaskyla",
+            "East China Normal University"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/cynthiaxie.html",
         "degrees": [
@@ -2257,35 +2127,37 @@
             "B.A."
         ],
         "country": [
-            " Finland",
-            " China"
+            "Finland",
+            "China"
         ],
         "faculty": [
-            " Applied Linguistics",
-            " Teaching Chinese as a Foreign Language"
+            "Applied Linguistics",
+            "Teaching Chinese as a Foreign Language"
         ],
         "yearCompleted": [
-            " 2000",
-            " 1992"
+            "2000",
+            "1992"
         ],
         "education": [
             "M.A., Applied Linguistics, University of Jyvaskyla, Finland, 2000",
-            "B.A., Teaching Chinese as a Foreign Language, East China Normal University, China, 1992",
-            "\u00A0"
+            "B.A., Teaching Chinese as a Foreign Language, East China Normal University, China, 1992"
         ],
         "courses": [
             "CHIN 180, CHIN 181, CHIN 280 and CHIN 281: Intensive Mandarin Chinese for Beginners",
             "CHIN 190, CHIN 191, CHIN 290 and CHIN 291: Heritage Mandarin Chinese",
             "CHIN 390: Advanced Chinese Reading: Technical Chinese"
+        ],
+        "publications": [
+            
         ]
     },
     {
-        "id": 63,
+        "id": 55,
         "professor": "Richard Zhang",
         "position": "Associate Professor",
         "schools": [
-            " University of Toronto",
-            " University of Waterloo"
+            "University of Toronto",
+            "University of Waterloo"
         ],
         "website": "http://www.cs.sfu.ca/people/faculty/richardzhang.html",
         "degrees": [
@@ -2294,27 +2166,33 @@
             "B.Math."
         ],
         "country": [
-            " Canada"
+            "Canada"
         ],
         "faculty": [
-            " Computer Science",
-            " Faculty of Mathematics"
+            "Computer Science",
+            "Faculty of Mathematics"
         ],
         "yearCompleted": [
-            " 2003",
-            " 1997",
-            " 1995"
+            "2003",
+            "1997",
+            "1995"
         ],
         "education": [
             "Ph.D., Computer Science, University of Toronto, Canada, 2003",
             "M.Math., Computer Science, University of Waterloo, Canada, 1997",
-            "B.Math., Faculty of Mathematics, University of Waterloo, Canada, 1995",
-            "\u00A0"
+            "B.Math., Faculty of Mathematics, University of Waterloo, Canada, 1995"
         ],
         "courses": [
             "CMPT 464/764 Geometric modeling in computer graphics",
             "CMPT 466 Computer animation",
             "CMPT 361 Introduction to computer graphics"
+        ],
+        "publications": [
+            "Kai Xu",
+            "Oliver van Kaick",
+            "Kai Xu",
+            "Kai Xu",
+            "Andrea Tagliasacchi"
         ]
     }
 ]

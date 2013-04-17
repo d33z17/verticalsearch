@@ -130,7 +130,7 @@
        "content_type": From the HTTP headers of incoming stream
        "resourcename": From SolrCell request param resource.name
    -->
-
+   <field name="publications" type="text_general" indexed="true" stored="true" multiValued="true"/>
    <field name="university" type="text_general" indexed="true" stored="true"/>
    <field name="uniLink" type="text_general" indexed="true" stored="true"/>
    
