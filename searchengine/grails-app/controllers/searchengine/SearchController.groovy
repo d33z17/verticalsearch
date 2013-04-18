@@ -8,9 +8,10 @@ class SearchController {
 	def uQ
 	def response
 	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
-	def allResults = []		// collection for concatenation of all prof maps
-	def startPageNum = 0	// for multipage
-	
+	def allResults = []			// collection for concatenation of all prof maps
+	def startPageNum = 0		// for multipage
+ 	def currentPageNum = 0	// for multipage
+
 	/* Main */
 	def index() {
 	}
@@ -42,7 +43,7 @@ class SearchController {
 		if (doclist.getNumFound() == 0)
 			render "Sorry, I could not find any matches for <b>$uQ</b><br /><br />"
 	  else {
-      render "Results found: ${doclist.getNumFound()}<br />"
+      render "Results found: ${doclist.getNumFound()} ---- Page # $currentPageNum<br />"
 		}
 
 		/* Loop every result doc in main results */		
@@ -166,52 +167,45 @@ class SearchController {
 		
 		/* Multi-Paging */
 	  def currentPage = request.getForwardURI()
-    render request.requestURI
     multiPage(doclist.getNumFound(), currentPage)
 		
 	} // end mainQuery
 	
-	/* multi pages */
-  def multiPage(numPages, currentURI){
+    /* multi pages */
+    def multiPage(numPages, currentURI){
 
-      def l = currentURI.split("/")
+        def filteredURI = []
+        def l = currentURI.split("/")
 
-      render "<br/>$l<br />"
+        //remove the last element
+        int i = 0
+        l.each{
+           if(i != l.size()-1)
+               filteredURI.add(it)
+            i+= 1
+        }
 
-      int pages = getPages(numPages)
-      def queryString = uQ.replaceAll(" ","%20")
-      render "$currentURI<link rel='stylesheet' href='/searchengine/static/css/search.css' type='text/css'><center><div class='rpage'>"
+        currentURI = filteredURI.join('/')
 
-      def prevlink = "${currentURI}page?q=${queryString};p=-1"
-      render "<a href=$prevlink style='text-decoration:none'>  prev  <a/>"
-      if (pages > 1) {
-          (1..pages).each {
-              def link = "${currentURI}page?q=${queryString};p=$it"
-              render "<a href=$link style='text-decoration:none'>  $it  <a/>"
-          }
-      }
-      def nextlink = "${currentURI}page?q=${queryString};p=+1"
-      render "<a href=$nextlink style='text-decoration:none'>  next  <a/></div></center>"
-  }
+        int pages = getPages(numPages)
+        def queryString = uQ.replaceAll(" ","%20")
 
-  def page() {
-      def request = request.getQueryString().split(";")
-      def query = request[0].split('=')
-      def page = request[1].split('=')
-      int num = page[1] as int
-      startPageNum = ((num-1)*10)
-      uQ = query[1].replaceAll("%20"," ")
-      mainQuery()
-  }
+        render "<link rel='stylesheet' href='/searchengine/static/css/search.css' type='text/css'>"
 
-  //HELPER FUNCTION TO DETERMINE HOW RESULT PAGES
-  private getPages(pages) {
-      int numPages = pages/10
-      if(pages%10 > 0)
-          numPages += 1
-      return numPages
-  }
-	
+        render "<center>"
+        render "<div class=rpage>"
+
+        if(pages > 1){
+            (1..pages).each{
+                def link = "${currentURI}/page?q=${queryString};p=$it;c=$startPageNum"
+                render "<a href=$link style='text-decoration:none'>  $it  <a/>"
+            }
+        }
+
+        render "</div>"
+        render "</center>"
+    }
+
 	/* Setter for simple string values */
 	def setData(a) {
 		def b
@@ -337,4 +331,27 @@ class SearchController {
 		}
 		render "<br />"
 	}
+
+  def page(){
+    def request = request.getQueryString().split(";")
+    def query = request[0].split('=')
+    def page = request[1].split('=')
+    def incomingPage = request[2].split('=')
+    int num = page[1] as int
+
+
+    currentPageNum = num
+    startPageNum = ((num-1)*10)
+    uQ = query[1].replaceAll("%20"," ")
+    mainQuery()
+  }
+
+  //HELPER FUNCTION TO DETERMINE HOW RESULT PAGES
+  private getPages(pages){
+      int numPages = pages/10
+      if(pages%10 > 0)
+          numPages += 1
+      return numPages
+  }
+	
 }
