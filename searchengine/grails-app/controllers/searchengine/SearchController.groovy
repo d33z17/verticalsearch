@@ -10,7 +10,7 @@ class SearchController {
 	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
 	def allResults = []			// collection for concatenation of all prof maps
 	def startPageNum = 0		// for multipage
- 	def currentPageNum = 0	// for multipage
+ 	def currentPageNum = 1	// for multipage
 
 	/* Main */
 	def index() {
@@ -21,8 +21,11 @@ class SearchController {
 		
 		/* Local Variables */
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
+
+		//if uQ is specified means its a subquery
 		if (!uQ)
 			uQ = params.address				// user query input value from gsp
+
 		solrparams.setQuery(uQ)
 		solrparams.set("qf","""
 										professor
@@ -41,9 +44,9 @@ class SearchController {
 		
 		/* Unsuccessful search */
 		if (doclist.getNumFound() == 0)
-			render "Sorry, I could not find any matches for <b>$uQ</b><br /><br />"
+			render "<br />Sorry, I could not find any matches for <b>$uQ</b><br /><br />"
 	  else {
-      render "Results found: ${doclist.getNumFound()} ---- Page # $currentPageNum<br />"
+      render "<br />Results found: ${doclist.getNumFound()} ---- Page # $currentPageNum<br /><br />"
 		}
 
 		/* Loop every result doc in main results */		
@@ -189,7 +192,9 @@ class SearchController {
 
         int pages = getPages(numPages)
         def queryString = uQ.replaceAll(" ","%20")
-				
+
+        render "<br/>"
+        render "<br/>"
         render "<link rel='stylesheet' href='/searchengine/static/css/search.css' type='text/css'>"
 
         render "<center>"
@@ -204,6 +209,8 @@ class SearchController {
 
         render "</div>"
         render "</center>"
+        render "<br/>"
+        render "<br/>"
     }
 
 	/* Setter for simple string values */
@@ -380,23 +387,59 @@ class SearchController {
 		render "<br />"
 	}
 
-  def page(){
-    def request = request.getQueryString().split(";")
-    def query = request[0].split('=')
-    def page = request[1].split('=')
-    def incomingPage = request[2].split('=')
-    int num = page[1] as int
+    def page(){
+        def r = request.getQueryString().split(";")
+        int num = -1
+        def query = r[0].split('=')
+        if (r.size() > 1)               //check if 2nd argument is specified
+        {
+            def page = r[1].split('=')
+            num = page[1] as int
+            currentPageNum = num
+        }
 
-    currentPageNum = num
-    startPageNum = ((num-1)*10)
-    uQ = query[1].replaceAll("%20"," ")
+        if(num != -1)
+            startPageNum = ((num-1)*10)
+        else
+            startPageNum = 0
+        uQ = query[1].replaceAll("%20"," ")
 
-		render "<div class='wrapper'><div class='content'><g:render template='nav' />"
 
-    mainQuery()
+        /* ghetto rendering of the next few pages */
 
-		render"<tmpl:/footer /></div></div>"
-  }
+        render "<title>Prestige query :: $uQ</title> "
+        render "<link rel=\"shortcut icon\" href=\"images/favicon.ico\" >"
+
+        render "<div class='wrapper'>"
+        render "<div class='content'>"
+        render "<div class='nav'>"
+          render "<a href='/searchengine/search/index'>Prestige :: Engine</a> |"
+	      render "<a href='https://docs.google.com/document/d/1bfjZXHmQLMC_q7rIz6f-X6kbokwQAy1HjQPIxf53K8g/edit?usp=sharing' target='_blank'>Documentation</a> |"
+          render "<a href='/searchengine/about/index'>About the Team</a> |"
+	      render "<a href='/searchengine/ranking/index'>University Ranking</a> |"
+          render "<a href='/searchengine/sample/index'>Query Examples</a>"
+        render "</div>"
+
+        /*  query box */
+        render "<br/>"
+        render "<br/>"
+        render "<form name='input' action='subquery' method='post'>"
+        render "<input type='text' name='newQuery' value='$uQ' >"
+        render "<input type='submit' value='Tarot'>"
+        render "</form>"
+
+        render "<div id='results'>"
+            mainQuery()
+        render "</div>"
+        render "</div>"
+
+    }
+
+    /* action for the querybox in 'page' results */
+    def subquery(){
+        def r = request.getParameter('newQuery')
+        redirect(uri:"/search/page?q=$r")
+    }
 
   //HELPER FUNCTION TO DETERMINE HOW RESULT PAGES
   private getPages(pages){

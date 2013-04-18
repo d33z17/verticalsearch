@@ -16,7 +16,7 @@
 			// enable 'enter' key to invoke search
 			$("#address").keypress(function(e){
 				if (e.which == 13){
-					//codeAddress()
+					codeAddress()
 				}
 			})
 			
@@ -24,12 +24,7 @@
 			$('input[value="Clear All"]').click(function(){
 				$("#address").val("")
 			})
-			
-			$('ul').on('click', 'li', function() {
-			    alert( $(this).text() )
-			})
-			
-		})
+
 	</script>
 		
 	<div id="querybox">
@@ -40,16 +35,16 @@
 		</div>
 		
 		<%-- ajax form to send query to searchcontroller.myquery --%>
-		<g:formRemote name="myForm" update="results" url="[controller:'Search', action:'mainQuery']">		
+		<g:formRemote name="myForm" update="results" url="[controller:'Search', action:'mainQuery']" after="codeAddress()">		
 
 			<%-- search field --%>
 			<g:textField name="address" placeholder="start here" />
 
 			<%-- submit query to map --%>
-			<g:actionSubmit value="BAM!" />
+			<g:actionSubmit value="Tarot" />
 				
 			<%-- clear map markers --%>
-			<%--<g:actionSubmit value="Clear All" onclick="deleteMarkers()" />--%>
+			<g:actionSubmit value="Clear All" onclick="deleteMarkers()" />
 			
 		</g:formRemote>
 					
