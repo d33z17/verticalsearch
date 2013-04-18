@@ -171,7 +171,7 @@ class SearchController {
 		/* Multi-Paging */
 	  def currentPage = request.getForwardURI()
     multiPage(doclist.getNumFound(), currentPage)
-		
+			
 	} // end mainQuery
 	
     /* multi pages */
@@ -375,12 +375,18 @@ class SearchController {
 				render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }} attended:</span>"
 				if (f.ranks) {
 					f.school.eachWithIndex {g, i ->
-						render "<span class='indent'><a href='${f.slink[i]}' target='_blank'>$g</a>, with a world ranking of: ${f.ranks[i]}</span>"
+						render "<span class='indent'><a href='${f.slink[i]}' target='_blank' class='school'>$g</a>, with a world ranking of: ${f.ranks[i]}</span>"
 					}
 				}
-				if (f.prank) {
-					render "<span class='prestige'>${f.name.takeWhile{ it != ' ' }}'s world prestige is: <em>$f.prank</em></span>"
+			}
+			if (f.education) {
+				render "<span class='smindent'>${f.name.takeWhile{ it != ' ' }} holds the following credentials:</span>"
+				f.education.each {
+					render "<span class='indent'>$it</span>"
 				}
+			}
+			if (f.prank) {
+				render "<span class='prestige'>${f.name.takeWhile{ it != ' ' }}'s world prestige is: <em>$f.prank</em></span>"
 			}
 			render "<br />"
 		}
