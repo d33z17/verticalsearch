@@ -51,9 +51,11 @@
 					
 	</div>
 	
+	<div>HERE: ${res}</div>
+		
 	<%-- populate div with query results --%>
 	<div id="results"></div>
-	
+					
 	<%-- interactive map --%>
 	<div id="map-canvas"></div>
 

@@ -8,6 +8,7 @@ class SearchController {
 	def uQ
 	def response
 	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
+	def allResults = []		// collection for concatenation of all prof maps
 	
 	/* Main */
 	def index() {
@@ -37,8 +38,6 @@ class SearchController {
 		/* Unsuccessful search */
 		if (doclist.getNumFound() == 0)
 			render "Sorry, I could not find any matches for " + uQ + "<br /><br />"
-
-		def allResults = []		// collection for concatenation of all prof maps
 
 		/* Loop every result doc in main results */		
 		for (org.apache.solr.common.SolrDocument doc : doclist) {
@@ -238,8 +237,7 @@ class SearchController {
 							def oName = ko.takeWhile{ it != "0"}
 
 	//						cmap.putAt(vu,uName + ', ' + oName)
-	//						render "$cmap <br /><br />"
-						
+	//						render "$cmap <br /><br />"						
 	//						render "${cmap.groupBy{ it.key.replaceAll('\\W',' ') }}"
 
 							render "<span class='smindent'>$uName and $oName both teach ${vu.replaceAll('\\W',' ')}</span>"

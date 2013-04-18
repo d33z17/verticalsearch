@@ -33,7 +33,7 @@ va, virginia
 inst, institute
 sfu, simon fraser
 ubc, british columbia
-cmpt, computer science
+cs, cmpt, computer science
 comp, computer
 sci, science
 I, 1
