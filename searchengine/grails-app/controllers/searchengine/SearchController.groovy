@@ -42,7 +42,7 @@ class SearchController {
 		if (doclist.getNumFound() == 0)
 			render "Sorry, I could not find any matches for <b>$uQ</b><br /><br />"
 	  else {
-      render "Results found ${doclist.getNumFound()} <br /><br />"
+      render "Results found: ${doclist.getNumFound()}<br />"
 		}
 
 		/* Loop every result doc in main results */		

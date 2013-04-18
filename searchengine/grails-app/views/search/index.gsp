@@ -31,7 +31,7 @@
 	<div id="querybox">
 		
 		<div class="header">
-			<h1 id="bigTitle">Prestige</h1>
+			<h1 id="bigTitle">Prestigious</h1>
 			<h3 id="subTitle">sfu professor ranklist.</h3>
 		</div>
 		
@@ -51,8 +51,6 @@
 					
 	</div>
 	
-	<div>HERE: ${res}</div>
-
 	<%-- populate div with query results --%>
 	<div id="results"></div>
 	
