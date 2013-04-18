@@ -189,11 +189,11 @@ class SearchController {
 
         int pages = getPages(numPages)
         def queryString = uQ.replaceAll(" ","%20")
-
+				
         render "<link rel='stylesheet' href='/searchengine/static/css/search.css' type='text/css'>"
 
         render "<center>"
-        render "<div class=rpage>"
+        render "<div class='rpage'>"
 
         if(pages > 1){
             (1..pages).each{
@@ -239,24 +239,21 @@ class SearchController {
 		def p 							// prof name
 		def cid 						// course id
 		def map = [:]				// prof label : course ids
+		def map2 = [:]			// prof label : school name
 				
-		/* MAP Prof Name : Course Ids */		
+		/* MAP Prof Name : Course Ids; Prof Name : School Name */		
 		e.eachWithIndex { v1, i1 -> 
 			def r																// prof + course id as key
-			p = "$v1.name"											// prof name
-			
-			if (v1.course) {
-				v1.course.eachWithIndex { v2, i2 -> r = "$p" + 0 + "$i1$i2"
-					cid = "${v2.tokenize().take(2)}"	// transform course label to course id				
-					map.putAt(r,cid)									// map each prof key with course ids
-				}
-			}			
+			def s																// prof + school as key
+			p = "$v1.name"											// prof name			
+			tokMapper(p, cid, map, r, v1.course, i1)	// make maps of prof name : course id
+			strMapper(p, map2, s, v1.school, i1)			// make maps of prof name : school name
 		}
 		
 		if (flag == 2)
-			render "<div class='cell'><h3>Matching Relationships</h3>"
+			render "<div class='cell'><ul><li><h3>Matching Relationships</h3><ul>"
 	
-		/* Iterate Current and Complement Maps */			
+		/* Iterate Current and Complement Maps */
 		def count = 0
 		def cmap = [:]
 		e.each {
@@ -286,17 +283,68 @@ class SearchController {
 	//						render "$cmap <br /><br />"						
 	//						render "${cmap.groupBy{ it.key.replaceAll('\\W',' ') }}"
 
-							render "<span class='smindent'>$uName and $oName both teach ${vu.replaceAll('\\W',' ')}</span>"
+							render "<li>$uName and $oName both teach ${vu.replaceAll('\\W',' ')}</li>"
 						}	// end if					
 					}	// end.complement.each
 				}	// end.current.each
 			} // end if it.course
+		}	// end e.each
+		count = 0
+		cmap = [:]
+		e.each {
+			if (it.school) {
+				def position = count
+				count += it.school.size()
+
+				def current = map2.take(count)									
+				def complement = map2.take(position) << map2.drop(count)
+
+				if (position > 0) {
+					current = current.drop(position)
+					complement = complement.drop(position)
+				}
+
+				current.each { ku, vu ->
+					complement.each{ ko, vo ->
+						if ((vu == vo) && (flag == 0)) {
+							flag = 1											// first iteration to draw div in main loop
+						}
+
+						if ((vu == vo) && (flag == 2)) {
+							def uName = ku.takeWhile{ it != "0"}
+							def oName = ko.takeWhile{ it != "0"}
+
+	//						cmap.putAt(vu,uName + ', ' + oName)
+	//						render "$cmap <br /><br />"						
+	//						render "${cmap.groupBy{ it.key.replaceAll('\\W',' ') }}"
+
+							render "<li>$uName and $oName both attended ${vu.replaceAll('\\W',' ')}</li>"
+						}	// end if					
+					}	// end.complement.each
+				}	// end.current.each
+			} // end if it.school
 		}	// end e.each		
-		
 		if (flag == 2)
-			render "</div>"
+			render "</ul></li></ul></div>"
 		if (flag == 1)
 			return flag
+	}
+	
+	private tokMapper(prof, eid, emap, ckey, v, i) {
+		if (v) {
+			v.eachWithIndex { v2, i2 -> ckey = "$prof" + 0 + "$i$i2"
+				eid = "${v2.tokenize().take(2)}"		// truncate label to id				
+				emap.putAt(ckey,eid)								// map each prof key with token ids
+			}
+		}
+	}
+	
+	private strMapper(prof, emap, ckey, v, i) {
+		if (v) {
+			v.eachWithIndex { v2, i2 -> ckey = "$prof" + 0 + "$i$i2"
+				emap.putAt(ckey,v2)						// map each prof key with str element
+			}
+		}
 	}
 	
 	/* to View */
@@ -339,11 +387,15 @@ class SearchController {
     def incomingPage = request[2].split('=')
     int num = page[1] as int
 
-
     currentPageNum = num
     startPageNum = ((num-1)*10)
     uQ = query[1].replaceAll("%20"," ")
+
+		render "<div class='wrapper'><div class='content'><g:render template='nav' />"
+
     mainQuery()
+
+		render"<tmpl:/footer /></div></div>"
   }
 
   //HELPER FUNCTION TO DETERMINE HOW RESULT PAGES

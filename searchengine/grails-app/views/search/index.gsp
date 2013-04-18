@@ -25,6 +25,10 @@
 				$("#address").val("")
 			})
 			
+			$('ul').on('click', 'li', function() {
+			    alert( $(this).text() )
+			})
+			
 		})
 	</script>
 		
@@ -50,7 +54,7 @@
 		</g:formRemote>
 					
 	</div>
-	
+		
 	<%-- populate div with query results --%>
 	<div id="results"></div>
 	

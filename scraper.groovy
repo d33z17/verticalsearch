@@ -449,9 +449,9 @@ def filterPeopleOnly(links){
 //MAIN LOOP
 def getProfData(){
 	
-	// def facultyAddr = ["http://www.cs.sfu.ca/people/emeriti.html", "http://www.cs.sfu.ca/people/faculty.html"]
+	def facultyAddr = ["http://www.cs.sfu.ca/people/emeriti.html", "http://www.cs.sfu.ca/people/faculty.html"]
 	// def facultyAddr = ["http://www.cs.sfu.ca/people/emeriti.html"]
-	def facultyAddr = ["http://www.cs.sfu.ca/people/faculty.html"]
+	//def facultyAddr = ["http://www.cs.sfu.ca/people/faculty.html"]
 	def allLinks = []
 	def allDocs = []
 	facultyAddr.each{

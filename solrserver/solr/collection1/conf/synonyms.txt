@@ -28,11 +28,12 @@ Television, Televisions, TV, TVs
 pixima => pixma
 
 # My Synonyms
-uni, univ, university
+u, uni, univ, university
+t, toronto
 va, virginia
 inst, institute
 sfu, simon fraser
-ubc, british columbia
+bc, british columbia
 cs, cmpt, computer science
 comp, computer
 sci, science
