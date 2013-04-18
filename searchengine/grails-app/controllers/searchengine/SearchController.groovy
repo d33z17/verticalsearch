@@ -414,16 +414,18 @@ class SearchController {
         /* ghetto rendering of the next few pages */
 
         render "<title>Prestige query :: $uQ</title> "
-        render "<link rel=\"shortcut icon\" href=\"images/favicon.ico\" >"
+        render "<link rel='shortcut icon' href='images/favicon.ico' >"
 
         render "<div class='wrapper'>"
         render "<div class='content'>"
         render "<div class='nav'>"
+          render "<center>"
           render "<a href='/searchengine/search/index'>Prestige :: Engine</a> |"
 	      render "<a href='https://docs.google.com/document/d/1bfjZXHmQLMC_q7rIz6f-X6kbokwQAy1HjQPIxf53K8g/edit?usp=sharing' target='_blank'>Documentation</a> |"
           render "<a href='/searchengine/about/index'>About the Team</a> |"
 	      render "<a href='/searchengine/ranking/index'>University Ranking</a> |"
-          render "<a href='/searchengine/sample/index'>Query Examples</a>"
+          render "<a href='/searchengine/sample/index'>How to use?</a>"
+          render "</center>"
         render "</div>"
 
         /*  query box */
