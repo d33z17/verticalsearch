@@ -9,6 +9,7 @@ class SearchController {
 	def response
 	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
 	def allResults = []		// collection for concatenation of all prof maps
+	def startPageNum = 0	// for multipage
 	
 	/* Main */
 	def index() {
@@ -19,7 +20,8 @@ class SearchController {
 		
 		/* Local Variables */
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
-		uQ = params.address				// user query input value from gsp
+		if (!uQ)
+			uQ = params.address				// user query input value from gsp
 		solrparams.setQuery(uQ)
 		solrparams.set("qf","""
 										professor
@@ -30,6 +32,7 @@ class SearchController {
 										""")										 // searchable fields
 		solrparams.set("q.op", "OR")						 // allow in-exact matches
 		solrparams.set("defType", "edismax")		 // set solr to run as edismax
+		solrparams.set("start",startPageNum)		 // set results starting point for multipage
 		
 		response = solr.query(solrparams)				 // main query raw header and results
 						 
@@ -37,7 +40,10 @@ class SearchController {
 		
 		/* Unsuccessful search */
 		if (doclist.getNumFound() == 0)
-			render "Sorry, I could not find any matches for " + uQ + "<br /><br />"
+			render "Sorry, I could not find any matches for <b>$uQ</b><br /><br />"
+	  else {
+      render "Results found ${doclist.getNumFound()} <br /><br />"
+		}
 
 		/* Loop every result doc in main results */		
 		for (org.apache.solr.common.SolrDocument doc : doclist) {
@@ -158,7 +164,53 @@ class SearchController {
 		if (findSimilarities(allResults, 0) == 1)
 			findSimilarities(allResults, 2)
 		
+		/* Multi-Paging */
+	  def currentPage = request.getForwardURI()
+    render request.requestURI
+    multiPage(doclist.getNumFound(), currentPage)
+		
 	} // end mainQuery
+	
+	/* multi pages */
+  def multiPage(numPages, currentURI){
+
+      def l = currentURI.split("/")
+
+      render "<br/>$l<br />"
+
+      int pages = getPages(numPages)
+      def queryString = uQ.replaceAll(" ","%20")
+      render "$currentURI<link rel='stylesheet' href='/searchengine/static/css/search.css' type='text/css'><center><div class='rpage'>"
+
+      def prevlink = "${currentURI}page?q=${queryString};p=-1"
+      render "<a href=$prevlink style='text-decoration:none'>  prev  <a/>"
+      if (pages > 1) {
+          (1..pages).each {
+              def link = "${currentURI}page?q=${queryString};p=$it"
+              render "<a href=$link style='text-decoration:none'>  $it  <a/>"
+          }
+      }
+      def nextlink = "${currentURI}page?q=${queryString};p=+1"
+      render "<a href=$nextlink style='text-decoration:none'>  next  <a/></div></center>"
+  }
+
+  def page() {
+      def request = request.getQueryString().split(";")
+      def query = request[0].split('=')
+      def page = request[1].split('=')
+      int num = page[1] as int
+      startPageNum = ((num-1)*10)
+      uQ = query[1].replaceAll("%20"," ")
+      mainQuery()
+  }
+
+  //HELPER FUNCTION TO DETERMINE HOW RESULT PAGES
+  private getPages(pages) {
+      int numPages = pages/10
+      if(pages%10 > 0)
+          numPages += 1
+      return numPages
+  }
 	
 	/* Setter for simple string values */
 	def setData(a) {
@@ -285,5 +337,4 @@ class SearchController {
 		}
 		render "<br />"
 	}
-	
 }
