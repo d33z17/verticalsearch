@@ -423,7 +423,7 @@ class SearchController {
           render "<a href='/searchengine/search/index'>Prestige :: Engine</a> |"
 	      render "<a href='https://docs.google.com/document/d/1bfjZXHmQLMC_q7rIz6f-X6kbokwQAy1HjQPIxf53K8g/edit?usp=sharing' target='_blank'>Documentation</a> |"
           render "<a href='/searchengine/about/index'>About the Team</a> |"
-	      render "<a href='/searchengine/ranking/index'>University Ranking</a> |"
+	      render "<a href='/searchengine/ranking/index'>University Ranking</a>"
           render "</center>"
         render "</div>"
 
