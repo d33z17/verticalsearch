@@ -37,6 +37,7 @@
 		<p>The Prestige Vertical Search Engine works with faculty data from <a href='http://www.cs.sfu.ca/people.html' target='_blank'>http://www.cs.sfu.ca</a>.</p>
 		<p>Some Examples:<br />
 			-- sfu lecturer<br />
+			-- stella pearce<br />
 			-- macm 101<br />
 			-- india<br />
 		</p>
