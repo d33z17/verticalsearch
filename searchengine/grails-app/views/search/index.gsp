@@ -42,7 +42,7 @@
 			-- india<br />
 		</p>
 		<p>It accommodates stopword and synonym lists to provide the most flexible user search experience.</p>
-		<p>The engine will search across the following professor attributes: name, classification, courses taught, degrees held, schools attend, years attended, and country.</p>
+		<p>The engine will search across the following professor attributes: name, classification, courses taught, degrees held, schools attended, years attended, and country.</p>
 		<p>Pairwise similarity matching is performed on the results to generate relationships on courses taught and schools attended.</p>
 		<p></p>
 	</div>
