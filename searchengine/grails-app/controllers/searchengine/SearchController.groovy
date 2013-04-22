@@ -183,7 +183,7 @@ class SearchController {
 		def sch
 		e.each {
 			if (it.school) {
-				org.codehaus.groovy.runtime.NullObject.metaClass.toString = {return ''}
+//				org.codehaus.groovy.runtime.NullObject.metaClass.toString = {return ''}
 				sch += it.school.toString()
 				sflag = 1
 			}

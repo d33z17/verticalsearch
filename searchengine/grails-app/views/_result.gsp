@@ -1,10 +1,7 @@
 <script type="text/javascript">
-
-	$(document).ajaxSuccess(function() {
-		initialize()
-	});
 	
-	$(document).ajaxStop(function() {
+	$(document).ready(function() {
+		initialize()
 		codeAddress("${sch}")
 	});
 	
