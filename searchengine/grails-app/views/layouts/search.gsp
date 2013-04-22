@@ -11,7 +11,7 @@
 		<r:layoutResources />
   </head>
 
-	<body onload="initialize()">
+	<body>
 
 		<%-- wrapper div for gradient effect --%>
 		<div class="wrapper">

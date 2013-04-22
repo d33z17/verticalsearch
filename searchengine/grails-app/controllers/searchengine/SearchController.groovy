@@ -8,7 +8,6 @@ class SearchController {
 	def uQ
 	def response
 	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
-	def allResults = []			// collection for concatenation of all prof maps
 	def startPageNum = 0		// for multipage
  	def currentPageNum = 1	// for multipage
 
@@ -21,6 +20,7 @@ class SearchController {
 		
 		/* Local Variables */
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
+		def allResults = []			// collection for concatenation of all prof maps
 
 		//if uQ is specified means its a subquery
 		if (!uQ)
@@ -164,7 +164,7 @@ class SearchController {
 		/* to View */
 		show(allResults)
 		
-		/* get Data to View */
+		/* get SchoolData to the view for the js */
 		pass(allResults)		
 		
 		/* for Relationships */
@@ -177,8 +177,19 @@ class SearchController {
 			
 	} // end mainQuery
 	
-	def pass(allResults) {
-		render (template:"/result",model:[sch:allResults.school.toString()])
+	// pass school data to view for Maps API
+	def pass(e) {
+		def sflag = 0
+		def sch
+		e.each {
+			if (it.school) {
+				org.codehaus.groovy.runtime.NullObject.metaClass.toString = {return ''}
+				sch += it.school.toString()
+				sflag = 1
+			}
+		}
+		if (sflag == 1)
+			render (template:"/result",model:[sch:sch])
 	}
 	
     /* multi pages */
