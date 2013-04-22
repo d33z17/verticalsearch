@@ -164,6 +164,9 @@ class SearchController {
 		/* to View */
 		show(allResults)
 		
+		/* get Data to View */
+		pass(allResults)		
+		
 		/* for Relationships */
 		if (findSimilarities(allResults, 0) == 1)
 			findSimilarities(allResults, 2)
@@ -173,6 +176,10 @@ class SearchController {
     multiPage(doclist.getNumFound(), currentPage)
 			
 	} // end mainQuery
+	
+	def pass(allResults) {
+		render (template:"/result",model:[sch:allResults.school.toString()])
+	}
 	
     /* multi pages */
     def multiPage(numPages, currentURI){
