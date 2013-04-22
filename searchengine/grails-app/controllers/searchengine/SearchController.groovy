@@ -5,8 +5,6 @@ class SearchController {
 	/* Global Variables */
 	String urlString = "http://localhost:8983/solr/"
 	def solr = new org.apache.solr.client.solrj.impl.HttpSolrServer(urlString)
-	def uQ
-	def response
 	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
 	def startPageNum = 0		// for multipage
  	def currentPageNum = 1	// for multipage
@@ -20,6 +18,8 @@ class SearchController {
 		
 		/* Local Variables */
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
+		def uQ
+		def response
 		def allResults = []			// collection for concatenation of all prof maps
 
 		//if uQ is specified means its a subquery
@@ -173,7 +173,7 @@ class SearchController {
 		
 		/* Multi-Paging */
 	  def currentPage = request.getForwardURI()
-    multiPage(doclist.getNumFound(), currentPage)
+    multiPage(doclist.getNumFound(), currentPage, uQ)
 			
 	} // end mainQuery
 	
@@ -193,7 +193,7 @@ class SearchController {
 	}
 	
     /* multi pages */
-    def multiPage(numPages, currentURI){
+    def multiPage(numPages, currentURI, uQ){
 
         def filteredURI = []
         def l = currentURI.split("/")

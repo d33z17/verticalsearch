@@ -40,3 +40,12 @@
 		latLngArray.push(location);
 	  markersArray.push(marker);
 	}
+	
+	function deleteOverlays() {
+	  if (markersArray) {
+	    for (i in markersArray) {
+	      markersArray[i].setMap(null);
+	    }
+	    markersArray.length = 0;
+	  }
+	}
