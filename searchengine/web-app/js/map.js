@@ -2,7 +2,6 @@
   var map;
 	var nameArray = [];
 	var markersArray = [];
-	var latLngArray = [];
 	
   function initialize(address) {
 		/* Defaults if prof doesn't have matching school data */
@@ -16,10 +15,12 @@
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
 		nameArray = (address.split(","));
+
+		var latLngArray = [];
 		
 		getLatLng(geocoder, nameArray, function plot(addr){
 			latLngArray.push(addr);
-			alert(latLngArray);
+//			alert(latLngArray);
 			var linePlot = new google.maps.Polyline({
 				path: latLngArray,
 				strokeColor: "#FF0000",
