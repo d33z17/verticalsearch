@@ -14,11 +14,19 @@
     }
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
-		nameArray = (address.split(","));
-		alert(nameArray);
+		nameArray = address.split(/\d:/);
+		nameArray = nameArray.splice(1, nameArray.length - 1);
 
 		var latLngArray = [];
 		
+		alert(nameArray);
+		
+/*		for(var i = 0; i < nameArray.length; i++) {
+			for(var j = 0; j < nameArray[i].length; j++) {
+				latLngArray[i] = nameArray[i]
+			}			
+		}		
+*/		
 		/* use callback lat lng values to connect universities */
 //		getLatLng(geocoder, nameArray, function plot(addr){
 //			latLngArray.push(addr);
