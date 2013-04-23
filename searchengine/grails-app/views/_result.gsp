@@ -1,8 +1,7 @@
 <script type="text/javascript">
 	
 	$(document).ready(function() {
-		initialize()
-		codeAddress("${sch}")
+		initialize("${sch}")
 	});
 	
 </script>

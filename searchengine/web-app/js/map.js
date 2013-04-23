@@ -4,7 +4,8 @@
 	var markersArray = [];
 	var latLngArray = [];
 	
-  function initialize() {
+  function initialize(address) {
+		/* Defaults if prof doesn't have matching school data */
     geocoder = new google.maps.Geocoder();
     var latlng = new google.maps.LatLng(49.2505, -123.1119);
     var mapOptions = {
@@ -13,39 +14,41 @@
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-  }
 
-  function codeAddress(address) {
 		nameArray = (address.split(","));
-		for (var i = 0; i < nameArray.length; i++) {
-	    geocoder.geocode( { 'address': nameArray[i]}, function(results, status) {
+		
+		getLatLng(geocoder, nameArray, function plot(addr){
+			latLngArray.push(addr);
+			alert(latLngArray);
+			var linePlot = new google.maps.Polyline({
+				path: latLngArray,
+				strokeColor: "#FF0000",
+				strokeOpacity: 1.0,
+				strokeWeight: 2
+			});
+			linePlot.setMap(map);
+		});
+		
+	}
+
+	/* wrapper function for geocoder so we can work with the callback lat lng values */	
+	function getLatLng(geocoder, nameArray, callback) {
+		for (var i = 0; i < nameArray.length; i++) {		
+			geocoder.geocode( { 'address': nameArray[i]}, function process(results, status) {
 	      if (status == google.maps.GeocoderStatus.OK) {
-	        map.setCenter(results[0].geometry.location);
 					addMarker(results[0].geometry.location);
-	      }
-	    });
+					if (callback) {
+						callback(results[0].geometry.location);
+					}
+	      }	
+	  	});
 		}
-		var bounds = new google.maps.LatLngBounds();
-		for (var i = 0; i < latLngArray.length; i++) {
-			bounds.extend (latLngArray[i]);
-		}
-		map.fitBounds(bounds);
-  }
+	}
 
 	function addMarker(location) {
 	  marker = new google.maps.Marker({
 	    position: location,
 	    map: map
 	  });
-		latLngArray.push(location);
 	  markersArray.push(marker);
-	}
-	
-	function deleteOverlays() {
-	  if (markersArray) {
-	    for (i in markersArray) {
-	      markersArray[i].setMap(null);
-	    }
-	    markersArray.length = 0;
-	  }
 	}
