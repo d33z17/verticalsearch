@@ -181,15 +181,17 @@ class SearchController {
 	def pass(e) {
 		def sflag = 0
 		def sch
-		e.each {
-			if (it.school) {
-//				org.codehaus.groovy.runtime.NullObject.metaClass.toString = {return ''}
-				sch += it.school.toString()
+		def cnt = [:]
+		e.eachWithIndex { v, i ->
+			if (v.school) {
+				sch += v.school.toString()
 				sflag = 1
+				cnt.putAt(i,v.school)
+				i++
 			}
 		}
 		if (sflag == 1)
-			render (template:"/result",model:[sch:sch])
+			render (template:"/result",model:[sch:cnt.toString()])
 	}
 	
     /* multi pages */

@@ -15,21 +15,23 @@
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
 		nameArray = (address.split(","));
+		alert(nameArray);
 
 		var latLngArray = [];
 		
-		getLatLng(geocoder, nameArray, function plot(addr){
-			latLngArray.push(addr);
+		/* use callback lat lng values to connect universities */
+//		getLatLng(geocoder, nameArray, function plot(addr){
+//			latLngArray.push(addr);
 //			alert(latLngArray);
-			var linePlot = new google.maps.Polyline({
+/*			var linePlot = new google.maps.Polyline({
 				path: latLngArray,
 				strokeColor: "#FF0000",
 				strokeOpacity: 1.0,
-				strokeWeight: 2
+				strokeWeight: 5
 			});
 			linePlot.setMap(map);
 		});
-		
+*/		
 	}
 
 	/* wrapper function for geocoder so we can work with the callback lat lng values */	

@@ -6,6 +6,4 @@
 	
 </script>
 
-<div>${sch}</div>
-
 <div id="map-canvas"></div>
