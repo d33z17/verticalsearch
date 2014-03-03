@@ -8,6 +8,7 @@ class SearchController {
 	def TOTAL_UNIVERSITIES = 852	// const for scrape total, used for rank calculation
 	def startPageNum = 0		// for multipage
  	def currentPageNum = 1	// for multipage
+  def uQ // userQuery
 
 	/* Main */
 	def index() {
@@ -18,7 +19,6 @@ class SearchController {
 		
 		/* Local Variables */
 		def solrparams = new org.apache.solr.client.solrj.SolrQuery()
-		def uQ
 		def response
 		def allResults = []			// collection for concatenation of all prof maps
 

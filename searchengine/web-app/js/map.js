@@ -6,54 +6,51 @@
   function initialize(address) {
 		/* Defaults if prof doesn't have matching school data */
     geocoder = new google.maps.Geocoder();
-    var latlng = new google.maps.LatLng(49.2505, -123.1119);
+    var latlng = new google.maps.LatLng(34.4604181,-3.7229434);
     var mapOptions = {
-      zoom: 12,
+      zoom: 2,
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
+		
 		nameArray = address.split(/\d:/);
-		nameArray = nameArray.splice(1, nameArray.length - 1);
+		nameArray.shift();
 
+		var school = [];
 		var latLngArray = [];
 		
-		alert(nameArray);
-		
-/*		for(var i = 0; i < nameArray.length; i++) {
-			for(var j = 0; j < nameArray[i].length; j++) {
-				latLngArray[i] = nameArray[i]
+		for (var i = 0; i < nameArray.length; i++) {
+			school = nameArray[i].split(',');
+
+			for (var j = 0; j < school.length; j++) {
+				
+				/* use callback lat lng values to connect universities */
+				getLatLng(geocoder, school[j], function plot(addr){
+					latLngArray.push(addr);
+					var linePlot = new google.maps.Polyline({
+						path: latLngArray,
+						strokeColor: "#FF0000",
+						strokeOpacity: 1.0,
+						strokeWeight: 5
+					});
+					linePlot.setMap(map);
+				});
 			}			
-		}		
-*/		
-		/* use callback lat lng values to connect universities */
-//		getLatLng(geocoder, nameArray, function plot(addr){
-//			latLngArray.push(addr);
-//			alert(latLngArray);
-/*			var linePlot = new google.maps.Polyline({
-				path: latLngArray,
-				strokeColor: "#FF0000",
-				strokeOpacity: 1.0,
-				strokeWeight: 5
-			});
-			linePlot.setMap(map);
-		});
-*/		
+		}
+		alert(school);	
 	}
 
 	/* wrapper function for geocoder so we can work with the callback lat lng values */	
-	function getLatLng(geocoder, nameArray, callback) {
-		for (var i = 0; i < nameArray.length; i++) {		
-			geocoder.geocode( { 'address': nameArray[i]}, function process(results, status) {
-	      if (status == google.maps.GeocoderStatus.OK) {
-					addMarker(results[0].geometry.location);
-					if (callback) {
-						callback(results[0].geometry.location);
-					}
-	      }	
-	  	});
-		}
+	function getLatLng(geocoder, schoolName, callback) {
+		geocoder.geocode( { 'address': schoolName}, function process(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+				addMarker(results[0].geometry.location);
+				if (callback) {
+					callback(results[0].geometry.location);
+				}
+      }	
+  	});
 	}
 
 	function addMarker(location) {

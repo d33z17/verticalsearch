@@ -5,5 +5,4 @@
 	});
 	
 </script>
-
 <div id="map-canvas"></div>
