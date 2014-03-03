@@ -38,7 +38,6 @@
 				});
 			}			
 		}
-		alert(school);	
 	}
 
 	/* wrapper function for geocoder so we can work with the callback lat lng values */	
